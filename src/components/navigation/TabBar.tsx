@@ -34,11 +34,12 @@ const styles = StyleSheet.create({
   },    
   active: {
     marginTop: 8,
-    ...TYPOGRAPHY.action.m,
-    color: 'COLORS.grey[700]'
+    ...TYPOGRAPHY.action.m,     
+    color: COLORS.grey[700]
   },
   inactive: {
+    marginTop: 8,
     ...TYPOGRAPHY.action.m,
-    color: 'COLORS.grey[500]'
+    color: COLORS.grey[500]
   }
 });

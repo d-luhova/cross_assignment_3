@@ -12,7 +12,6 @@ export default function Index() {
 
   return (
     <>
-      <TabBar />
       <TitleCard
         title="W&B – The Amber Room"
         subtitle="Leave your contact information so that the restaurant administration can call you if necessary."
@@ -25,6 +24,7 @@ export default function Index() {
         onPress={() => {}}
         disabled={!selectedDate}
       />
+      <TabBar />
     </>
   );
 }
