@@ -1,3 +1,14 @@
+import { NavigationContainer } from '@react-navigation/native';
+import StackNavigator from './src/navigation/StackNavigator';
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
+  );
+}
+
 import { COLORS } from "@/src/constants/colors";
 import { MaterialIcons } from "@expo/vector-icons";
 import { useState } from "react";
@@ -6,25 +17,21 @@ import DateCalendar from "../../src/components/dateTimePicker/DateCalendar";
 import TimePicker from "../../src/components/dateTimePicker/TimePicker";
 import TabBar from "../../src/components/navigation/TabBar";
 import TitleCard from "../../src/components/TitleCard";
+import EmptyState from "@/src/components/EmptyState";
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import Toast from "@/src/components/Toast";
+import { Button, View } from "react-native";
+import BookingCard from "@/src/components/BookingCard"; 
+
 
 export default function Index() {
   const [selectedDate, setSelectedDate] = useState("");
+  const [visible, setVisible] = useState(true);
 
   return (
     <>
-      <TitleCard
-        title="W&B – The Amber Room"
-        subtitle="Leave your contact information so that the restaurant administration can call you if necessary."
-      />
-      <DateCalendar onSelectDate={setSelectedDate} />
-      <TimePicker selectedDate={selectedDate} />
-      <ButtonPrimary
-        title="Find a table"
-        icon={<MaterialIcons name="search" size={14} color={COLORS.white} />}
-        onPress={() => {}}
-        disabled={!selectedDate}
-      />
       <TabBar />
+      
     </>
   );
 }

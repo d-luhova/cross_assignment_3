@@ -2,25 +2,46 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import { COLORS } from '../../constants/colors';
 import { TYPOGRAPHY } from '@/src/constants/typography';
+import { BottomTabBarProps } from '@react-navigation/bottom-tabs';
 
-export default function TabBar() {
+export default function TabBar({ state, navigation }: BottomTabBarProps) {
   return (
     <View style={styles.tabBar}>
-      
-      <TouchableOpacity style={styles.tab}>
-        <MaterialIcons name="restaurant" size={20} color={COLORS.primary[400]} />
-        <Text style={styles.active}>Restaurants</Text>
-      </TouchableOpacity>
+      {state.routes.map((route, index) => {
+        const isFocused = state.index === index;
 
-      <TouchableOpacity style={styles.tab}>
-        <MaterialIcons name="calendar-today" size={20} color={COLORS.grey[200]} />
-        <Text style={styles.inactive}>My Bookings</Text>
-      </TouchableOpacity>
+        const onPress = () => {
+          navigation.navigate(route.name);
+        };
 
+        const iconName =
+          route.name === 'Home' ? 'restaurant' : 'calendar-today';
+
+        const label =
+          route.name === 'Home' ? 'Restaurants' : 'My Bookings';
+
+        return (
+          <TouchableOpacity key={route.key} onPress={onPress} style={styles.tab}>
+            <MaterialIcons
+              name={iconName}
+              size={20}
+              color={isFocused ? COLORS.primary[400] : COLORS.grey[200]}
+            />
+
+            <Text
+              style={[
+                styles.text,
+                isFocused ? styles.active : styles.inactive,
+              ]}
+            >
+              {label}
+            </Text>
+          </TouchableOpacity>
+        );
+      })}
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   tabBar: {
     height: 88,
@@ -29,17 +50,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-around',
   },
+
   tab: {
     alignItems: 'center',
-  },    
-  active: {
-    marginTop: 8,
-    ...TYPOGRAPHY.action.m,     
-    color: COLORS.grey[700]
   },
-  inactive: {
+
+  text: {
     marginTop: 8,
     ...TYPOGRAPHY.action.m,
-    color: COLORS.grey[500]
-  }
+  },
+
+  active: {
+    color: COLORS.grey[700],
+  },
+
+  inactive: {
+    color: COLORS.grey[500],
+  },
 });
