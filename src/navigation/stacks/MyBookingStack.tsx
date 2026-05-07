@@ -1,12 +1,12 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import BookingScreen from '@/src/screens/BookingScreen';
+import BookingScreen from "@/src/screens/BookingScreen";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const Stack = createNativeStackNavigator();
 
 export default function MyBookingStack() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Booking" component={BookingScreen} /> 
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Booking" component={BookingScreen} />
     </Stack.Navigator>
   );
 }

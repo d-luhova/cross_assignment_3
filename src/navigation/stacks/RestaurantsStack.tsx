@@ -8,7 +8,7 @@ const Stack = createNativeStackNavigator();
 
 export default function RestaurantsStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Details" component={DetailsScreen} />
       <Stack.Screen name="DateTime" component={DateTimeScreen} />

@@ -1,9 +1,7 @@
-import { View, Text, Button } from 'react-native';
-import { StyleSheet } from 'react-native';      
+import { View, Text, Button, StyleSheet } from 'react-native';    
 import EmptyState from '../components/EmptyState';
 import { COLORS } from '../constants/colors';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { MaterialIcons } from "@expo/vector-icons";
+import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 import Toast from '../components/Toast';
 import { useState } from 'react';
 import BookingCard from '../components/BookingCard';
@@ -16,11 +14,11 @@ export default function BookingScreen() {
     <View style={styles.container}>
       <Text>Booking Screen</Text>  
       <TitleCard
-              title="W&B – The Amber Room"
+              title="W&B - The Amber Room"
               subtitle="Leave your contact information so that the restaurant administration can call you if necessary."
             />
       <BookingCard
-              title="W&B – The Amber Room"
+              title="W&B - The Amber Room"
               date="2023-10-15"
               time="19:00"
               guests="4"

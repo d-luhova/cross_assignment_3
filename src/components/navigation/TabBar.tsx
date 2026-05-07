@@ -1,8 +1,8 @@
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { MaterialIcons } from '@expo/vector-icons';
-import { COLORS } from '../../constants/colors';
-import { TYPOGRAPHY } from '@/src/constants/typography';
-import { BottomTabBarProps } from '@react-navigation/bottom-tabs';
+import { TYPOGRAPHY } from "@/src/constants/typography";
+import { MaterialIcons } from "@expo/vector-icons";
+import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { COLORS } from "../../constants/colors";
 
 export default function TabBar({ state, navigation }: BottomTabBarProps) {
   return (
@@ -15,13 +15,17 @@ export default function TabBar({ state, navigation }: BottomTabBarProps) {
         };
 
         const iconName =
-          route.name === 'Home' ? 'restaurant' : 'calendar-today';
+          route.name === "Restaurants" ? "restaurant" : "calendar-today";
 
         const label =
-          route.name === 'Home' ? 'Restaurants' : 'My Bookings';
+          route.name === "Restaurants" ? "Restaurants" : "My Bookings";
 
         return (
-          <TouchableOpacity key={route.key} onPress={onPress} style={styles.tab}>
+          <TouchableOpacity
+            key={route.key}
+            onPress={onPress}
+            style={styles.tab}
+          >
             <MaterialIcons
               name={iconName}
               size={20}
@@ -29,10 +33,7 @@ export default function TabBar({ state, navigation }: BottomTabBarProps) {
             />
 
             <Text
-              style={[
-                styles.text,
-                isFocused ? styles.active : styles.inactive,
-              ]}
+              style={[styles.text, isFocused ? styles.active : styles.inactive]}
             >
               {label}
             </Text>
@@ -45,14 +46,14 @@ export default function TabBar({ state, navigation }: BottomTabBarProps) {
 const styles = StyleSheet.create({
   tabBar: {
     height: 88,
-    flexDirection: 'row',
+    flexDirection: "row",
     backgroundColor: COLORS.secondary[50],
-    alignItems: 'center',
-    justifyContent: 'space-around',
+    alignItems: "center",
+    justifyContent: "space-around",
   },
 
   tab: {
-    alignItems: 'center',
+    alignItems: "center",
   },
 
   text: {

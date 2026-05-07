@@ -1,5 +1,4 @@
-import { View, Text } from 'react-native';
-import { StyleSheet } from 'react-native';     
+import { View, Text, StyleSheet } from 'react-native';    
 import ButtonPrimary from "../components/ButtonPrimary";
 import { MaterialIcons } from "@expo/vector-icons";
 import { COLORS } from '../constants/colors';
@@ -9,7 +8,7 @@ export default function ContactScreen() {
   return (
     <View style={styles.container}>
         <TitleCard
-                title="W&B – The Amber Room"
+                title="W&B - The Amber Room"
                 subtitle="Leave your contact information so that the restaurant administration can call you if necessary."
               />
       <Text>Contact Screen</Text>
