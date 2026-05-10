@@ -6,6 +6,8 @@ import {
   TouchableOpacity,
   FlatList,
   ListRenderItem,
+  Modal, 
+  TouchableWithoutFeedback
 } from 'react-native';
 import { COLORS } from '../../constants/colors';
 import { MaterialIcons } from '@expo/vector-icons';
@@ -13,6 +15,7 @@ import { TYPOGRAPHY } from '@/src/constants/typography';
 
 type Props = {
   selectedDate: string;
+  onSelectTime: (time: string) => void;
 };
 
 const generateTimes = (): string[] => {
@@ -31,7 +34,10 @@ const BOOKED_SLOTS: Record<string, string[]> = {
   '2026-05-02': ['11:30'],
 };
 
-export default function TimePicker({ selectedDate }: Props) {
+export default function TimePicker({
+  selectedDate,
+  onSelectTime,
+}: Props) {
   const [selectedTime, setSelectedTime] = useState<string>('');
   const [open, setOpen] = useState<boolean>(false);
 
@@ -63,6 +69,7 @@ export default function TimePicker({ selectedDate }: Props) {
         disabled={disabled}
         onPress={() => {
           setSelectedTime(item);
+          onSelectTime(item);
           setOpen(false);
         }}
       >
@@ -79,83 +86,100 @@ export default function TimePicker({ selectedDate }: Props) {
     );
   };
 
+  const styles = StyleSheet.create({
+    container: {
+      marginTop: 16,
+    },
+
+    field: {
+      height: 48,
+      width: 130,
+      backgroundColor: COLORS.white,
+      borderRadius: 8,
+      borderWidth: 1,
+      borderColor: COLORS.secondary[200],
+      paddingHorizontal: 16,
+      flexDirection: 'row',        
+      alignItems: 'center',
+      justifyContent: 'space-between',
+    },
+
+    text: {
+      ...TYPOGRAPHY.body.s,
+      color: COLORS.grey[500],
+    },
+
+    dropdown: {
+      marginTop: 4,
+      borderRadius: 8,
+      borderWidth: 1,
+      borderColor: COLORS.secondary[200],
+      backgroundColor: COLORS.white,
+      maxHeight: 320,
+      width: 130,
+    },
+
+    item: {
+      padding: 12,
+    },
+
+    itemText: {
+      ...TYPOGRAPHY.body.s,
+      color: COLORS.grey[600],
+    },
+
+    selected: {
+      color: COLORS.primary[400],
+      ...TYPOGRAPHY.action.m,
+    },
+
+    disabled: {
+      color: COLORS.grey[300],
+    },
+    overlay: {
+      flex: 1,
+      backgroundColor: "rgba(0,0,0,0.3)",
+      justifyContent: "center",
+      padding: 24,},
+  });
+
   return (
-    <View style={styles.container}>
-      <TouchableOpacity
-        style={styles.field}
-        onPress={() => setOpen((prev) => !prev)}
-      >
-        <Text style={styles.text}>
-          {selectedTime || 'Time'}
-        </Text>
-        <MaterialIcons
-        name={open ? 'keyboard-arrow-up' : 'keyboard-arrow-down'}
+  <View style={styles.container}>
+
+    <TouchableOpacity
+      style={styles.field}
+      onPress={() => setOpen(true)}
+    >
+      <Text style={styles.text}>
+        {selectedTime || "Time"}
+      </Text>
+
+      <MaterialIcons
+        name="keyboard-arrow-down"
         size={24}
         color={COLORS.grey[400]}
-        />
-      </TouchableOpacity>
+      />
+    </TouchableOpacity>
 
-      {open && (
-        <View style={styles.dropdown}>
-          <FlatList
-            data={TIMES}
-            keyExtractor={(item) => item}
-            renderItem={renderItem}
-          />
+    <Modal
+    visible={open}
+    transparent
+    animationType="fade"
+    >
+      <TouchableWithoutFeedback onPress={() => setOpen(false)}>
+        <View style={styles.overlay}>
+          <TouchableWithoutFeedback>
+            <View style={styles.dropdown}>
+              <FlatList
+              data={TIMES}
+              keyExtractor={(item) => item}
+              renderItem={renderItem}
+              />
+            </View>
+          </TouchableWithoutFeedback>
         </View>
-      )}
-    </View>
+      </TouchableWithoutFeedback>
+    </Modal>
+  </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    marginTop: 16,
-  },
-
-  field: {
-    height: 48,
-    width: 130,
-    backgroundColor: COLORS.white,
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: COLORS.secondary[200],
-    paddingHorizontal: 16,
-    flexDirection: 'row',        
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-
-  text: {
-    ...TYPOGRAPHY.body.s,
-    color: COLORS.grey[500],
-  },
-
-  dropdown: {
-    marginTop: 4,
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: COLORS.secondary[200],
-    backgroundColor: COLORS.white,
-    maxHeight: 120,
-    width: 130,
-  },
-
-  item: {
-    padding: 12,
-  },
-
-  itemText: {
-    ...TYPOGRAPHY.body.s,
-    color: COLORS.grey[600],
-  },
-
-  selected: {
-    color: COLORS.primary[400],
-    ...TYPOGRAPHY.action.m,
-  },
-
-  disabled: {
-    color: COLORS.grey[300],
-  },
-});

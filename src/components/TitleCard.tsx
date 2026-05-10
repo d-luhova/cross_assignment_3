@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, StyleSheet, View, useWindowDimensions } from 'react-native';
+import { Text, StyleSheet, View, } from 'react-native';
 import { COLORS } from '../constants/colors';
 import { TYPOGRAPHY } from '../constants/typography';
 
@@ -9,12 +9,9 @@ type Props = {
 };
 
 export default function TitleCard({ title, subtitle }: Props) {
-  const { width } = useWindowDimensions();
-  const isSmall = width < 375;
   return (
     <View style={[
     styles.container,
-    { paddingHorizontal: isSmall ? 12 : 16 }
   ]}>
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.subtitle}>{subtitle}</Text>

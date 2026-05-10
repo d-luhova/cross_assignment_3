@@ -1,20 +1,44 @@
-import { View, StyleSheet } from 'react-native';
-import { COLORS } from '../constants/colors';
-import ButtonPrimary from '../components/ButtonPrimary';
 import { MaterialIcons } from "@expo/vector-icons";
-import DetailsCard from '../components/DetailsCard';
+import { Image, StyleSheet, View } from "react-native";
+import ButtonPrimary from "../components/ButtonPrimary";
+import DetailsCard from "../components/DetailsCard";
+import NavBar from "../components/navigation/NavBar";
+import NumberInput from "../components/NumberInput";
+import { COLORS } from "../constants/colors";
+import restaurants from "../data/Restaurants";
+import React, { useState } from "react";
 
-export default function DetailsScreen({ route }: any) {
+export default function DetailsScreen({ route, navigation }: any) {
   const { restaurantId } = route.params;
-
+  const restaurant = restaurants.find((item) => item.id === restaurantId);
+    const [guests, setGuests] = useState(1);
   return (
     <View style={styles.container}>
-      <DetailsCard restaurantId={restaurantId} />
-      <ButtonPrimary
-              title="Find a table"
-              icon={<MaterialIcons name="search" size={14} color={COLORS.white} />}
-              onPress={() => {}}
-            />
+      <View style={styles.imageWrapper}>
+        <Image
+          source={{ uri: restaurant?.image }}
+          resizeMode="cover"
+          style={styles.image}
+        />
+        <View style={styles.navBar}>
+          <NavBar onBackPress={() => navigation.goBack()} />
+        </View>
+      </View>
+
+      <View style={styles.content}>
+        <DetailsCard restaurantId={restaurantId} />
+        <NumberInput
+          guests={guests}
+          onChange={setGuests}
+          />
+        <ButtonPrimary
+          title="Find a table"
+          icon={<MaterialIcons name="search" size={14} color={COLORS.white} />}
+          onPress={() => 
+            navigation.navigate("DateTime", { restaurantId, guests })
+          }
+        />
+      </View>
     </View>
   );
 }
@@ -22,8 +46,28 @@ export default function DetailsScreen({ route }: any) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'white',
-    },
+    backgroundColor: COLORS.white,
+  },
+
+  imageWrapper: {
+    position: "relative",
+  },
+
+  image: {
+    width: "100%",
+    height: 361,
+  },
+
+  navBar: {
+    position: "absolute",
+    top: 48,
+    left: 0,
+    right: 0,
+  },
+
+  content: {
+    flex: 1,
+    padding: 24,
+    justifyContent: "space-between",
+  },
 });

@@ -3,8 +3,25 @@ import ButtonPrimary from "../components/ButtonPrimary";
 import { MaterialIcons } from "@expo/vector-icons";
 import { COLORS } from '../constants/colors';
 import TitleCard from '../components/TitleCard';
+import { createBooking } from "../services/tablesApi";
 
-export default function ContactScreen() {
+export default function ContactScreen({
+  route,
+  navigation,
+}: any) {
+  const { restaurantId, guests, date, time } = route.params;
+  const handleBooking = async () => {
+  try {
+    await createBooking({
+      restaurantId,
+      guests,
+      date,
+      time,
+    });
+
+    navigation.navigate("Bookings");} catch (error) {
+    console.log(error);
+  }};
   return (
     <View style={styles.container}>
         <TitleCard
@@ -15,7 +32,7 @@ export default function ContactScreen() {
       <ButtonPrimary
               title="Find a table"
               icon={<MaterialIcons name="search" size={14} color={COLORS.white} />}
-              onPress={() => {}}
+              onPress={handleBooking}
             />          
     </View>
   );
