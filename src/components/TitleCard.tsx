@@ -1,18 +1,17 @@
-import React from 'react';
-import { Text, StyleSheet, View, } from 'react-native';
-import { COLORS } from '../constants/colors';
-import { TYPOGRAPHY } from '../constants/typography';
+import React from "react";
+import { StyleSheet, Text, View, ViewStyle } from "react-native";
+import { COLORS } from "../constants/colors";
+import { TYPOGRAPHY } from "../constants/typography";
 
 type Props = {
   title: string;
   subtitle: string;
+  style?: ViewStyle;
 };
 
-export default function TitleCard({ title, subtitle }: Props) {
+export default function TitleCard({ title, subtitle, style }: Props) {
   return (
-    <View style={[
-    styles.container,
-  ]}>
+    <View style={[styles.container, style]}>
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.subtitle}>{subtitle}</Text>
     </View>
@@ -21,7 +20,7 @@ export default function TitleCard({ title, subtitle }: Props) {
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
+    width: "100%",
     gap: 20,
   },
 

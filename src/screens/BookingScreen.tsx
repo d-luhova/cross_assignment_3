@@ -1,58 +1,163 @@
-import { View, Text, Button, StyleSheet } from 'react-native';    
-import EmptyState from '../components/EmptyState';
-import { COLORS } from '../constants/colors';
-import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
-import Toast from '../components/Toast';
-import { useState } from 'react';
-import BookingCard from '../components/BookingCard';
-import ButtonPrimary from '../components/ButtonPrimary';
-import TitleCard from '../components/TitleCard';
+import { useCallback, useState } from "react";
+import { USER_ID } from "../data/user";
 
-export default function BookingScreen() {
-    const [visible, setVisible] = useState(true);
+import { FlatList, StyleSheet, View } from "react-native";
+
+import { useFocusEffect } from "@react-navigation/native";
+
+import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
+
+import BookingCard from "../components/BookingCard";
+import ButtonPrimary from "../components/ButtonPrimary";
+import EmptyState from "../components/EmptyState";
+import TitleCard from "../components/TitleCard";
+import Toast from "../components/Toast";
+
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { COLORS } from "../constants/colors";
+
+import restaurants from "../data/Restaurants";
+
+import { deleteBooking, getTables } from "../services/tablesApi";
+import DeleteBookingModal from "../components/DeleteBookingModal";  
+
+export default function BookingScreen({ route, navigation }: any) {
+  const [bookings, setBookings] = useState([]);
+  const [toast, setToast] = useState<null | {
+    title: string;
+    description: string;
+  }>(null);
+
+  const loadBookings = async () => {
+    try {
+      const data = await getTables();
+      const filtered = data.filter((item: any) => item.userId === USER_ID);
+      setBookings(filtered);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const insets = useSafeAreaInsets();
+  const [selectedBookingId, setSelectedBookingId] =
+  useState<string | null>(null);
+
+  useFocusEffect(
+    useCallback(() => {
+      loadBookings();
+
+      if (route.params?.success) {
+        setToast({
+          title: "Done!",
+          description: "Booking created successfully.",
+        });
+
+        navigation.setParams({
+          success: false,
+        });
+      }
+    }, []),
+  );
+
+  const handleDelete = async (id: string) => {
+    try {
+      await deleteBooking(id);
+
+      setBookings((prev) => prev.filter((item: any) => item.id !== id));
+
+      setToast({
+        title: "Done!",
+        description: "Booking cancelled successfully.",
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
-    <View style={styles.container}>
-      <Text>Booking Screen</Text>  
+    <View style={[styles.container, { paddingTop: insets.top }]}>
       <TitleCard
-              title="W&B - The Amber Room"
-              subtitle="Leave your contact information so that the restaurant administration can call you if necessary."
-            />
-      <BookingCard
-              title="W&B - The Amber Room"
-              date="2023-10-15"
-              time="19:00"
-              guests="4"
-            />
-      <View style={{ flex: 1, padding: 16 }}>
-        <Button title="Show Toast" onPress={() => setVisible(true)} />
-        {visible && (
-          <Toast
-            title="Done!"
-            description="Booking cancelled successfully."
-            onClose={() => setVisible(false)}
-          />
-        )}
-      </View> 
-      <ButtonPrimary
-           title="Find a table"
-           icon={<MaterialIcons name="search" size={14} color={COLORS.white} />} 
-           onPress={() => {}}
-            />    
-      <EmptyState
+        style={{ marginTop: 32 }}
+        title="Your Tables"
+        subtitle="Your upcoming bookings will appear here. You can cancel them up to 2 hours before the reservation time."
+      />
+
+      {bookings.length === 0 ? (
+        <>
+          <EmptyState
             title="No bookings yet"
             subtitle="Start by booking at Wein & Brot."
-            icon={<MaterialCommunityIcons name="calendar-month" size={120} color={COLORS.grey[200]}/>}
-            />
-    
+            icon={
+              <MaterialCommunityIcons
+                name="calendar-month"
+                size={120}
+                color={COLORS.grey[200]}
+              />
+            }
+          />
+          <ButtonPrimary
+            title="Find a table"
+            icon={
+              <MaterialIcons name="search" size={14} color={COLORS.white} />
+            }
+            onPress={() => navigation.navigate("Restaurants")}
+          />
+        </>
+      ) : (
+        <>
+          <FlatList
+            contentContainerStyle={styles.list}
+            data={bookings}
+            keyExtractor={(item: any) => item.id}
+            renderItem={({ item }: any) => {
+              const restaurant = restaurants.find(
+                (r) => r.id === item.restaurantId,
+              );
+
+              return (
+                <BookingCard
+                  title={restaurant?.title || ""}
+                  date={item.date}
+                  time={item.time}
+                  guests={`${item.guests} guests`}
+                  onDelete={() => setSelectedBookingId(item.id)}
+                />
+              );
+            }}
+          />
+          <DeleteBookingModal
+           visible={!!selectedBookingId}
+           onCancel={() => setSelectedBookingId(null)}
+           onConfirm={() => {
+            if (selectedBookingId) {
+              handleDelete(selectedBookingId);
+              setSelectedBookingId(null);
+              }
+            }}
+          />
+        </>
+      )}
+
+      {toast && (
+        <Toast
+          title={toast.title}
+          description={toast.description}
+          onClose={() => setToast(null)}
+        />
+      )}
     </View>
-    
   );
-}   
+}
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'white',
-    },
+    backgroundColor: COLORS.white,
+    padding: 24,
+    gap: 32,
+  },
+
+  list: {
+    gap: 16,
+    paddingBottom: 24,
+  },
 });

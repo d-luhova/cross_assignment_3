@@ -7,13 +7,15 @@ import NumberInput from "../components/NumberInput";
 import { COLORS } from "../constants/colors";
 import restaurants from "../data/Restaurants";
 import React, { useState } from "react";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function DetailsScreen({ route, navigation }: any) {
   const { restaurantId } = route.params;
   const restaurant = restaurants.find((item) => item.id === restaurantId);
     const [guests, setGuests] = useState(1);
+  const insets = useSafeAreaInsets();
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { paddingTop: insets.top }]}>
       <View style={styles.imageWrapper}>
         <Image
           source={{ uri: restaurant?.image }}
@@ -58,11 +60,13 @@ const styles = StyleSheet.create({
     height: 361,
   },
 
+  
+
   navBar: {
     position: "absolute",
-    top: 48,
     left: 0,
     right: 0,
+    zIndex: 10,
   },
 
   content: {
