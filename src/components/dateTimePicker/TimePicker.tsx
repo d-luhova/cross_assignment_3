@@ -12,6 +12,7 @@ import {
 import { COLORS } from '../../constants/colors';
 import { MaterialIcons } from '@expo/vector-icons';
 import { TYPOGRAPHY } from '@/src/constants/typography';
+import useTheme from '@/src/hooks/useTheme';
 
 type Props = {
   selectedDate: string;
@@ -59,6 +60,7 @@ export default function TimePicker({
 
     return false;
   };
+  const colors = useTheme().colors;
 
   const renderItem: ListRenderItem<string> = ({ item }) => {
     const disabled = isDisabled(item);
@@ -94,7 +96,6 @@ export default function TimePicker({
     field: {
       height: 48,
       width: 130,
-      backgroundColor: COLORS.white,
       borderRadius: 8,
       borderWidth: 1,
       borderColor: COLORS.secondary[200],
@@ -106,7 +107,6 @@ export default function TimePicker({
 
     text: {
       ...TYPOGRAPHY.body.s,
-      color: COLORS.grey[500],
     },
 
     dropdown: {
@@ -137,8 +137,7 @@ export default function TimePicker({
       color: COLORS.grey[300],
     },
     overlay: {
-      flex: 1,
-      backgroundColor: "rgba(0,0,0,0.3)",
+      ...StyleSheet.absoluteFillObject,
       justifyContent: "center",
       padding: 24,},
   });
@@ -150,14 +149,14 @@ export default function TimePicker({
       style={styles.field}
       onPress={() => setOpen(true)}
     >
-      <Text style={styles.text}>
+      <Text style={[styles.text, { color: colors.text }]}> 
         {selectedTime || "Time"}
       </Text>
 
       <MaterialIcons
         name="keyboard-arrow-down"
         size={24}
-        color={COLORS.grey[400]}
+        color={colors.primary}
       />
     </TouchableOpacity>
 
@@ -167,7 +166,7 @@ export default function TimePicker({
     animationType="fade"
     >
       <TouchableWithoutFeedback onPress={() => setOpen(false)}>
-        <View style={styles.overlay}>
+        <View style={[styles.overlay, { backgroundColor: colors.overlay }]}>
           <TouchableWithoutFeedback>
             <View style={styles.dropdown}>
               <FlatList

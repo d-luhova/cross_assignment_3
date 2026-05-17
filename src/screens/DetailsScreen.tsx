@@ -8,14 +8,16 @@ import { COLORS } from "../constants/colors";
 import restaurants from "../data/Restaurants";
 import React, { useState } from "react";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import useTheme from "../hooks/useTheme";
 
 export default function DetailsScreen({ route, navigation }: any) {
   const { restaurantId } = route.params;
   const restaurant = restaurants.find((item) => item.id === restaurantId);
     const [guests, setGuests] = useState(1);
+  const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   return (
-    <View style={[styles.container, { paddingTop: insets.top }]}>
+    <View style={[styles.container, { paddingTop: insets.top, backgroundColor: colors.background, }]}>
       <View style={styles.imageWrapper}>
         <Image
           source={{ uri: restaurant?.image }}
@@ -48,7 +50,6 @@ export default function DetailsScreen({ route, navigation }: any) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.white,
   },
 
   imageWrapper: {

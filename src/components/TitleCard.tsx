@@ -1,7 +1,8 @@
 import React from "react";
 import { StyleSheet, Text, View, ViewStyle } from "react-native";
-import { COLORS } from "../constants/colors";
 import { TYPOGRAPHY } from "../constants/typography";
+import useTheme from "../hooks/useTheme";
+
 
 type Props = {
   title: string;
@@ -10,10 +11,11 @@ type Props = {
 };
 
 export default function TitleCard({ title, subtitle, style }: Props) {
+  const { colors } = useTheme();  
   return (
     <View style={[styles.container, style]}>
-      <Text style={styles.title}>{title}</Text>
-      <Text style={styles.subtitle}>{subtitle}</Text>
+      <Text style={[styles.title, { color: colors.text }]}>{title}</Text>
+      <Text style={[styles.subtitle, { color: colors.tetriaryText }]}>{subtitle}</Text>
     </View>
   );
 }
@@ -26,11 +28,9 @@ const styles = StyleSheet.create({
 
   title: {
     ...TYPOGRAPHY.heading.h2,
-    color: COLORS.grey[700],
   },
 
   subtitle: {
     ...TYPOGRAPHY.body.m,
-    color: COLORS.grey[500],
   },
 });

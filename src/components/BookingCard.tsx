@@ -4,6 +4,7 @@ import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
 import { COLORS } from '../constants/colors';
 import { TYPOGRAPHY } from '../constants/typography';   
+import useTheme from '../hooks/useTheme';
 
 type Props = {
   title: string;
@@ -20,16 +21,17 @@ export default function BookingCard({
   guests,
   onDelete,
 }: Props) {
+  const colors = useTheme().colors;  
   return (
     <View style={styles.container}>
       <View style={styles.content}>
         <View style={styles.textBlock}>
-          <Text style={styles.title}>{title}</Text>
+          <Text style={[styles.title, { color: colors.text }]}>{title}</Text>
 
           <View style={styles.meta}>
-            <Text style={styles.metaText}>{date}</Text>
-            <Text style={styles.metaText}>{time}</Text>
-            <Text style={styles.metaText}>{guests}</Text>
+            <Text style={[styles.metaText, { color: colors.tetriaryText }]}>{date}</Text>
+            <Text style={[styles.metaText, { color: colors.tetriaryText }]}>{time}</Text>
+            <Text style={[styles.metaText, { color: colors.tetriaryText }]}>{guests}</Text>
           </View>
         </View>
         {onDelete && (
@@ -48,8 +50,8 @@ export default function BookingCard({
 const styles = StyleSheet.create({
   container: {
     borderWidth: 1,
-    borderColor: COLORS.grey[200],
-    borderRadius: 12,
+    borderRadius: 16,
+    borderColor: COLORS.secondary[200],
     padding: 16,
     width: '100%',
   },
@@ -57,7 +59,7 @@ const styles = StyleSheet.create({
   content: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'flex-start',
+    alignItems: 'center',
   },
 
   textBlock: {
@@ -67,7 +69,6 @@ const styles = StyleSheet.create({
 
   title: {
     ...TYPOGRAPHY.action.l,
-    color: COLORS.grey[700],
   },
 
   meta: {
@@ -78,6 +79,5 @@ const styles = StyleSheet.create({
 
   metaText: {
     ...TYPOGRAPHY.body.s,
-    color: COLORS.grey[500],
   },
 });

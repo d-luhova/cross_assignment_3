@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { COLORS } from '../constants/colors';
 import { TYPOGRAPHY } from '../constants/typography';
+import useTheme from '../hooks/useTheme';
 
 type Props = {
   title?: string;
@@ -14,13 +15,16 @@ export default function EmptyState({
   subtitle,
   icon,
 }: Props) {
+  const colors = useTheme().colors; 
   return (
     <View style={styles.container}>
-      {icon && <View style={styles.icon}>{icon}</View>}
+      {icon && <View style={styles.icon}>
+        {icon}
+      </View>}
 
       <View style={styles.textContainer}>
-        <Text style={styles.title}>{title}</Text>
-        <Text style={styles.subtitle}>{subtitle}</Text>
+        <Text style={[styles.title, { color: colors.text }]}>{title}</Text>
+        <Text style={[styles.subtitle, { color: colors.tetriaryText }]}>{subtitle}</Text>
       </View>
     </View>
   );
@@ -50,13 +54,11 @@ const styles = StyleSheet.create({
 
   title: {
     ...TYPOGRAPHY.heading.h2,
-    color: COLORS.grey[700],
     textAlign: 'center',
   },
 
   subtitle: {
     ...TYPOGRAPHY.body.m,
-    color: COLORS.grey[500],
     textAlign: 'center',
   },
 });

@@ -13,7 +13,9 @@ export default function TabNavigator() {
       }}
       tabBar={(props) => <TabBar {...props} />}
     >
-      <Tab.Screen name="Restaurants" component={RestaurantsStack} />
+      <Tab.Screen name="Restaurants" component={RestaurantsStack} options={{
+        popToTopOnBlur: true,
+        }}/>
       <Tab.Screen name="Bookings" component={MyBookingsStack} />
     </Tab.Navigator>
   );

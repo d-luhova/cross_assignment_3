@@ -21,59 +21,57 @@ import restaurants from "../data/Restaurants";
 import { createBooking } from "../services/tablesApi";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { USER_ID } from "../data/user";
-import LoadingModal from "../components/LoadingModal";  
+import LoadingModal from "../components/LoadingModal";
+import useTheme from "../hooks/useTheme";
+import { useAppDispatch } from "../store/hooks";
+import { createBookingThunk } from "../features/bookings/bookingsThunks";
 
-export default function ContactScreen({
-  route,
-  navigation,
-}: any) {
-  const {
-    restaurantId,
-    guests,
-    date,
-    time,
-  } = route.params;
+export default function ContactScreen({ route, navigation }: any) {
+  const { restaurantId, guests, date, time } = route.params;
 
-  const restaurant = restaurants.find(
-    item => item.id === restaurantId
-  );
-  
+  const restaurant = restaurants.find((item) => item.id === restaurantId);
+
   const [loading, setLoading] = useState(false);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [accepted, setAccepted] = useState(false);
+  const { colors } = useTheme();
   const insets = useSafeAreaInsets();
+  const dispatch = useAppDispatch();
   const handleBooking = async () => {
-    try { 
-      setLoading(true);
-      await createBooking({
-        userId: USER_ID,
-        restaurantId,
-        guests,
-        date,
-        time,
-        name,
-        phone,
-      });
+    setLoading(true);
 
-      navigation.navigate("Bookings", {
-        success: true,
-      });
+    try {
+      await dispatch(
+        createBookingThunk({
+          userId: USER_ID,
+          restaurantId,
+          guests,
+          date,
+          time,
+          name,
+          phone,
+        })
+      ).unwrap();
+
+      navigation.navigate("Bookings");
     } catch (error) {
       console.log(error);
     } finally {
       setLoading(false);
-    } 
+    }
   };
 
-  const isDisabled =
-    !name || !phone || !accepted;
+  const isDisabled = !name || !phone || !accepted;
 
   return (
-    <TouchableWithoutFeedback
-      onPress={Keyboard.dismiss}
+    <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+      <View
+        style={[
+          styles.container,
+          { paddingTop: insets.top, backgroundColor: colors.background },
+        ]}
       >
-      <View style={[styles.container, { paddingTop: insets.top }]}>
         <NavBar
           title="Contact details"
           onBackPress={() => navigation.goBack()}
@@ -85,76 +83,58 @@ export default function ContactScreen({
           />
           <View style={styles.form}>
             <View style={styles.fieldWrapper}>
-              <Text style={styles.label}>
-                Name
-              </Text>
+              <Text style={[styles.label, { color: colors.text }]}>Name</Text>
               <TextInput
                 placeholder="Your name"
+                placeholderTextColor={colors.placeholderText}
                 value={name}
                 onChangeText={setName}
-                style={styles.input}
+                style={[styles.input, { color: colors.text }]}
               />
             </View>
             <View style={styles.fieldWrapper}>
-              <Text style={styles.label}>
-                Phone
-              </Text>
+              <Text style={[styles.label, { color: colors.text }]}>Phone</Text>
               <TextInput
                 placeholder="+49..."
+                placeholderTextColor={colors.placeholderText}
                 value={phone}
                 onChangeText={setPhone}
                 keyboardType="phone-pad"
-                style={styles.input}
+                style={[styles.input, { color: colors.text }]}
               />
             </View>
           </View>
           <TouchableOpacity
             style={styles.checkboxRow}
-            onPress={() =>
-              setAccepted(prev => !prev)
-            }
+            onPress={() => setAccepted((prev) => !prev)}
           >
-            <View
-              style={[
-                styles.checkbox,
-                accepted && styles.checkboxActive,
-              ]}
-            >
+            <View style={[styles.checkbox, accepted && styles.checkboxActive]}>
               {accepted && (
-                <MaterialIcons
-                  name="check"
-                  size={16}
-                  color={COLORS.white}
-                />
+                <MaterialIcons name="check" size={16} color={COLORS.white} />
               )}
             </View>
-            <Text style={styles.checkboxText}>
-              I agree with the Terms and
-              Conditions and Privacy Policy.
+            <Text
+              style={[styles.checkboxText, { color: colors.secondaryText }]}
+            >
+              I agree with the Terms and Conditions and Privacy Policy.
             </Text>
           </TouchableOpacity>
         </View>
-        <View style={styles.footer}>
+        <View style={[styles.footer, { borderColor: colors.border }]}>
           <View style={styles.bookingInfo}>
-            <Text style={styles.infoText}>
+            <Text style={[styles.infoText, { color: colors.secondaryText }]}>
               {date}
             </Text>
-            <Text style={styles.infoText}>
+            <Text style={[styles.infoText, { color: colors.secondaryText }]}>
               {time}
             </Text>
-            <Text style={styles.infoText}>
+            <Text style={[styles.infoText, { color: colors.secondaryText }]}>
               {guests} guests
             </Text>
           </View>
           <ButtonPrimary
             title="To book"
-            icon={
-              <MaterialIcons
-                name="check"
-                size={14}
-                color={COLORS.white}
-              />
-            }
+            icon={<MaterialIcons name="check" size={14} color={COLORS.white} />}
             onPress={handleBooking}
             disabled={isDisabled}
           />
@@ -168,7 +148,6 @@ export default function ContactScreen({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.white,
   },
 
   content: {
@@ -187,7 +166,6 @@ const styles = StyleSheet.create({
 
   label: {
     ...TYPOGRAPHY.action.m,
-    color: COLORS.grey[700],
   },
 
   input: {
@@ -196,9 +174,7 @@ const styles = StyleSheet.create({
     borderColor: COLORS.secondary[200],
     borderRadius: 12,
     paddingHorizontal: 16,
-
     ...TYPOGRAPHY.body.m,
-    color: COLORS.grey[700],
   },
 
   checkboxRow: {
@@ -224,9 +200,7 @@ const styles = StyleSheet.create({
 
   checkboxText: {
     flex: 1,
-
     ...TYPOGRAPHY.body.s,
-    color: COLORS.grey[600],
     lineHeight: 18,
   },
 
@@ -234,7 +208,6 @@ const styles = StyleSheet.create({
     padding: 24,
     gap: 16,
     borderTopWidth: 1,
-    borderTopColor: COLORS.secondary[100],
   },
 
   bookingInfo: {
@@ -244,6 +217,5 @@ const styles = StyleSheet.create({
 
   infoText: {
     ...TYPOGRAPHY.body.s,
-    color: COLORS.grey[600],
   },
 });

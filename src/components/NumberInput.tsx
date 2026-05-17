@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import {
   View,
   Text,
@@ -10,6 +8,7 @@ import {
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { COLORS } from '../constants/colors';
 import { TYPOGRAPHY } from '../constants/typography';
+import useTheme from '../hooks/useTheme';
 
 type Props = {
   guests: number;
@@ -20,7 +19,8 @@ type Props = {
 export default function NumberInput({ guests, onChange }: Props) {
   const increase = () => {
       onChange(guests + 1);
- };
+    };
+  const colors = useTheme().colors;
 
   const decrease = () => {
     if (guests > 1) {
@@ -30,7 +30,7 @@ export default function NumberInput({ guests, onChange }: Props) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>
+      <Text style={[styles.title, { color: colors.text }]}>
         Number of guests
       </Text>
 
@@ -47,7 +47,7 @@ export default function NumberInput({ guests, onChange }: Props) {
         </TouchableOpacity>
 
         <View style={styles.number}>
-          <Text style={styles.numberText}>
+          <Text style={[styles.numberText, { color: colors.text }]}>
             {guests}
           </Text>
         </View>
@@ -77,7 +77,6 @@ const styles = StyleSheet.create({
 
   title: {
     ...TYPOGRAPHY.action.l,
-    color: COLORS.grey[700],
   },
 
   inputField: {
@@ -102,7 +101,6 @@ const styles = StyleSheet.create({
 
   numberText: {
     ...TYPOGRAPHY.body.m,
-    color: COLORS.grey[700],
     textAlign: 'center',
   },
 });

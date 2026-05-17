@@ -3,10 +3,12 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { COLORS } from "../../constants/colors";
+import useTheme from "@/src/hooks/useTheme";
 
 export default function TabBar({ state, navigation }: BottomTabBarProps) {
+  const { colors } = useTheme();
   return (
-    <View style={styles.tabBar}>
+    <View style={[styles.tabBar, { backgroundColor: colors.tabBar }]}>
       {state.routes.map((route, index) => {
         const isFocused = state.index === index;
 
@@ -29,7 +31,7 @@ export default function TabBar({ state, navigation }: BottomTabBarProps) {
             <MaterialIcons
               name={iconName}
               size={20}
-              color={isFocused ? COLORS.primary[400] : COLORS.grey[200]}
+              color={isFocused ? COLORS.primary[400] : COLORS.grey[300]}
             />
 
             <Text
@@ -47,7 +49,6 @@ const styles = StyleSheet.create({
   tabBar: {
     height: 88,
     flexDirection: "row",
-    backgroundColor: COLORS.secondary[50],
     alignItems: "center",
     justifyContent: "space-around",
   },

@@ -9,12 +9,14 @@ import NavBar from "../components/navigation/NavBar";
 import { COLORS } from "../constants/colors";
 import restaurants from "../data/Restaurants";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import useTheme from "../hooks/useTheme";
 
 export default function DateTimeScreen({
   route,
   navigation,
 }: any) {
   const { restaurantId, guests } = route.params;
+  const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const [selectedTime, setSelectedTime] = useState("");
   const [selectedDate, setSelectedDate] = useState("");
@@ -24,7 +26,7 @@ export default function DateTimeScreen({
   );
 
   return (
-    <View style={[styles.container, { paddingTop: insets.top}]}>
+    <View style={[styles.container, { paddingTop: insets.top, backgroundColor: colors.background, }]}>
       <View>
         <NavBar title="Date & time" onBackPress={() => navigation.goBack()} />
       </View>
@@ -71,7 +73,6 @@ export default function DateTimeScreen({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.white,
   },
     navBar: {
     position: "absolute",

@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import { StyleSheet, View } from "react-native";
 import { Calendar } from "react-native-calendars";
 import { COLORS } from "../../constants/colors";
+import useTheme from "@/src/hooks/useTheme";
 
 type DateCalendarProps = {
   onSelectDate: (date: string) => void;
 }
 
 export default function DateCalendar({ onSelectDate }: DateCalendarProps) {
-  const [selectedDate, setSelectedDate] = useState("");  
+  const [selectedDate, setSelectedDate] = useState("");
+  const colors = useTheme().colors;  
 
   return (
     <View style={styles.calendar}>
@@ -25,15 +27,15 @@ export default function DateCalendar({ onSelectDate }: DateCalendarProps) {
           },
         }}
         theme={{
-          backgroundColor: COLORS.white,
-          calendarBackground: COLORS.white,
-          todayTextColor: COLORS.primary[400],
-          monthTextColor: COLORS.grey[700],
+          backgroundColor: colors.background,
+          calendarBackground: colors.background,
+          todayTextColor: colors.primary,
+          monthTextColor: colors.text,
           textMonthFontSize: 14,
           textMonthFontWeight: "700",
-          textSectionTitleColor: COLORS.grey[400],
-          dayTextColor: COLORS.grey[600],
-          arrowColor: COLORS.grey[400],
+          textSectionTitleColor: colors.tetriaryText,
+          dayTextColor: colors.text,
+          arrowColor: colors.primary,
         }}
         monthFormat={"MMM yyyy"}
         hideExtraDays={true}
@@ -46,7 +48,6 @@ const styles = StyleSheet.create({
   calendar: {
     borderRadius: 12,
     overflow: "hidden",
-    backgroundColor: COLORS.white,
     borderWidth: 1,
     borderColor: COLORS.secondary[200],
     padding: 16,

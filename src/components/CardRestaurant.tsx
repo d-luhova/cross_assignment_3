@@ -9,6 +9,7 @@ import {
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { COLORS } from '../constants/colors';
 import { TYPOGRAPHY } from '../constants/typography';
+import useTheme from '../hooks/useTheme';
 
 type Props = {
   title: string;
@@ -21,6 +22,7 @@ export default function RestaurantCard({
   address,
   onPress,
 }: Props) {
+  const colors = useTheme().colors;
   return (
     <TouchableOpacity
       style={styles.card}
@@ -29,7 +31,9 @@ export default function RestaurantCard({
     >
       <View style={styles.content}>
         <View style={styles.info}>
-          <Text style={styles.title}>{title}</Text>
+          <Text style={[styles.title, { color: colors.text }]}>
+            {title}
+          </Text>
           <Text style={styles.address}>
             📍 {address}
           </Text>
@@ -52,7 +56,6 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     borderWidth: 1,
     borderColor: COLORS.secondary[200],
-    backgroundColor: COLORS.white,
     justifyContent: 'center',
   },
 
@@ -68,8 +71,7 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    ...TYPOGRAPHY.body.l,
-    color: COLORS.grey[700],
+    ...TYPOGRAPHY.heading.h4,
   },
 
   address: {

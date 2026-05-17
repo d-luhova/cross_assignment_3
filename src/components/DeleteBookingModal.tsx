@@ -8,6 +8,7 @@ import {
 
 import { COLORS } from "../constants/colors";
 import { TYPOGRAPHY } from "../constants/typography";
+import useTheme from "../hooks/useTheme";
 
 type Props = {
   visible: boolean;
@@ -20,13 +21,14 @@ export default function DeleteBookingModal({
   onCancel,
   onConfirm,
 }: Props) {
+  const colors = useTheme().colors;
   return (
     <Modal
       transparent
       visible={visible}
       animationType="fade"
     >
-      <View style={styles.overlay}>
+      <View style={[styles.overlay, { backgroundColor: colors.overlay }]}>
         <View style={styles.modal}>
           <View style={styles.content}>
             <Text style={styles.title}>
@@ -66,8 +68,7 @@ export default function DeleteBookingModal({
 
 const styles = StyleSheet.create({
   overlay: {
-    flex: 1,
-    backgroundColor: "rgba(0,0,0,0.3)",
+    ...StyleSheet.absoluteFillObject,
     alignItems: "center",
     justifyContent: "center",
     padding: 24,

@@ -10,40 +10,49 @@ import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
 import BookingCard from "../components/BookingCard";
 import ButtonPrimary from "../components/ButtonPrimary";
 import EmptyState from "../components/EmptyState";
-import TitleCard from "../components/TitleCard";
 import Toast from "../components/Toast";
+import DeleteBookingModal from "../components/DeleteBookingModal";
+import { COLORS } from "../constants/colors";
 
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { COLORS } from "../constants/colors";
 
 import restaurants from "../data/Restaurants";
 
 import { deleteBooking, getTables } from "../services/tablesApi";
-import DeleteBookingModal from "../components/DeleteBookingModal";  
+
+import useTheme from "../hooks/useTheme";
+import { useAppSelector, useAppDispatch } from "../store/hooks";
+import { setBookings, removeBooking } from "../features/bookings/bookingsSlice";
+import BookingsHero from "../components/BookingsHero";
 
 export default function BookingScreen({ route, navigation }: any) {
-  const [bookings, setBookings] = useState([]);
+  const bookings = useAppSelector((state) => state.bookings.items);
+  const dispatch = useAppDispatch();
+
+  const [selectedBookingId, setSelectedBookingId] = useState<string | null>(
+    null
+  );
+
   const [toast, setToast] = useState<null | {
     title: string;
     description: string;
   }>(null);
 
-  const loadBookings = async () => {
-    try {
-      const data = await getTables();
-      const filtered = data.filter((item: any) => item.userId === USER_ID);
-      setBookings(filtered);
-    } catch (error) {
-      console.log(error);
-    }
-  };
   const insets = useSafeAreaInsets();
-  const [selectedBookingId, setSelectedBookingId] =
-  useState<string | null>(null);
+
+  const { colors } = useTheme();
+
+  const loadBookings = async () => {
+    const data = await getTables();
+    const filtered = data.filter((item: any) => item.userId === USER_ID);
+    dispatch(setBookings(filtered));
+  };
 
   useFocusEffect(
     useCallback(() => {
-      loadBookings();
+      if (bookings.length === 0) {
+        loadBookings();
+      }
 
       if (route.params?.success) {
         setToast({
@@ -55,31 +64,37 @@ export default function BookingScreen({ route, navigation }: any) {
           success: false,
         });
       }
-    }, []),
+    }, [bookings.length, route.params?.success])
   );
 
   const handleDelete = async (id: string) => {
     try {
       await deleteBooking(id);
-
-      setBookings((prev) => prev.filter((item: any) => item.id !== id));
-
+      dispatch(removeBooking(id));
       setToast({
         title: "Done!",
         description: "Booking cancelled successfully.",
       });
     } catch (error) {
       console.log(error);
+      setToast({
+        title: "Error",
+        description: "Failed to cancel booking.",
+      });
     }
   };
 
   return (
-    <View style={[styles.container, { paddingTop: insets.top }]}>
-      <TitleCard
-        style={{ marginTop: 32 }}
-        title="Your Tables"
-        subtitle="Your upcoming bookings will appear here. You can cancel them up to 2 hours before the reservation time."
-      />
+    <View
+      style={[
+        styles.container,
+        {
+          paddingTop: insets.top,
+          backgroundColor: colors.background,
+        },
+      ]}
+    >
+      <BookingsHero />
 
       {bookings.length === 0 ? (
         <>
@@ -90,10 +105,11 @@ export default function BookingScreen({ route, navigation }: any) {
               <MaterialCommunityIcons
                 name="calendar-month"
                 size={120}
-                color={COLORS.grey[200]}
+                color={COLORS.secondary[100]}
               />
             }
           />
+
           <ButtonPrimary
             title="Find a table"
             icon={
@@ -110,7 +126,7 @@ export default function BookingScreen({ route, navigation }: any) {
             keyExtractor={(item: any) => item.id}
             renderItem={({ item }: any) => {
               const restaurant = restaurants.find(
-                (r) => r.id === item.restaurantId,
+                (r) => r.id === item.restaurantId
               );
 
               return (
@@ -124,13 +140,15 @@ export default function BookingScreen({ route, navigation }: any) {
               );
             }}
           />
+
           <DeleteBookingModal
-           visible={!!selectedBookingId}
-           onCancel={() => setSelectedBookingId(null)}
-           onConfirm={() => {
-            if (selectedBookingId) {
-              handleDelete(selectedBookingId);
-              setSelectedBookingId(null);
+            visible={!!selectedBookingId}
+            onCancel={() => setSelectedBookingId(null)}
+            onConfirm={() => {
+              if (selectedBookingId) {
+                handleDelete(selectedBookingId);
+
+                setSelectedBookingId(null);
               }
             }}
           />
@@ -151,13 +169,11 @@ export default function BookingScreen({ route, navigation }: any) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.white,
-    padding: 24,
-    gap: 32,
   },
 
   list: {
-    gap: 16,
-    paddingBottom: 24,
+    gap: 12,
+    padding: 24,
+    paddingTop: 32,
   },
 });

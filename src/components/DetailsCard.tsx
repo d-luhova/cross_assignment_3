@@ -4,6 +4,7 @@ import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import restaurants from '../data/Restaurants';
 import { COLORS } from '../constants/colors';
 import { TYPOGRAPHY } from '../constants/typography';
+import useTheme from '../hooks/useTheme'; 
 
 type Props = {
   restaurantId: string;
@@ -13,6 +14,7 @@ export default function DetailsCard({ restaurantId }: Props) {
   const restaurant = restaurants.find(
     item => item.id === restaurantId
   );
+  const { colors } = useTheme();
 
   if (!restaurant) {
     return <Text>Restaurant not found</Text>;
@@ -21,10 +23,12 @@ export default function DetailsCard({ restaurantId }: Props) {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>{restaurant.title}</Text>
+        <Text style={[styles.title, { color: colors.text }]}>
+          {restaurant.title}
+        </Text>
 
         <View style={styles.info}>
-          <Text style={styles.address}>
+          <Text style={[styles.address, { color: colors.tetriaryText }]}>
             {restaurant.address}
           </Text>
           <TouchableOpacity style={styles.phoneButton}>
@@ -40,7 +44,7 @@ export default function DetailsCard({ restaurantId }: Props) {
         </View>
       </View>
 
-      <Text style={styles.description}>
+      <Text style={[styles.description, { color: colors.secondaryText }]}>
         {restaurant.description}
       </Text>
     </View>
@@ -63,12 +67,10 @@ const styles = StyleSheet.create({
 
   title: {
     ...TYPOGRAPHY.heading.h2,
-    color: COLORS.grey[700],
   },
 
   address: {
     ...TYPOGRAPHY.body.m,
-    color: COLORS.grey[500],
     lineHeight: 16,
   },
 
@@ -85,7 +87,6 @@ const styles = StyleSheet.create({
 
   description: {
     ...TYPOGRAPHY.body.m,
-    color: COLORS.grey[500],
     lineHeight: 20,
   },
 });

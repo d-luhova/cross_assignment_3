@@ -1,5 +1,6 @@
 import { ActivityIndicator, Modal, StyleSheet, View } from "react-native";
 import { COLORS } from "../constants/colors";
+import useTheme from "../hooks/useTheme";
 
 type Props = {
   visible: boolean;
@@ -8,13 +9,14 @@ type Props = {
 export default function LoadingModal({
   visible,
 }: Props) {
+  const { colors } = useTheme();
   return (
     <Modal
       transparent
       visible={visible}
       animationType="fade"
     >
-      <View style={styles.overlay}>
+      <View style={[styles.overlay, { backgroundColor: colors.overlay }]}>
         <View style={styles.content}>
           <ActivityIndicator
             size="large"
@@ -28,8 +30,7 @@ export default function LoadingModal({
 
 const styles = StyleSheet.create({
   overlay: {
-    flex: 1,
-    backgroundColor: "rgba(0,0,0,0.3)",
+    ...StyleSheet.absoluteFillObject,
     alignItems: "center",
     justifyContent: "center",
   },
