@@ -13,3 +13,5 @@ React.memo використаний для компонентів CardRestaurant
 Було замінено `@expo/vector-icons`, який підключає великі набори font-іконок, на `lucide-react-native`, де імпортуються лише конкретні SVG-компоненти. Також було видалено невикористані прямі залежності: `expo-haptics`, `expo-linking`, `expo-web-browser`, `expo-system-ui`, `expo-splash-screen`, `expo-font`, `expo-constants`, `@react-navigation/elements`.
 Після змін було виконано перевірку через `source-map-explorer`. JS bundle після переходу на Lucide став більшим, оскільки SVG-іконки входять у JavaScript-код. Проте фінальний export разом з assets зменшився, бо `@expo/vector-icons` додавав великі font-файли іконок.
 Загальний розмір JS + assets без sourcemap зменшився з ~6.49 MB до ~3.14 MB. Економія склала приблизно 3.35 MB, або 51.6%. Кількість пакетів у dependency tree зменшилась на 116 пакетів.
+
+<img width="1035" height="657" alt="Знімок екрана 2026-05-18 020434" src="https://github.com/user-attachments/assets/8c57649d-5dd0-4f0f-af7e-5838b440b52c" />
