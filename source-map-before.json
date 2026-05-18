@@ -1,0 +1,3815 @@
+{
+  "results": [
+    {
+      "bundleName": "dist-before-vector/_expo/static/js/android/AppEntry-02fcc7b9aa12defd6a4b2ab08610cdd7.js",
+      "totalBytes": 2395938,
+      "mappedBytes": 1859682,
+      "unmappedBytes": 534726,
+      "eolBytes": 1415,
+      "sourceMapCommentBytes": 115,
+      "files": {
+        "/node_modules/expo/node_modules/@expo/cli/build/metro-require/require.js": {
+          "size": 2402
+        },
+        "[no source]": {
+          "size": 53773
+        },
+        "/node_modules/@react-native/js-polyfills/console.js": {
+          "size": 6274
+        },
+        "/node_modules/@react-native/js-polyfills/error-guard.js": {
+          "size": 836
+        },
+        "../external-require": {
+          "size": 421
+        },
+        "/node_modules/expo/virtual/streams.js": {
+          "size": 64227
+        },
+        "/node_modules/expo/AppEntry.js": {
+          "size": 57
+        },
+        "/node_modules/expo/src/launch/registerRootComponent.tsx": {
+          "size": 169
+        },
+        "/node_modules/expo/src/Expo.fx.tsx": {
+          "size": 248
+        },
+        "/node_modules/expo/src/winter/index.ts": {
+          "size": 10
+        },
+        "/node_modules/expo/src/winter/runtime.native.ts": {
+          "size": 570
+        },
+        "/node_modules/expo/src/winter/FormData.ts": {
+          "size": 2107
+        },
+        "/node_modules/expo/src/winter/installGlobal.ts": {
+          "size": 712
+        },
+        "/node_modules/expo/src/winter/TextDecoder.ts": {
+          "size": 4409
+        },
+        "/node_modules/@babel/runtime/helpers/classCallCheck.js": {
+          "size": 157
+        },
+        "/node_modules/@babel/runtime/helpers/createClass.js": {
+          "size": 355
+        },
+        "/node_modules/@babel/runtime/helpers/toPropertyKey.js": {
+          "size": 157
+        },
+        "/node_modules/@babel/runtime/helpers/typeof.js": {
+          "size": 358
+        },
+        "/node_modules/@babel/runtime/helpers/toPrimitive.js": {
+          "size": 338
+        },
+        "/node_modules/expo/src/winter/TextDecoderStream.ts": {
+          "size": 1376
+        },
+        "/node_modules/@babel/runtime/helpers/callSuper.js": {
+          "size": 195
+        },
+        "/node_modules/@babel/runtime/helpers/getPrototypeOf.js": {
+          "size": 265
+        },
+        "/node_modules/@babel/runtime/helpers/isNativeReflectConstruct.js": {
+          "size": 271
+        },
+        "/node_modules/@babel/runtime/helpers/possibleConstructorReturn.js": {
+          "size": 271
+        },
+        "/node_modules/@babel/runtime/helpers/assertThisInitialized.js": {
+          "size": 186
+        },
+        "/node_modules/@babel/runtime/helpers/inherits.js": {
+          "size": 356
+        },
+        "/node_modules/@babel/runtime/helpers/setPrototypeOf.js": {
+          "size": 249
+        },
+        "/node_modules/@babel/runtime/helpers/wrapNativeSuper.js": {
+          "size": 615
+        },
+        "/node_modules/@babel/runtime/helpers/isNativeFunction.js": {
+          "size": 180
+        },
+        "/node_modules/@babel/runtime/helpers/construct.js": {
+          "size": 250
+        },
+        "/node_modules/expo/src/winter/url.ts": {
+          "size": 911
+        },
+        "/node_modules/whatwg-url-without-unicode/index.js": {
+          "size": 520
+        },
+        "/node_modules/whatwg-url-without-unicode/webidl2js-wrapper.js": {
+          "size": 67
+        },
+        "/node_modules/whatwg-url-without-unicode/lib/URL.js": {
+          "size": 6206
+        },
+        "/node_modules/whatwg-url-without-unicode/node_modules/webidl-conversions/lib/index.js": {
+          "size": 4107
+        },
+        "/node_modules/whatwg-url-without-unicode/lib/utils.js": {
+          "size": 1671
+        },
+        "/node_modules/whatwg-url-without-unicode/lib/URL-impl.js": {
+          "size": 2964
+        },
+        "/node_modules/whatwg-url-without-unicode/lib/url-state-machine.js": {
+          "size": 16287
+        },
+        "/node_modules/buffer/index.js": {
+          "size": 20888
+        },
+        "/node_modules/base64-js/index.js": {
+          "size": 1401
+        },
+        "/node_modules/ieee754/index.js": {
+          "size": 871
+        },
+        "/node_modules/punycode/punycode.js": {
+          "size": 2247
+        },
+        "/node_modules/whatwg-url-without-unicode/lib/infra.js": {
+          "size": 256
+        },
+        "/node_modules/whatwg-url-without-unicode/lib/urlencoded.js": {
+          "size": 1424
+        },
+        "/node_modules/@babel/runtime/helpers/slicedToArray.js": {
+          "size": 160
+        },
+        "/node_modules/@babel/runtime/helpers/arrayWithHoles.js": {
+          "size": 106
+        },
+        "/node_modules/@babel/runtime/helpers/iterableToArrayLimit.js": {
+          "size": 459
+        },
+        "/node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js": {
+          "size": 350
+        },
+        "/node_modules/@babel/runtime/helpers/arrayLikeToArray.js": {
+          "size": 165
+        },
+        "/node_modules/@babel/runtime/helpers/nonIterableRest.js": {
+          "size": 237
+        },
+        "/node_modules/whatwg-url-without-unicode/lib/URLSearchParams.js": {
+          "size": 7857
+        },
+        "/node_modules/whatwg-url-without-unicode/lib/URLSearchParams-impl.js": {
+          "size": 1821
+        },
+        "/node_modules/expo/src/winter/ImportMetaRegistry.ts": {
+          "size": 145
+        },
+        "/node_modules/expo/src/utils/getBundleUrl.native.ts": {
+          "size": 182
+        },
+        "/node_modules/react-native/Libraries/NativeModules/specs/NativeSourceCode.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeSourceCode.js": {
+          "size": 186
+        },
+        "/node_modules/react-native/Libraries/TurboModule/TurboModuleRegistry.js": {
+          "size": 491
+        },
+        "/node_modules/invariant/browser.js": {
+          "size": 359
+        },
+        "/node_modules/react-native/Libraries/BatchedBridge/NativeModules.js": {
+          "size": 2175
+        },
+        "/node_modules/react-native/Libraries/BatchedBridge/BatchedBridge.js": {
+          "size": 248
+        },
+        "/node_modules/react-native/Libraries/BatchedBridge/MessageQueue.js": {
+          "size": 4552
+        },
+        "/node_modules/react-native/Libraries/Performance/Systrace.js": {
+          "size": 694
+        },
+        "/node_modules/react-native/Libraries/Utilities/deepFreezeAndThrowOnMutationInDev.js": {
+          "size": 168
+        },
+        "/node_modules/react-native/Libraries/Utilities/stringifySafe.js": {
+          "size": 1536
+        },
+        "/node_modules/react-native/Libraries/Utilities/warnOnce.js": {
+          "size": 202
+        },
+        "/node_modules/react-native/Libraries/vendor/core/ErrorUtils.js": {
+          "size": 97
+        },
+        "/node_modules/react-native/Libraries/Utilities/defineLazyObjectProperty.js": {
+          "size": 426
+        },
+        "/node_modules/@ungap/structured-clone/cjs/index.js": {
+          "size": 265
+        },
+        "/node_modules/@ungap/structured-clone/cjs/deserialize.js": {
+          "size": 1044
+        },
+        "/node_modules/@ungap/structured-clone/cjs/types.js": {
+          "size": 117
+        },
+        "/node_modules/@ungap/structured-clone/cjs/serialize.js": {
+          "size": 1903
+        },
+        "/node_modules/expo/src/async-require/index.ts": {
+          "size": 97
+        },
+        "/node_modules/expo/src/async-require/buildAsyncRequire.ts": {
+          "size": 299
+        },
+        "/node_modules/@babel/runtime/helpers/asyncToGenerator.js": {
+          "size": 377
+        },
+        "/node_modules/expo/src/async-require/loadBundle.ts": {
+          "size": 248
+        },
+        "/node_modules/expo/src/async-require/buildUrlForBundle.native.ts": {
+          "size": 345
+        },
+        "/node_modules/expo/src/async-require/fetchThenEval.ts": {
+          "size": 122
+        },
+        "/node_modules/expo/src/async-require/fetchThenEvalJs.ts": {
+          "size": 509
+        },
+        "/node_modules/expo/src/async-require/errors.ts": {
+          "size": 409
+        },
+        "/node_modules/expo/src/async-require/fetchAsync.native.ts": {
+          "size": 1361
+        },
+        "/node_modules/react-native/index.js": {
+          "size": 5036
+        },
+        "/node_modules/react-native/Libraries/Components/ActivityIndicator/ActivityIndicator.js": {
+          "size": 1085
+        },
+        "/node_modules/@babel/runtime/helpers/objectWithoutProperties.js": {
+          "size": 307
+        },
+        "/node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js": {
+          "size": 204
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/StyleSheet.js": {
+          "size": 162
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/StyleSheetExports.js": {
+          "size": 663
+        },
+        "/node_modules/react-native/src/private/styles/composeStyles.js": {
+          "size": 127
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/flattenStyle.js": {
+          "size": 315
+        },
+        "/node_modules/react-native/Libraries/Components/View/ReactNativeStyleAttributes.js": {
+          "size": 2831
+        },
+        "/node_modules/react-native/src/private/featureflags/ReactNativeFeatureFlags.js": {
+          "size": 13290
+        },
+        "/node_modules/react-native/src/private/featureflags/ReactNativeFeatureFlagsBase.js": {
+          "size": 752
+        },
+        "/node_modules/react-native/src/private/featureflags/specs/NativeReactNativeFeatureFlags.js": {
+          "size": 137
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/processAspectRatio.js": {
+          "size": 379
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/processBackgroundImage.js": {
+          "size": 7050
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/processColor.js": {
+          "size": 381
+        },
+        "/node_modules/react-native/Libraries/Utilities/Platform.android.js": {
+          "size": 537
+        },
+        "/node_modules/react-native/Libraries/Utilities/NativePlatformConstantsAndroid.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativePlatformConstantsAndroid.js": {
+          "size": 131
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/normalizeColor.js": {
+          "size": 278
+        },
+        "/node_modules/@react-native/normalize-colors/index.js": {
+          "size": 7763
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/PlatformColorValueTypes.android.js": {
+          "size": 415
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/processBoxShadow.js": {
+          "size": 1628
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/processFilter.js": {
+          "size": 2656
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/processFontVariant.js": {
+          "size": 214
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/processTransform.js": {
+          "size": 896
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/processTransformOrigin.js": {
+          "size": 972
+        },
+        "/node_modules/react-native/Libraries/Utilities/differ/sizesDiffer.js": {
+          "size": 269
+        },
+        "/node_modules/react-native/Libraries/Utilities/PixelRatio.js": {
+          "size": 674
+        },
+        "/node_modules/react-native/Libraries/Utilities/Dimensions.js": {
+          "size": 967
+        },
+        "/node_modules/react-native/Libraries/EventEmitter/RCTDeviceEventEmitter.js": {
+          "size": 633
+        },
+        "/node_modules/@babel/runtime/helpers/superPropGet.js": {
+          "size": 211
+        },
+        "/node_modules/@babel/runtime/helpers/get.js": {
+          "size": 385
+        },
+        "/node_modules/@babel/runtime/helpers/superPropBase.js": {
+          "size": 155
+        },
+        "/node_modules/react-native/Libraries/vendor/emitter/EventEmitter.js": {
+          "size": 1002
+        },
+        "/node_modules/@babel/runtime/helpers/classPrivateFieldLooseBase.js": {
+          "size": 190
+        },
+        "/node_modules/@babel/runtime/helpers/classPrivateFieldLooseKey.js": {
+          "size": 114
+        },
+        "/node_modules/react-native/Libraries/Utilities/NativeDeviceInfo.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeDeviceInfo.js": {
+          "size": 186
+        },
+        "/node_modules/react-native/Libraries/Components/View/View.js": {
+          "size": 2585
+        },
+        "/node_modules/react-native/Libraries/Text/TextAncestorContext.js": {
+          "size": 176
+        },
+        "/node_modules/react/index.js": {
+          "size": 33
+        },
+        "/node_modules/react/cjs/react.production.js": {
+          "size": 7394
+        },
+        "/node_modules/react-native/Libraries/Components/View/ViewNativeComponent.js": {
+          "size": 318
+        },
+        "/node_modules/react-native/Libraries/NativeComponent/NativeComponentRegistry.js": {
+          "size": 1071
+        },
+        "/node_modules/react-native/Libraries/ReactNative/getNativeComponentAttributes.js": {
+          "size": 1952
+        },
+        "/node_modules/react-native/Libraries/Image/resolveAssetSource.js": {
+          "size": 816
+        },
+        "/node_modules/react-native/Libraries/Image/AssetSourceResolver.js": {
+          "size": 2468
+        },
+        "/node_modules/react-native/Libraries/Image/AssetUtils.js": {
+          "size": 251
+        },
+        "/node_modules/@react-native/assets-registry/path-support.js": {
+          "size": 874
+        },
+        "../assets-registry": {
+          "size": 73
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/processColorArray.js": {
+          "size": 349
+        },
+        "/node_modules/react-native/Libraries/Utilities/differ/insetsDiffer.js": {
+          "size": 319
+        },
+        "/node_modules/react-native/Libraries/Utilities/differ/matricesDiffer.js": {
+          "size": 404
+        },
+        "/node_modules/react-native/Libraries/Utilities/differ/pointsDiffer.js": {
+          "size": 237
+        },
+        "/node_modules/react-native/Libraries/ReactNative/UIManager.js": {
+          "size": 1551
+        },
+        "/node_modules/react-native/Libraries/ReactNative/FabricUIManager.js": {
+          "size": 915
+        },
+        "/node_modules/nullthrows/nullthrows.js": {
+          "size": 214
+        },
+        "/node_modules/react-native/Libraries/ReactNative/BridgelessUIManager.js": {
+          "size": 3636
+        },
+        "/node_modules/react-native/Libraries/NativeComponent/NativeComponentRegistryUnstable.js": {
+          "size": 265
+        },
+        "/node_modules/react-native/Libraries/ReactNative/PaperUIManager.js": {
+          "size": 1722
+        },
+        "/node_modules/react-native/Libraries/ReactNative/NativeUIManager.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeUIManager.js": {
+          "size": 123
+        },
+        "/node_modules/react-native/Libraries/ReactNative/UIManagerProperties.js": {
+          "size": 777
+        },
+        "/node_modules/react-native/Libraries/Renderer/shims/ReactNativeViewConfigRegistry.js": {
+          "size": 1197
+        },
+        "/node_modules/react-native/Libraries/NativeComponent/StaticViewConfigValidator.js": {
+          "size": 1140
+        },
+        "/node_modules/react-native/Libraries/NativeComponent/ViewConfig.js": {
+          "size": 373
+        },
+        "/node_modules/react-native/Libraries/NativeComponent/PlatformBaseViewConfig.js": {
+          "size": 109
+        },
+        "/node_modules/react-native/Libraries/NativeComponent/BaseViewConfig.android.js": {
+          "size": 6508
+        },
+        "/node_modules/react-native/Libraries/NativeComponent/ViewConfigIgnore.js": {
+          "size": 234
+        },
+        "/node_modules/react-native/Libraries/Utilities/codegenNativeCommands.js": {
+          "size": 288
+        },
+        "/node_modules/react-native/Libraries/ReactNative/RendererProxy.js": {
+          "size": 182
+        },
+        "/node_modules/react-native/Libraries/ReactNative/RendererImplementation.js": {
+          "size": 1496
+        },
+        "/node_modules/react-native/src/private/renderer/errorhandling/ErrorHandlers.js": {
+          "size": 459
+        },
+        "/node_modules/react-native/Libraries/Core/ExceptionsManager.js": {
+          "size": 2466
+        },
+        "/node_modules/react-native/Libraries/Core/Devtools/parseErrorStack.js": {
+          "size": 615
+        },
+        "/node_modules/react-native/Libraries/Core/Devtools/parseHermesStack.js": {
+          "size": 1051
+        },
+        "/node_modules/stacktrace-parser/dist/stack-trace-parser.cjs.js": {
+          "size": 1822
+        },
+        "/node_modules/react-native/Libraries/Core/NativeExceptionsManager.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeExceptionsManager.js": {
+          "size": 492
+        },
+        "/node_modules/react-native/Libraries/Renderer/shims/ReactFabric.js": {
+          "size": 283
+        },
+        "/node_modules/react-native/Libraries/ReactPrivate/ReactNativePrivateInterface.js": {
+          "size": 1264
+        },
+        "/node_modules/react-native/Libraries/EventEmitter/RCTEventEmitter.js": {
+          "size": 246
+        },
+        "/node_modules/react-native/Libraries/Core/registerCallableModule.js": {
+          "size": 414
+        },
+        "/node_modules/react-native/Libraries/Components/TextInput/TextInputState.js": {
+          "size": 810
+        },
+        "/node_modules/react-native/Libraries/Components/TextInput/AndroidTextInputNativeComponent.js": {
+          "size": 2327
+        },
+        "/node_modules/react-native/Libraries/Components/TextInput/RCTSingelineTextInputNativeComponent.js": {
+          "size": 477
+        },
+        "/node_modules/react-native/Libraries/Components/TextInput/RCTTextInputViewConfig.js": {
+          "size": 2570
+        },
+        "/node_modules/react-native/Libraries/Utilities/differ/deepDiffer.js": {
+          "size": 979
+        },
+        "/node_modules/react-native/Libraries/Core/ReactFiberErrorDialog.js": {
+          "size": 361
+        },
+        "/node_modules/react-native/Libraries/Components/AccessibilityInfo/legacySendAccessibilityEvent.android.js": {
+          "size": 388
+        },
+        "/node_modules/react-native/Libraries/Core/RawEventEmitter.js": {
+          "size": 112
+        },
+        "/node_modules/react-native/src/private/webapis/dom/events/CustomEvent.js": {
+          "size": 297
+        },
+        "/node_modules/react-native/src/private/webapis/dom/events/Event.js": {
+          "size": 2553
+        },
+        "/node_modules/react-native/src/private/webapis/webidl/PlatformObjects.js": {
+          "size": 363
+        },
+        "/node_modules/react-native/src/private/webapis/dom/events/internals/EventInternals.js": {
+          "size": 1641
+        },
+        "/node_modules/react-native/Libraries/ReactNative/ReactFabricPublicInstance/ReactNativeAttributePayload.js": {
+          "size": 2531
+        },
+        "/node_modules/react-native/Libraries/ReactNative/ReactFabricPublicInstance/ReactFabricPublicInstance.js": {
+          "size": 959
+        },
+        "/node_modules/react-native/src/private/webapis/dom/nodes/ReactNativeDocument.js": {
+          "size": 1288
+        },
+        "/node_modules/react-native/src/private/webapis/dom/oldstylecollections/HTMLCollection.js": {
+          "size": 754
+        },
+        "/node_modules/react-native/src/private/webapis/utils/ArrayLikeUtils.js": {
+          "size": 224
+        },
+        "/node_modules/react-native/src/private/webapis/dom/nodes/internals/ReactNativeDocumentElementInstanceHandle.js": {
+          "size": 673
+        },
+        "/node_modules/react-native/src/private/webapis/dom/nodes/internals/ReactNativeDocumentInstanceHandle.js": {
+          "size": 376
+        },
+        "/node_modules/react-native/src/private/webapis/dom/nodes/ReactNativeElement.js": {
+          "size": 2165
+        },
+        "/node_modules/react-native/Libraries/ReactNative/ReactFabricPublicInstance/warnForStyleProps.js": {
+          "size": 95
+        },
+        "/node_modules/react-native/src/private/webapis/dom/nodes/internals/NodeInternals.js": {
+          "size": 1374
+        },
+        "/node_modules/react-native/src/private/webapis/dom/nodes/ReadOnlyElement.js": {
+          "size": 3216
+        },
+        "/node_modules/react-native/src/private/webapis/geometry/DOMRect.js": {
+          "size": 789
+        },
+        "/node_modules/react-native/src/private/webapis/geometry/DOMRectReadOnly.js": {
+          "size": 2182
+        },
+        "/node_modules/react-native/src/private/webapis/dom/nodes/internals/Traversal.js": {
+          "size": 279
+        },
+        "/node_modules/react-native/src/private/webapis/dom/nodes/ReadOnlyNode.js": {
+          "size": 3172
+        },
+        "/node_modules/react-native/src/private/webapis/dom/oldstylecollections/NodeList.js": {
+          "size": 1012
+        },
+        "/node_modules/react-native/src/private/webapis/dom/nodes/specs/NativeDOM.js": {
+          "size": 1427
+        },
+        "/node_modules/react-native/Libraries/ReactNative/ReactFabricPublicInstance/ReactFabricHostComponent.js": {
+          "size": 1500
+        },
+        "/node_modules/react-native/src/private/webapis/dom/nodes/ReadOnlyText.js": {
+          "size": 341
+        },
+        "/node_modules/react-native/src/private/webapis/dom/nodes/ReadOnlyCharacterData.js": {
+          "size": 1092
+        },
+        "/node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-prod.js": {
+          "size": 118076
+        },
+        "/node_modules/react-native/Libraries/ReactPrivate/ReactNativePrivateInitializeCore.js": {
+          "size": 10
+        },
+        "/node_modules/react-native/Libraries/Core/InitializeCore.js": {
+          "size": 178
+        },
+        "/node_modules/react-native/src/private/setup/setUpDefaultReactNativeEnvironment.js": {
+          "size": 228
+        },
+        "/node_modules/react-native/Libraries/Core/setUpGlobals.js": {
+          "size": 193
+        },
+        "/node_modules/react-native/src/private/setup/setUpDOM.js": {
+          "size": 720
+        },
+        "/node_modules/react-native/Libraries/Utilities/PolyfillFunctions.js": {
+          "size": 404
+        },
+        "/node_modules/react-native/src/private/webapis/geometry/DOMRectList.js": {
+          "size": 702
+        },
+        "/node_modules/react-native/Libraries/Core/setUpPerformance.js": {
+          "size": 171
+        },
+        "/node_modules/react-native/src/private/webapis/performance/Performance.js": {
+          "size": 3381
+        },
+        "/node_modules/@babel/runtime/helpers/readOnlyError.js": {
+          "size": 121
+        },
+        "/node_modules/react-native/src/private/webapis/errors/DOMException.js": {
+          "size": 1839
+        },
+        "/node_modules/react-native/src/private/webapis/performance/EventTiming.js": {
+          "size": 1986
+        },
+        "/node_modules/react-native/src/private/webapis/performance/internals/Utilities.js": {
+          "size": 154
+        },
+        "/node_modules/react-native/src/private/webapis/performance/PerformanceEntry.js": {
+          "size": 1168
+        },
+        "/node_modules/react-native/src/private/webapis/performance/specs/NativePerformance.js": {
+          "size": 125
+        },
+        "/node_modules/react-native/src/private/webapis/performance/internals/RawPerformanceEntry.js": {
+          "size": 1834
+        },
+        "/node_modules/react-native/src/private/webapis/performance/LongTasks.js": {
+          "size": 759
+        },
+        "/node_modules/react-native/src/private/webapis/performance/ResourceTiming.js": {
+          "size": 2112
+        },
+        "/node_modules/react-native/src/private/webapis/performance/UserTiming.js": {
+          "size": 1091
+        },
+        "/node_modules/react-native/src/private/webapis/performance/MemoryInfo.js": {
+          "size": 804
+        },
+        "/node_modules/react-native/src/private/webapis/performance/ReactNativeStartupTiming.js": {
+          "size": 1551
+        },
+        "/node_modules/react-native/Libraries/Core/polyfillPromise.js": {
+          "size": 129
+        },
+        "/node_modules/react-native/Libraries/Promise.js": {
+          "size": 218
+        },
+        "/node_modules/promise/setimmediate/es6-extensions.js": {
+          "size": 2114
+        },
+        "/node_modules/promise/setimmediate/core.js": {
+          "size": 1806
+        },
+        "/node_modules/promise/setimmediate/finally.js": {
+          "size": 215
+        },
+        "/node_modules/react-native/Libraries/Core/setUpTimers.js": {
+          "size": 760
+        },
+        "/node_modules/react-native/src/private/webapis/microtasks/specs/NativeMicrotasks.js": {
+          "size": 133
+        },
+        "/node_modules/react-native/Libraries/Core/Timers/immediateShim.js": {
+          "size": 558
+        },
+        "/node_modules/react-native/src/private/webapis/idlecallbacks/specs/NativeIdleCallbacks.js": {
+          "size": 136
+        },
+        "/node_modules/react-native/Libraries/Core/Timers/JSTimers.js": {
+          "size": 3641
+        },
+        "/node_modules/react-native/Libraries/Core/Timers/NativeTiming.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeTiming.js": {
+          "size": 111
+        },
+        "/node_modules/react-native/Libraries/Core/Timers/queueMicrotask.js": {
+          "size": 454
+        },
+        "/node_modules/react-native/Libraries/Core/setUpErrorHandling.js": {
+          "size": 292
+        },
+        "/node_modules/react-native/Libraries/Core/setUpRegeneratorRuntime.js": {
+          "size": 200
+        },
+        "/node_modules/react-native/Libraries/Utilities/FeatureDetection.js": {
+          "size": 211
+        },
+        "/node_modules/regenerator-runtime/runtime.js": {
+          "size": 6632
+        },
+        "/node_modules/react-native/Libraries/Core/setUpXHR.js": {
+          "size": 543
+        },
+        "/node_modules/react-native/Libraries/Network/XMLHttpRequest.js": {
+          "size": 11688
+        },
+        "/node_modules/react-native/src/private/webapis/dom/events/EventHandlerAttributes.js": {
+          "size": 499
+        },
+        "/node_modules/react-native/src/private/webapis/dom/events/EventTarget.js": {
+          "size": 3889
+        },
+        "/node_modules/react-native/src/private/webapis/dom/events/internals/EventTargetInternals.js": {
+          "size": 364
+        },
+        "/node_modules/react-native/src/private/webapis/xhr/events/ProgressEvent.js": {
+          "size": 506
+        },
+        "/node_modules/react-native/Libraries/Blob/BlobManager.js": {
+          "size": 1939
+        },
+        "/node_modules/react-native/Libraries/Blob/NativeBlobModule.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeBlobModule.js": {
+          "size": 469
+        },
+        "/node_modules/react-native/Libraries/Blob/Blob.js": {
+          "size": 1201
+        },
+        "/node_modules/react-native/Libraries/Blob/BlobRegistry.js": {
+          "size": 379
+        },
+        "/node_modules/react-native/Libraries/Utilities/GlobalPerformanceLogger.js": {
+          "size": 115
+        },
+        "/node_modules/react-native/Libraries/Utilities/createPerformanceLogger.js": {
+          "size": 2564
+        },
+        "/node_modules/react-native/Libraries/Network/RCTNetworking.android.js": {
+          "size": 577
+        },
+        "/node_modules/react-native/Libraries/EventEmitter/NativeEventEmitter.js": {
+          "size": 1368
+        },
+        "/node_modules/react-native/Libraries/Network/convertRequestBody.js": {
+          "size": 385
+        },
+        "/node_modules/react-native/Libraries/Utilities/binaryToBase64.js": {
+          "size": 454
+        },
+        "/node_modules/react-native/Libraries/Network/FormData.js": {
+          "size": 961
+        },
+        "/node_modules/react-native/Libraries/Network/NativeNetworkingAndroid.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeNetworkingAndroid.js": {
+          "size": 124
+        },
+        "/node_modules/react-native/Libraries/Network/fetch.js": {
+          "size": 426
+        },
+        "/node_modules/whatwg-fetch/dist/fetch.umd.js": {
+          "size": 10027
+        },
+        "/node_modules/react-native/Libraries/WebSocket/WebSocket.js": {
+          "size": 4311
+        },
+        "/node_modules/react-native/src/private/webapis/html/events/MessageEvent.js": {
+          "size": 475
+        },
+        "/node_modules/react-native/src/private/webapis/websockets/events/CloseEvent.js": {
+          "size": 485
+        },
+        "/node_modules/react-native/Libraries/WebSocket/NativeWebSocketModule.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeWebSocketModule.js": {
+          "size": 129
+        },
+        "/node_modules/react-native/Libraries/Blob/File.js": {
+          "size": 712
+        },
+        "/node_modules/react-native/Libraries/Blob/FileReader.js": {
+          "size": 3182
+        },
+        "/node_modules/react-native/Libraries/Blob/NativeFileReaderModule.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeFileReaderModule.js": {
+          "size": 130
+        },
+        "/node_modules/react-native/Libraries/Blob/URL.js": {
+          "size": 3053
+        },
+        "/node_modules/react-native/Libraries/Blob/URLSearchParams.js": {
+          "size": 2279
+        },
+        "/node_modules/abort-controller/dist/abort-controller.mjs": {
+          "size": 1734
+        },
+        "/node_modules/event-target-shim/dist/event-target-shim.mjs": {
+          "size": 6204
+        },
+        "/node_modules/react-native/Libraries/Core/setUpAlert.js": {
+          "size": 83
+        },
+        "/node_modules/react-native/Libraries/Alert/Alert.js": {
+          "size": 837
+        },
+        "/node_modules/react-native/Libraries/Alert/RCTAlertManager.android.js": {
+          "size": 121
+        },
+        "/node_modules/react-native/Libraries/NativeModules/specs/NativeDialogManagerAndroid.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeDialogManagerAndroid.js": {
+          "size": 125
+        },
+        "/node_modules/react-native/Libraries/Core/setUpNavigator.js": {
+          "size": 146
+        },
+        "/node_modules/react-native/Libraries/Core/setUpBatchedBridge.js": {
+          "size": 446
+        },
+        "/node_modules/react-native/Libraries/Utilities/RCTLog.js": {
+          "size": 626
+        },
+        "/node_modules/react-native/Libraries/EventEmitter/RCTNativeAppEventEmitter.js": {
+          "size": 109
+        },
+        "/node_modules/react-native/Libraries/Utilities/HMRClientProdShim.js": {
+          "size": 326
+        },
+        "/node_modules/react-native/Libraries/Core/setUpSegmentFetcher.js": {
+          "size": 160
+        },
+        "/node_modules/react-native/Libraries/Core/SegmentFetcher/NativeSegmentFetcher.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeSegmentFetcher.js": {
+          "size": 128
+        },
+        "/node_modules/react-native/Libraries/ReactNative/AppRegistry.js": {
+          "size": 315
+        },
+        "/node_modules/react-native/Libraries/ReactNative/AppRegistryImpl.js": {
+          "size": 2900
+        },
+        "/node_modules/react-native/Libraries/Utilities/SceneTracker.js": {
+          "size": 316
+        },
+        "/node_modules/react-native/Libraries/ReactNative/DisplayMode.js": {
+          "size": 275
+        },
+        "/node_modules/react-native/Libraries/ReactNative/HeadlessJsTaskError.js": {
+          "size": 226
+        },
+        "/node_modules/react-native/Libraries/ReactNative/NativeHeadlessJsTaskSupport.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeHeadlessJsTaskSupport.js": {
+          "size": 126
+        },
+        "/node_modules/react-native/Libraries/ReactNative/renderApplication.js": {
+          "size": 1389
+        },
+        "/node_modules/react-native/Libraries/Utilities/PerformanceLoggerContext.js": {
+          "size": 213
+        },
+        "/node_modules/react-native/Libraries/ReactNative/AppContainer.js": {
+          "size": 108
+        },
+        "/node_modules/react-native/Libraries/ReactNative/AppContainer-prod.js": {
+          "size": 511
+        },
+        "/node_modules/react-native/Libraries/ReactNative/RootTag.js": {
+          "size": 158
+        },
+        "/node_modules/react/jsx-runtime.js": {
+          "size": 33
+        },
+        "/node_modules/react/cjs/react-jsx-runtime.production.js": {
+          "size": 338
+        },
+        "/node_modules/react-native/Libraries/ReactNative/getCachedComponentWithDebugName.js": {
+          "size": 187
+        },
+        "/node_modules/react-native/Libraries/Utilities/BackHandler.android.js": {
+          "size": 438
+        },
+        "/node_modules/react-native/Libraries/NativeModules/specs/NativeDeviceEventManager.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeDeviceEventManager.js": {
+          "size": 123
+        },
+        "/node_modules/scheduler/index.native.js": {
+          "size": 33
+        },
+        "/node_modules/scheduler/cjs/scheduler.native.production.js": {
+          "size": 3962
+        },
+        "/node_modules/react-native/Libraries/Renderer/shims/ReactNative.js": {
+          "size": 154
+        },
+        "/node_modules/react-native/Libraries/Renderer/implementations/ReactNativeRenderer-prod.js": {
+          "size": 120554
+        },
+        "/node_modules/react-native/Libraries/Components/ProgressBarAndroid/ProgressBarAndroid.android.js": {
+          "size": 359
+        },
+        "/node_modules/react-native/Libraries/Components/ProgressBarAndroid/ProgressBarAndroidNativeComponent.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/components/ProgressBarAndroidNativeComponent.js": {
+          "size": 395
+        },
+        "/node_modules/react-native/Libraries/Utilities/codegenNativeComponent.js": {
+          "size": 578
+        },
+        "/node_modules/react-native/Libraries/ReactNative/requireNativeComponent.js": {
+          "size": 199
+        },
+        "/node_modules/react-native/Libraries/Renderer/shims/createReactNativeComponentClass.js": {
+          "size": 224
+        },
+        "/node_modules/react-native/Libraries/Components/Button.js": {
+          "size": 2076
+        },
+        "/node_modules/react-native/Libraries/Text/Text.js": {
+          "size": 4733
+        },
+        "/node_modules/react-native/Libraries/Pressability/PressabilityDebug.js": {
+          "size": 160
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/Rect.js": {
+          "size": 132
+        },
+        "/node_modules/react-native/Libraries/Pressability/usePressability.js": {
+          "size": 383
+        },
+        "/node_modules/react-native/Libraries/Pressability/Pressability.js": {
+          "size": 9698
+        },
+        "/node_modules/react-native/Libraries/Components/Sound/SoundManager.js": {
+          "size": 169
+        },
+        "/node_modules/react-native/Libraries/Components/Sound/NativeSoundManager.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeSoundManager.js": {
+          "size": 117
+        },
+        "/node_modules/react-native/Libraries/ReactNative/ReactNativeFeatureFlags.js": {
+          "size": 173
+        },
+        "/node_modules/react-native/Libraries/Pressability/HoverState.js": {
+          "size": 57
+        },
+        "/node_modules/react-native/Libraries/Pressability/PressabilityPerformanceEventEmitter.js": {
+          "size": 494
+        },
+        "/node_modules/react-native/Libraries/Text/TextNativeComponent.js": {
+          "size": 956
+        },
+        "/node_modules/react-native/Libraries/Components/Touchable/TouchableNativeFeedback.js": {
+          "size": 5262
+        },
+        "/node_modules/react-native/Libraries/Components/Touchable/TouchableOpacity.js": {
+          "size": 4948
+        },
+        "/node_modules/react-native/Libraries/Animated/Animated.js": {
+          "size": 100
+        },
+        "/node_modules/react-native/Libraries/Animated/AnimatedExports.js": {
+          "size": 411
+        },
+        "/node_modules/react-native/Libraries/Animated/AnimatedImplementation.js": {
+          "size": 5058
+        },
+        "/node_modules/react-native/Libraries/Animated/AnimatedEvent.js": {
+          "size": 2458
+        },
+        "/node_modules/react-native/src/private/animated/NativeAnimatedHelper.js": {
+          "size": 4813
+        },
+        "/node_modules/react-native/Libraries/Animated/NativeAnimatedModule.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeAnimatedModule.js": {
+          "size": 168
+        },
+        "/node_modules/react-native/Libraries/Animated/shouldUseTurboAnimatedModule.js": {
+          "size": 163
+        },
+        "/node_modules/react-native/Libraries/Animated/NativeAnimatedTurboModule.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeAnimatedTurboModule.js": {
+          "size": 173
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedValue.js": {
+          "size": 4591
+        },
+        "/node_modules/react-native/Libraries/Interaction/InteractionManager.js": {
+          "size": 1195
+        },
+        "/node_modules/react-native/Libraries/Interaction/TaskQueue.js": {
+          "size": 1722
+        },
+        "/node_modules/react-native/Libraries/Interaction/InteractionManagerStub.js": {
+          "size": 840
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedInterpolation.js": {
+          "size": 3672
+        },
+        "/node_modules/react-native/src/private/animated/NativeAnimatedValidation.js": {
+          "size": 549
+        },
+        "/node_modules/react-native/Libraries/Animated/NativeAnimatedAllowlist.js": {
+          "size": 1418
+        },
+        "/node_modules/react-native/Libraries/Animated/Easing.js": {
+          "size": 1000
+        },
+        "/node_modules/react-native/Libraries/Animated/bezier.js": {
+          "size": 1050
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedWithChildren.js": {
+          "size": 1632
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedNode.js": {
+          "size": 2292
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedValueXY.js": {
+          "size": 2424
+        },
+        "/node_modules/react-native/Libraries/Animated/animations/DecayAnimation.js": {
+          "size": 1361
+        },
+        "/node_modules/react-native/Libraries/Animated/animations/Animation.js": {
+          "size": 2426
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedProps.js": {
+          "size": 4588
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedObject.js": {
+          "size": 2383
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedStyle.js": {
+          "size": 2988
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedTransform.js": {
+          "size": 2316
+        },
+        "/node_modules/react-native/Libraries/Animated/animations/SpringAnimation.js": {
+          "size": 4166
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedColor.js": {
+          "size": 3811
+        },
+        "/node_modules/react-native/Libraries/Animated/SpringConfig.js": {
+          "size": 741
+        },
+        "/node_modules/react-native/Libraries/Animated/animations/TimingAnimation.js": {
+          "size": 1863
+        },
+        "/node_modules/react-native/Libraries/Animated/createAnimatedComponent.js": {
+          "size": 612
+        },
+        "/node_modules/react-native/src/private/animated/createAnimatedPropsHook.js": {
+          "size": 2606
+        },
+        "/node_modules/react-native/Libraries/ReactNative/ReactFabricPublicInstance/ReactFabricPublicInstanceUtils.js": {
+          "size": 236
+        },
+        "/node_modules/react-native/Libraries/Utilities/useRefEffect.js": {
+          "size": 236
+        },
+        "/node_modules/react-native/src/private/animated/createAnimatedPropsMemoHook.js": {
+          "size": 2517
+        },
+        "/node_modules/react-native/Libraries/Utilities/useMergeRefs.js": {
+          "size": 439
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedAddition.js": {
+          "size": 1231
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedDiffClamp.js": {
+          "size": 1225
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedDivision.js": {
+          "size": 1586
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedModulo.js": {
+          "size": 1091
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedMultiplication.js": {
+          "size": 1237
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedSubtraction.js": {
+          "size": 1234
+        },
+        "/node_modules/react-native/Libraries/Animated/nodes/AnimatedTracking.js": {
+          "size": 1630
+        },
+        "/node_modules/react-native/Libraries/Animated/AnimatedMock.js": {
+          "size": 1550
+        },
+        "/node_modules/react-native/Libraries/Animated/components/AnimatedFlatList.js": {
+          "size": 148
+        },
+        "/node_modules/react-native/Libraries/Lists/FlatList.js": {
+          "size": 5594
+        },
+        "/node_modules/react-native/node_modules/@react-native/virtualized-lists/index.js": {
+          "size": 458
+        },
+        "/node_modules/react-native/node_modules/@react-native/virtualized-lists/Lists/VirtualizeUtils.js": {
+          "size": 2085
+        },
+        "/node_modules/react-native/node_modules/@react-native/virtualized-lists/Lists/VirtualizedList.js": {
+          "size": 27755
+        },
+        "/node_modules/react-native/node_modules/@react-native/virtualized-lists/Utilities/clamp.js": {
+          "size": 184
+        },
+        "/node_modules/react-native/node_modules/@react-native/virtualized-lists/Utilities/infoLog.js": {
+          "size": 191
+        },
+        "/node_modules/react-native/node_modules/@react-native/virtualized-lists/Lists/CellRenderMask.js": {
+          "size": 1652
+        },
+        "/node_modules/react-native/node_modules/@react-native/virtualized-lists/Lists/ChildListCollection.js": {
+          "size": 1154
+        },
+        "/node_modules/react-native/node_modules/@react-native/virtualized-lists/Lists/FillRateHelper.js": {
+          "size": 2970
+        },
+        "/node_modules/react-native/node_modules/@react-native/virtualized-lists/Lists/ListMetricsAggregator.js": {
+          "size": 3681
+        },
+        "/node_modules/react-native/node_modules/@react-native/virtualized-lists/Lists/StateSafePureComponent.js": {
+          "size": 975
+        },
+        "/node_modules/react-native/node_modules/@react-native/virtualized-lists/Lists/ViewabilityHelper.js": {
+          "size": 2653
+        },
+        "/node_modules/react-native/node_modules/@react-native/virtualized-lists/Lists/VirtualizedListCellRenderer.js": {
+          "size": 2599
+        },
+        "/node_modules/react-native/node_modules/@react-native/virtualized-lists/Lists/VirtualizedListContext.js": {
+          "size": 949
+        },
+        "/node_modules/react-native/node_modules/@react-native/virtualized-lists/Lists/VirtualizedListProps.js": {
+          "size": 337
+        },
+        "/node_modules/react-native/node_modules/@react-native/virtualized-lists/Lists/VirtualizedSectionList.js": {
+          "size": 5943
+        },
+        "/node_modules/memoize-one/dist/memoize-one.cjs.js": {
+          "size": 443
+        },
+        "/node_modules/react-native/Libraries/Animated/components/AnimatedImage.js": {
+          "size": 148
+        },
+        "/node_modules/react-native/Libraries/Image/Image.android.js": {
+          "size": 3197
+        },
+        "/node_modules/react-native/Libraries/Image/ImageAnalyticsTagContext.js": {
+          "size": 116
+        },
+        "/node_modules/react-native/Libraries/Image/ImageInjection.js": {
+          "size": 585
+        },
+        "/node_modules/react-native/Libraries/Image/ImageSourceUtils.js": {
+          "size": 1041
+        },
+        "/node_modules/react-native/Libraries/Image/ImageUtils.js": {
+          "size": 163
+        },
+        "/node_modules/react-native/Libraries/Image/ImageViewNativeComponent.js": {
+          "size": 1181
+        },
+        "/node_modules/react-native/Libraries/Image/NativeImageLoaderAndroid.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeImageLoaderAndroid.js": {
+          "size": 125
+        },
+        "/node_modules/react-native/Libraries/Image/TextInlineImageNativeComponent.js": {
+          "size": 691
+        },
+        "/node_modules/react-native/Libraries/Animated/components/AnimatedScrollView.js": {
+          "size": 1092
+        },
+        "/node_modules/react-native/Libraries/Components/RefreshControl/RefreshControl.js": {
+          "size": 1227
+        },
+        "/node_modules/react-native/Libraries/Components/RefreshControl/AndroidSwipeRefreshLayoutNativeComponent.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/components/AndroidSwipeRefreshLayoutNativeComponent.js": {
+          "size": 768
+        },
+        "/node_modules/react-native/Libraries/Components/RefreshControl/PullToRefreshViewNativeComponent.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/components/PullToRefreshViewNativeComponent.js": {
+          "size": 708
+        },
+        "/node_modules/react-native/Libraries/Components/ScrollView/ScrollView.js": {
+          "size": 14294
+        },
+        "/node_modules/react-native/src/private/components/scrollview/HScrollViewNativeComponents.js": {
+          "size": 289
+        },
+        "/node_modules/react-native/Libraries/Components/ScrollView/AndroidHorizontalScrollViewNativeComponent.js": {
+          "size": 1178
+        },
+        "/node_modules/react-native/Libraries/Components/ScrollView/ScrollContentViewNativeComponent.js": {
+          "size": 331
+        },
+        "/node_modules/react-native/Libraries/Components/ScrollView/ScrollViewNativeComponent.js": {
+          "size": 1499
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/components/AndroidHorizontalScrollContentViewNativeComponent.js": {
+          "size": 343
+        },
+        "/node_modules/react-native/src/private/components/scrollview/VScrollViewNativeComponents.js": {
+          "size": 278
+        },
+        "/node_modules/react-native/Libraries/Interaction/FrameRateLogger.js": {
+          "size": 408
+        },
+        "/node_modules/react-native/Libraries/Interaction/NativeFrameRateLogger.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeFrameRateLogger.js": {
+          "size": 120
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/splitLayoutProps.js": {
+          "size": 655
+        },
+        "/node_modules/react-native/Libraries/Utilities/dismissKeyboard.js": {
+          "size": 223
+        },
+        "/node_modules/react-native/Libraries/Components/Keyboard/Keyboard.js": {
+          "size": 980
+        },
+        "/node_modules/react-native/Libraries/LayoutAnimation/LayoutAnimation.js": {
+          "size": 1705
+        },
+        "/node_modules/react-native/Libraries/Components/Keyboard/NativeKeyboardObserver.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeKeyboardObserver.js": {
+          "size": 121
+        },
+        "/node_modules/react-native/Libraries/Components/ScrollView/processDecelerationRate.js": {
+          "size": 145
+        },
+        "/node_modules/react-native/Libraries/Components/ScrollView/ScrollViewCommands.js": {
+          "size": 213
+        },
+        "/node_modules/react-native/Libraries/Components/ScrollView/ScrollViewContext.js": {
+          "size": 338
+        },
+        "/node_modules/react-native/Libraries/Components/ScrollView/ScrollViewStickyHeader.js": {
+          "size": 2466
+        },
+        "/node_modules/react-native/Libraries/Animated/useAnimatedProps.js": {
+          "size": 119
+        },
+        "/node_modules/react-native/Libraries/Animated/components/AnimatedSectionList.js": {
+          "size": 148
+        },
+        "/node_modules/react-native/Libraries/Lists/SectionList.js": {
+          "size": 1919
+        },
+        "/node_modules/react-native/Libraries/Animated/components/AnimatedText.js": {
+          "size": 148
+        },
+        "/node_modules/react-native/Libraries/Animated/components/AnimatedView.js": {
+          "size": 148
+        },
+        "/node_modules/react-native/Libraries/Components/DrawerAndroid/DrawerLayoutAndroid.android.js": {
+          "size": 3502
+        },
+        "/node_modules/react-native/Libraries/Components/StatusBar/StatusBar.js": {
+          "size": 3452
+        },
+        "/node_modules/react-native/Libraries/Components/StatusBar/NativeStatusBarManagerAndroid.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeStatusBarManagerAndroid.js": {
+          "size": 318
+        },
+        "/node_modules/react-native/Libraries/Components/StatusBar/NativeStatusBarManagerIOS.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeStatusBarManagerIOS.js": {
+          "size": 438
+        },
+        "/node_modules/react-native/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/components/AndroidDrawerLayoutNativeComponent.js": {
+          "size": 1015
+        },
+        "/node_modules/react-native/Libraries/Image/ImageBackground.js": {
+          "size": 1034
+        },
+        "/node_modules/react-native/Libraries/Components/TextInput/InputAccessoryView.js": {
+          "size": 349
+        },
+        "/node_modules/react-native/Libraries/Components/SafeAreaView/SafeAreaView.js": {
+          "size": 132
+        },
+        "/node_modules/react-native/Libraries/Utilities/useWindowDimensions.js": {
+          "size": 478
+        },
+        "/node_modules/react-native/Libraries/Components/TextInput/RCTInputAccessoryViewNativeComponent.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/components/RCTInputAccessoryViewNativeComponent.js": {
+          "size": 334
+        },
+        "/node_modules/react-native/Libraries/Components/Keyboard/KeyboardAvoidingView.js": {
+          "size": 3225
+        },
+        "/node_modules/react-native/Libraries/Components/AccessibilityInfo/AccessibilityInfo.js": {
+          "size": 2041
+        },
+        "/node_modules/react-native/Libraries/Components/AccessibilityInfo/NativeAccessibilityInfo.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeAccessibilityInfo.js": {
+          "size": 122
+        },
+        "/node_modules/react-native/Libraries/Components/AccessibilityInfo/NativeAccessibilityManager.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeAccessibilityManager.js": {
+          "size": 125
+        },
+        "/node_modules/react-native/Libraries/Components/LayoutConformance/LayoutConformance.js": {
+          "size": 317
+        },
+        "/node_modules/react-native/Libraries/Components/LayoutConformance/LayoutConformanceNativeComponent.js": {
+          "size": 192
+        },
+        "/node_modules/react-native/Libraries/Modal/Modal.js": {
+          "size": 2496
+        },
+        "/node_modules/react-native/Libraries/Modal/NativeModalManager.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeModalManager.js": {
+          "size": 117
+        },
+        "/node_modules/react-native/Libraries/Modal/RCTModalHostViewNativeComponent.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/components/RCTModalHostViewNativeComponent.js": {
+          "size": 822
+        },
+        "/node_modules/react-native/Libraries/ReactNative/I18nManager.js": {
+          "size": 573
+        },
+        "/node_modules/react-native/Libraries/ReactNative/NativeI18nManager.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeI18nManager.js": {
+          "size": 116
+        },
+        "/node_modules/react-native/Libraries/Components/Pressable/Pressable.js": {
+          "size": 2417
+        },
+        "/node_modules/react-native/Libraries/Components/Pressable/useAndroidRippleForView.js": {
+          "size": 911
+        },
+        "/node_modules/react-native/Libraries/Components/Switch/Switch.js": {
+          "size": 1181
+        },
+        "/node_modules/react-native/Libraries/Components/Switch/AndroidSwitchNativeComponent.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/components/AndroidSwitchNativeComponent.js": {
+          "size": 861
+        },
+        "/node_modules/react-native/Libraries/Components/Switch/SwitchNativeComponent.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/components/SwitchNativeComponent.js": {
+          "size": 857
+        },
+        "/node_modules/react-native/Libraries/Components/TextInput/TextInput.js": {
+          "size": 6643
+        },
+        "/node_modules/react-native/Libraries/Components/Touchable/Touchable.js": {
+          "size": 8179
+        },
+        "/node_modules/react-native/Libraries/Components/Touchable/BoundingDimensions.js": {
+          "size": 456
+        },
+        "/node_modules/react-native/Libraries/Components/Touchable/PooledClass.js": {
+          "size": 1086
+        },
+        "/node_modules/react-native/Libraries/Components/Touchable/Position.js": {
+          "size": 363
+        },
+        "/node_modules/react-native/Libraries/Components/Touchable/TouchableHighlight.js": {
+          "size": 5316
+        },
+        "/node_modules/react-native/Libraries/Components/Touchable/TouchableWithoutFeedback.js": {
+          "size": 2133
+        },
+        "/node_modules/react-native/Libraries/Lists/VirtualizedList.js": {
+          "size": 220
+        },
+        "/node_modules/react-native/Libraries/Lists/VirtualizedSectionList.js": {
+          "size": 227
+        },
+        "/node_modules/react-native/src/private/components/virtualview/VirtualView.js": {
+          "size": 1269
+        },
+        "/node_modules/react-native/src/private/components/virtualview/VirtualViewNativeComponent.js": {
+          "size": 439
+        },
+        "/node_modules/react-native/Libraries/ActionSheetIOS/ActionSheetIOS.js": {
+          "size": 1553
+        },
+        "/node_modules/react-native/Libraries/ActionSheetIOS/NativeActionSheetManager.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeActionSheetManager.js": {
+          "size": 123
+        },
+        "/node_modules/react-native/Libraries/Utilities/Appearance.js": {
+          "size": 954
+        },
+        "/node_modules/react-native/Libraries/Utilities/NativeAppearance.js": {
+          "size": 109
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeAppearance.js": {
+          "size": 115
+        },
+        "/node_modules/react-native/Libraries/AppState/AppState.js": {
+          "size": 1143
+        },
+        "/node_modules/react-native/Libraries/Utilities/logError.js": {
+          "size": 375
+        },
+        "/node_modules/react-native/Libraries/AppState/NativeAppState.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeAppState.js": {
+          "size": 122
+        },
+        "/node_modules/react-native/Libraries/Components/Clipboard/Clipboard.js": {
+          "size": 177
+        },
+        "/node_modules/react-native/Libraries/Components/Clipboard/NativeClipboard.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeClipboard.js": {
+          "size": 123
+        },
+        "/node_modules/react-native/Libraries/Utilities/DeviceInfo.js": {
+          "size": 109
+        },
+        "/node_modules/react-native/src/private/devsupport/devmenu/DevMenu.js": {
+          "size": 113
+        },
+        "/node_modules/react-native/src/private/devsupport/devmenu/specs/NativeDevMenu.js": {
+          "size": 121
+        },
+        "/node_modules/react-native/Libraries/Utilities/DevSettings.js": {
+          "size": 166
+        },
+        "/node_modules/react-native/Libraries/NativeModules/specs/NativeDevSettings.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeDevSettings.js": {
+          "size": 125
+        },
+        "/node_modules/react-native/Libraries/StyleSheet/PlatformColorValueTypesIOS.js": {
+          "size": 167
+        },
+        "/node_modules/react-native/Libraries/Linking/Linking.js": {
+          "size": 1064
+        },
+        "/node_modules/react-native/Libraries/Linking/NativeIntentAndroid.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeIntentAndroid.js": {
+          "size": 118
+        },
+        "/node_modules/react-native/Libraries/Linking/NativeLinkingManager.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeLinkingManager.js": {
+          "size": 119
+        },
+        "/node_modules/react-native/Libraries/LogBox/LogBox.js": {
+          "size": 269
+        },
+        "/node_modules/react-native/Libraries/Interaction/PanResponder.js": {
+          "size": 2921
+        },
+        "/node_modules/react-native/Libraries/Interaction/TouchHistoryMath.js": {
+          "size": 1088
+        },
+        "/node_modules/react-native/Libraries/PermissionsAndroid/PermissionsAndroid.js": {
+          "size": 4070
+        },
+        "/node_modules/react-native/Libraries/PermissionsAndroid/NativePermissionsAndroid.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativePermissionsAndroid.js": {
+          "size": 123
+        },
+        "/node_modules/react-native/Libraries/PushNotificationIOS/PushNotificationIOS.js": {
+          "size": 5251
+        },
+        "/node_modules/react-native/Libraries/PushNotificationIOS/NativePushNotificationManagerIOS.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativePushNotificationManagerIOS.js": {
+          "size": 128
+        },
+        "/node_modules/react-native/Libraries/Settings/Settings.js": {
+          "size": 108
+        },
+        "/node_modules/react-native/Libraries/Settings/SettingsFallback.js": {
+          "size": 463
+        },
+        "/node_modules/react-native/Libraries/Share/Share.js": {
+          "size": 966
+        },
+        "/node_modules/react-native/Libraries/Share/NativeShareModule.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeShareModule.js": {
+          "size": 116
+        },
+        "/node_modules/react-native/Libraries/Components/ToastAndroid/ToastAndroid.android.js": {
+          "size": 397
+        },
+        "/node_modules/react-native/Libraries/Components/ToastAndroid/NativeToastAndroid.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeToastAndroid.js": {
+          "size": 126
+        },
+        "/node_modules/react-native/Libraries/Animated/useAnimatedValue.js": {
+          "size": 223
+        },
+        "/node_modules/react-native/Libraries/Utilities/useColorScheme.js": {
+          "size": 292
+        },
+        "/node_modules/react-native/Libraries/UTFSequence.js": {
+          "size": 464
+        },
+        "/node_modules/react-native/Libraries/Vibration/Vibration.js": {
+          "size": 481
+        },
+        "/node_modules/react-native/Libraries/Vibration/NativeVibration.js": {
+          "size": 281
+        },
+        "/node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeVibration.js": {
+          "size": 123
+        },
+        "/node_modules/expo-asset/build/index.js": {
+          "size": 370
+        },
+        "/node_modules/expo-asset/build/Asset.fx.js": {
+          "size": 437
+        },
+        "/node_modules/expo-asset/build/Asset.js": {
+          "size": 2793
+        },
+        "/node_modules/expo-modules-core/src/index.ts": {
+          "size": 2672
+        },
+        "/node_modules/expo-modules-core/src/sweet/setUpJsLogger.fx.ts": {
+          "size": 94
+        },
+        "/node_modules/expo-modules-core/src/sweet/NativeJSLogger.ts": {
+          "size": 151
+        },
+        "/node_modules/expo-modules-core/src/requireNativeModule.ts": {
+          "size": 496
+        },
+        "/node_modules/expo-modules-core/src/NativeModulesProxy.native.ts": {
+          "size": 1338
+        },
+        "/node_modules/expo-modules-core/src/TurboModuleToExpoModuleProxy.native.ts": {
+          "size": 275
+        },
+        "/node_modules/expo-modules-core/src/ensureNativeModulesAreInstalled.native.ts": {
+          "size": 219
+        },
+        "/node_modules/expo-modules-core/src/Platform.ts": {
+          "size": 454
+        },
+        "/node_modules/expo-modules-core/src/environment/browser.ts": {
+          "size": 366
+        },
+        "/node_modules/expo-modules-core/src/errors/CodedError.ts": {
+          "size": 317
+        },
+        "/node_modules/expo-modules-core/src/EventEmitter.ts": {
+          "size": 226
+        },
+        "/node_modules/expo-modules-core/src/NativeModule.ts": {
+          "size": 226
+        },
+        "/node_modules/expo-modules-core/src/SharedObject.ts": {
+          "size": 226
+        },
+        "/node_modules/expo-modules-core/src/SharedRef.ts": {
+          "size": 220
+        },
+        "/node_modules/expo-modules-core/src/uuid/index.ts": {
+          "size": 633
+        },
+        "/node_modules/expo-modules-core/src/uuid/lib/bytesToUuid.ts": {
+          "size": 370
+        },
+        "/node_modules/expo-modules-core/src/uuid/uuid.types.ts": {
+          "size": 301
+        },
+        "/node_modules/expo-modules-core/src/NativeViewManagerAdapter.native.tsx": {
+          "size": 1388
+        },
+        "/node_modules/expo-modules-core/src/registerWebModule.ts": {
+          "size": 480
+        },
+        "/node_modules/expo-modules-core/src/PermissionsInterface.ts": {
+          "size": 189
+        },
+        "/node_modules/expo-modules-core/src/PermissionsHook.ts": {
+          "size": 902
+        },
+        "/node_modules/expo-modules-core/src/Refs.ts": {
+          "size": 80
+        },
+        "/node_modules/expo-modules-core/src/hooks/useReleasingSharedObject.ts": {
+          "size": 526
+        },
+        "/node_modules/expo-modules-core/src/reload.ts": {
+          "size": 285
+        },
+        "/node_modules/expo-modules-core/src/errors/UnavailabilityError.ts": {
+          "size": 457
+        },
+        "/node_modules/expo-modules-core/src/LegacyEventEmitter.ts": {
+          "size": 1430
+        },
+        "/node_modules/expo-asset/build/AssetSources.js": {
+          "size": 1049
+        },
+        "/node_modules/expo-asset/build/AssetSourceResolver.native.js": {
+          "size": 281
+        },
+        "/node_modules/expo-asset/build/PlatformUtils.js": {
+          "size": 625
+        },
+        "/node_modules/expo-constants/build/Constants.js": {
+          "size": 2576
+        },
+        "/node_modules/expo-constants/build/Constants.types.js": {
+          "size": 525
+        },
+        "/node_modules/expo-constants/build/ExponentConstants.js": {
+          "size": 145
+        },
+        "/node_modules/expo-asset/build/AssetUris.js": {
+          "size": 526
+        },
+        "/node_modules/expo-asset/build/ExpoAsset.js": {
+          "size": 244
+        },
+        "/node_modules/expo-asset/build/ImageAssets.js": {
+          "size": 382
+        },
+        "/node_modules/expo-asset/build/LocalAssets.js": {
+          "size": 177
+        },
+        "/node_modules/expo-asset/build/resolveAssetSource.native.js": {
+          "size": 281
+        },
+        "/node_modules/expo-asset/build/AssetHooks.js": {
+          "size": 257
+        },
+        "/node_modules/expo/src/environment/ExpoGo.ts": {
+          "size": 207
+        },
+        "/node_modules/expo/src/errors/AppEntryNotFound.tsx": {
+          "size": 702
+        },
+        "/node_modules/expo/src/errors/ExpoErrorManager.native.ts": {
+          "size": 881
+        },
+        "/App.jsx": {
+          "size": 578
+        },
+        "/node_modules/react/compiler-runtime.js": {
+          "size": 33
+        },
+        "/node_modules/react/cjs/react-compiler-runtime.production.js": {
+          "size": 137
+        },
+        "/node_modules/@react-navigation/native/lib/module/index.js": {
+          "size": 2048
+        },
+        "/node_modules/@react-navigation/native/lib/module/createStaticNavigation.js": {
+          "size": 1420
+        },
+        "/node_modules/@react-navigation/core/lib/module/index.js": {
+          "size": 4631
+        },
+        "/node_modules/@react-navigation/core/lib/module/BaseNavigationContainer.js": {
+          "size": 4494
+        },
+        "/node_modules/@react-navigation/routers/lib/module/index.js": {
+          "size": 1273
+        },
+        "/node_modules/@react-navigation/routers/lib/module/CommonActions.js": {
+          "size": 1543
+        },
+        "/node_modules/@react-navigation/routers/lib/module/BaseRouter.js": {
+          "size": 855
+        },
+        "/node_modules/nanoid/non-secure/index.js": {
+          "size": 578
+        },
+        "/node_modules/@react-navigation/routers/lib/module/DrawerRouter.js": {
+          "size": 1753
+        },
+        "/node_modules/@react-navigation/routers/lib/module/TabRouter.js": {
+          "size": 4631
+        },
+        "/node_modules/@react-navigation/routers/lib/module/createParamsFromAction.js": {
+          "size": 206
+        },
+        "/node_modules/@react-navigation/routers/lib/module/StackRouter.js": {
+          "size": 6998
+        },
+        "/node_modules/@react-navigation/routers/lib/module/createRouteFromAction.js": {
+          "size": 285
+        },
+        "/node_modules/@react-navigation/routers/lib/module/types.js": {
+          "size": 3
+        },
+        "/node_modules/use-latest-callback/esm.mjs": {
+          "size": 109
+        },
+        "/node_modules/use-latest-callback/lib/src/index.js": {
+          "size": 354
+        },
+        "/node_modules/@react-navigation/core/lib/module/checkDuplicateRouteNames.js": {
+          "size": 298
+        },
+        "/node_modules/@react-navigation/core/lib/module/checkSerializable.js": {
+          "size": 694
+        },
+        "/node_modules/@react-navigation/core/lib/module/createNavigationContainerRef.js": {
+          "size": 1303
+        },
+        "/node_modules/@react-navigation/core/lib/module/DeprecatedNavigationInChildContext.js": {
+          "size": 438
+        },
+        "/node_modules/@react-navigation/core/lib/module/EnsureSingleNavigator.js": {
+          "size": 1023
+        },
+        "/node_modules/@react-navigation/core/lib/module/findFocusedRoute.js": {
+          "size": 211
+        },
+        "/node_modules/@react-navigation/core/lib/module/NavigationBuilderContext.js": {
+          "size": 646
+        },
+        "/node_modules/@react-navigation/core/lib/module/NavigationContainerRefContext.js": {
+          "size": 437
+        },
+        "/node_modules/@react-navigation/core/lib/module/NavigationIndependentTreeContext.js": {
+          "size": 436
+        },
+        "/node_modules/@react-navigation/core/lib/module/NavigationStateContext.js": {
+          "size": 788
+        },
+        "/node_modules/@react-navigation/core/lib/module/theming/ThemeProvider.js": {
+          "size": 214
+        },
+        "/node_modules/@react-navigation/core/lib/module/theming/ThemeContext.js": {
+          "size": 449
+        },
+        "/node_modules/@react-navigation/core/lib/module/UnhandledActionContext.js": {
+          "size": 430
+        },
+        "/node_modules/@react-navigation/core/lib/module/useChildListeners.js": {
+          "size": 548
+        },
+        "/node_modules/@react-navigation/core/lib/module/useEventEmitter.js": {
+          "size": 1332
+        },
+        "/node_modules/@react-navigation/core/lib/module/useKeyedChildListeners.js": {
+          "size": 550
+        },
+        "/node_modules/@react-navigation/core/lib/module/useNavigationIndependentTree.js": {
+          "size": 427
+        },
+        "/node_modules/@react-navigation/core/lib/module/useOptionsGetters.js": {
+          "size": 1125
+        },
+        "/node_modules/@react-navigation/core/lib/module/useSyncState.js": {
+          "size": 1048
+        },
+        "/node_modules/@react-navigation/core/lib/module/deepFreeze.js": {
+          "size": 315
+        },
+        "/node_modules/@react-navigation/core/lib/module/createNavigatorFactory.js": {
+          "size": 764
+        },
+        "/node_modules/@react-navigation/core/lib/module/Group.js": {
+          "size": 97
+        },
+        "/node_modules/@react-navigation/core/lib/module/Screen.js": {
+          "size": 98
+        },
+        "/node_modules/@react-navigation/core/lib/module/StaticNavigation.js": {
+          "size": 4289
+        },
+        "/node_modules/react-is/index.js": {
+          "size": 33
+        },
+        "/node_modules/react-is/cjs/react-is.production.js": {
+          "size": 1737
+        },
+        "/node_modules/@react-navigation/core/lib/module/useRoute.js": {
+          "size": 518
+        },
+        "/node_modules/@react-navigation/core/lib/module/NavigationProvider.js": {
+          "size": 938
+        },
+        "/node_modules/@react-navigation/core/lib/module/NavigationContext.js": {
+          "size": 425
+        },
+        "/node_modules/@react-navigation/core/lib/module/useIsFocused.js": {
+          "size": 831
+        },
+        "/node_modules/@react-navigation/core/lib/module/useNavigation.js": {
+          "size": 593
+        },
+        "/node_modules/@react-navigation/core/lib/module/CurrentRenderContext.js": {
+          "size": 428
+        },
+        "/node_modules/@react-navigation/core/lib/module/getActionFromState.js": {
+          "size": 1478
+        },
+        "/node_modules/@react-navigation/core/lib/module/getFocusedRouteNameFromRoute.js": {
+          "size": 305
+        },
+        "/node_modules/@react-navigation/core/lib/module/useRouteCache.js": {
+          "size": 831
+        },
+        "/node_modules/@react-navigation/core/lib/module/isRecordEqual.js": {
+          "size": 223
+        },
+        "/node_modules/@react-navigation/core/lib/module/getPathFromState.js": {
+          "size": 2902
+        },
+        "/node_modules/query-string/index.js": {
+          "size": 5185
+        },
+        "/node_modules/strict-uri-encode/index.js": {
+          "size": 122
+        },
+        "/node_modules/decode-uri-component/index.js": {
+          "size": 942
+        },
+        "/node_modules/split-on-first/index.js": {
+          "size": 236
+        },
+        "/node_modules/filter-obj/index.js": {
+          "size": 177
+        },
+        "/node_modules/@react-navigation/core/lib/module/getPatternParts.js": {
+          "size": 1314
+        },
+        "/node_modules/@react-navigation/core/lib/module/validatePathConfig.js": {
+          "size": 1587
+        },
+        "/node_modules/@react-navigation/core/lib/module/getStateFromPath.js": {
+          "size": 6254
+        },
+        "/node_modules/escape-string-regexp/index.js": {
+          "size": 162
+        },
+        "/node_modules/@react-navigation/core/lib/module/arrayStartsWith.js": {
+          "size": 159
+        },
+        "/node_modules/@react-navigation/core/lib/module/isArrayEqual.js": {
+          "size": 185
+        },
+        "/node_modules/@react-navigation/core/lib/module/NavigationHelpersContext.js": {
+          "size": 432
+        },
+        "/node_modules/@react-navigation/core/lib/module/NavigationIndependentTree.js": {
+          "size": 463
+        },
+        "/node_modules/@react-navigation/core/lib/module/NavigationMetaContext.js": {
+          "size": 429
+        },
+        "/node_modules/@react-navigation/core/lib/module/PreventRemoveContext.js": {
+          "size": 428
+        },
+        "/node_modules/@react-navigation/core/lib/module/PreventRemoveProvider.js": {
+          "size": 1526
+        },
+        "/node_modules/@react-navigation/core/lib/module/theming/useTheme.js": {
+          "size": 518
+        },
+        "/node_modules/@react-navigation/core/lib/module/types.js": {
+          "size": 286
+        },
+        "/node_modules/@react-navigation/core/lib/module/useFocusEffect.js": {
+          "size": 1041
+        },
+        "/node_modules/@react-navigation/core/lib/module/useNavigationBuilder.js": {
+          "size": 10022
+        },
+        "/node_modules/fast-deep-equal/index.js": {
+          "size": 714
+        },
+        "/node_modules/@react-navigation/core/lib/module/ConsumedParamsContext.js": {
+          "size": 429
+        },
+        "/node_modules/@react-navigation/core/lib/module/useClientLayoutEffect.js": {
+          "size": 534
+        },
+        "/node_modules/@react-navigation/core/lib/module/useComponent.js": {
+          "size": 659
+        },
+        "/node_modules/@react-navigation/core/lib/module/useCurrentRender.js": {
+          "size": 507
+        },
+        "/node_modules/@react-navigation/core/lib/module/useDescriptors.js": {
+          "size": 2341
+        },
+        "/node_modules/@react-navigation/core/lib/module/SceneView.js": {
+          "size": 2204
+        },
+        "/node_modules/@react-navigation/core/lib/module/NavigationFocusedRouteStateContext.js": {
+          "size": 442
+        },
+        "/node_modules/@react-navigation/core/lib/module/StaticContainer.js": {
+          "size": 581
+        },
+        "/node_modules/@react-navigation/core/lib/module/useNavigationCache.js": {
+          "size": 1809
+        },
+        "/node_modules/@react-navigation/core/lib/module/useFocusedListenersChildrenAdapter.js": {
+          "size": 701
+        },
+        "/node_modules/@react-navigation/core/lib/module/useFocusEvents.js": {
+          "size": 869
+        },
+        "/node_modules/@react-navigation/core/lib/module/useLazyValue.js": {
+          "size": 421
+        },
+        "/node_modules/@react-navigation/core/lib/module/useNavigationHelpers.js": {
+          "size": 1164
+        },
+        "/node_modules/@react-navigation/core/lib/module/useNavigationState.js": {
+          "size": 1047
+        },
+        "/node_modules/use-sync-external-store/with-selector.js": {
+          "size": 33
+        },
+        "/node_modules/use-sync-external-store/cjs/use-sync-external-store-with-selector.production.js": {
+          "size": 766
+        },
+        "/node_modules/@react-navigation/core/lib/module/useOnAction.js": {
+          "size": 1463
+        },
+        "/node_modules/@react-navigation/core/lib/module/useOnPreventRemove.js": {
+          "size": 1078
+        },
+        "/node_modules/@react-navigation/core/lib/module/useOnGetState.js": {
+          "size": 751
+        },
+        "/node_modules/@react-navigation/core/lib/module/useOnRouteFocus.js": {
+          "size": 585
+        },
+        "/node_modules/@react-navigation/core/lib/module/useRegisterNavigator.js": {
+          "size": 828
+        },
+        "/node_modules/@react-navigation/core/lib/module/useScheduleUpdate.js": {
+          "size": 491
+        },
+        "/node_modules/@react-navigation/core/lib/module/useNavigationContainerRef.js": {
+          "size": 472
+        },
+        "/node_modules/@react-navigation/core/lib/module/usePreventRemove.js": {
+          "size": 810
+        },
+        "/node_modules/@react-navigation/core/lib/module/usePreventRemoveContext.js": {
+          "size": 534
+        },
+        "/node_modules/@react-navigation/core/lib/module/useStateForPath.js": {
+          "size": 416
+        },
+        "/node_modules/@react-navigation/native/lib/module/NavigationContainer.js": {
+          "size": 2465
+        },
+        "/node_modules/@react-navigation/native/lib/module/LinkingContext.js": {
+          "size": 526
+        },
+        "/node_modules/@react-navigation/native/lib/module/LocaleDirContext.js": {
+          "size": 456
+        },
+        "/node_modules/@react-navigation/native/lib/module/theming/DefaultTheme.js": {
+          "size": 358
+        },
+        "/node_modules/@react-navigation/native/lib/module/theming/fonts.js": {
+          "size": 365
+        },
+        "/node_modules/@react-navigation/native/lib/module/UnhandledLinkingContext.js": {
+          "size": 615
+        },
+        "/node_modules/@react-navigation/native/lib/module/useBackButton.native.js": {
+          "size": 532
+        },
+        "/node_modules/@react-navigation/native/lib/module/useDocumentTitle.native.js": {
+          "size": 96
+        },
+        "/node_modules/@react-navigation/native/lib/module/useLinking.native.js": {
+          "size": 1971
+        },
+        "/node_modules/@react-navigation/native/lib/module/extractPathFromURL.js": {
+          "size": 618
+        },
+        "/node_modules/@babel/runtime/helpers/toArray.js": {
+          "size": 154
+        },
+        "/node_modules/@babel/runtime/helpers/iterableToArray.js": {
+          "size": 177
+        },
+        "/node_modules/@react-navigation/native/lib/module/useThenable.js": {
+          "size": 794
+        },
+        "/node_modules/@react-navigation/native/lib/module/Link.js": {
+          "size": 801
+        },
+        "/node_modules/@react-navigation/native/lib/module/useLinkProps.js": {
+          "size": 839
+        },
+        "/node_modules/@react-navigation/native/lib/module/ServerContainer.js": {
+          "size": 848
+        },
+        "/node_modules/@react-navigation/native/lib/module/ServerContext.js": {
+          "size": 421
+        },
+        "/node_modules/@react-navigation/native/lib/module/theming/DarkTheme.js": {
+          "size": 347
+        },
+        "/node_modules/@react-navigation/native/lib/module/types.js": {
+          "size": 3
+        },
+        "/node_modules/@react-navigation/native/lib/module/useLinkBuilder.js": {
+          "size": 1493
+        },
+        "/node_modules/@react-navigation/native/lib/module/useLinkTo.js": {
+          "size": 612
+        },
+        "/node_modules/@react-navigation/native/lib/module/useLocale.js": {
+          "size": 529
+        },
+        "/node_modules/@react-navigation/native/lib/module/useRoutePath.js": {
+          "size": 702
+        },
+        "/node_modules/@react-navigation/native/lib/module/useScrollToTop.js": {
+          "size": 1379
+        },
+        "/node_modules/react-native-safe-area-context/src/index.tsx": {
+          "size": 784
+        },
+        "/node_modules/react-native-safe-area-context/src/SafeAreaContext.tsx": {
+          "size": 2049
+        },
+        "/node_modules/react-native-safe-area-context/src/NativeSafeAreaProvider.tsx": {
+          "size": 124
+        },
+        "/node_modules/react-native-safe-area-context/src/specs/NativeSafeAreaProvider.ts": {
+          "size": 429
+        },
+        "/node_modules/react-native-safe-area-context/src/SafeAreaView.tsx": {
+          "size": 523
+        },
+        "/node_modules/react-native-safe-area-context/src/specs/NativeSafeAreaView.ts": {
+          "size": 297
+        },
+        "/node_modules/react-native-safe-area-context/src/InitialWindow.native.ts": {
+          "size": 280
+        },
+        "/node_modules/react-native-safe-area-context/src/specs/NativeSafeAreaContext.ts": {
+          "size": 138
+        },
+        "/src/navigation/StackNavigator.tsx": {
+          "size": 422
+        },
+        "/node_modules/@react-navigation/native-stack/lib/module/index.js": {
+          "size": 436
+        },
+        "/node_modules/@react-navigation/native-stack/lib/module/navigators/createNativeStackNavigator.js": {
+          "size": 1529
+        },
+        "/node_modules/@react-navigation/native-stack/lib/module/views/NativeStackView.native.js": {
+          "size": 7789
+        },
+        "/node_modules/@react-navigation/elements/lib/module/index.js": {
+          "size": 3175
+        },
+        "/node_modules/@react-navigation/elements/lib/module/assets/back-icon.png": {
+          "size": 369
+        },
+        "/node_modules/@react-navigation/elements/lib/module/assets/back-icon-mask.png": {
+          "size": 263
+        },
+        "/node_modules/@react-navigation/elements/lib/module/assets/clear-icon.png": {
+          "size": 407
+        },
+        "/node_modules/@react-navigation/elements/lib/module/assets/close-icon.png": {
+          "size": 407
+        },
+        "/node_modules/@react-navigation/elements/lib/module/assets/search-icon.png": {
+          "size": 371
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Background.js": {
+          "size": 351
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Badge.js": {
+          "size": 1584
+        },
+        "/node_modules/color/index.js": {
+          "size": 5944
+        },
+        "/node_modules/color-string/index.js": {
+          "size": 3164
+        },
+        "/node_modules/color-name/index.js": {
+          "size": 3421
+        },
+        "/node_modules/simple-swizzle/index.js": {
+          "size": 259
+        },
+        "/node_modules/simple-swizzle/node_modules/is-arrayish/index.js": {
+          "size": 220
+        },
+        "/node_modules/color-convert/index.js": {
+          "size": 792
+        },
+        "/node_modules/color-convert/conversions.js": {
+          "size": 8595
+        },
+        "/node_modules/color-convert/route.js": {
+          "size": 708
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Button.js": {
+          "size": 1420
+        },
+        "/node_modules/@react-navigation/elements/lib/module/PlatformPressable.js": {
+          "size": 1735
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Text.js": {
+          "size": 325
+        },
+        "/node_modules/@react-navigation/elements/lib/module/getDefaultSidebarWidth.js": {
+          "size": 206
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Header/getDefaultHeaderHeight.js": {
+          "size": 151
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Header/getHeaderTitle.js": {
+          "size": 174
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Header/Header.js": {
+          "size": 6928
+        },
+        "/node_modules/@react-navigation/elements/lib/module/useFrameSize.js": {
+          "size": 1556
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Header/HeaderBackButton.js": {
+          "size": 2604
+        },
+        "/node_modules/@react-navigation/elements/lib/module/MaskedView.android.js": {
+          "size": 168
+        },
+        "/node_modules/@react-navigation/elements/lib/module/MaskedViewNative.js": {
+          "size": 423
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Header/HeaderButton.js": {
+          "size": 1084
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Header/HeaderIcon.js": {
+          "size": 691
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Header/HeaderBackground.js": {
+          "size": 454
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Header/HeaderSearchBar.js": {
+          "size": 3761
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Header/HeaderShownContext.js": {
+          "size": 210
+        },
+        "/node_modules/@react-navigation/elements/lib/module/getNamedContext.js": {
+          "size": 538
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Header/HeaderTitle.js": {
+          "size": 484
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Header/HeaderBackContext.js": {
+          "size": 212
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Header/HeaderHeightContext.js": {
+          "size": 216
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Header/useHeaderHeight.js": {
+          "size": 529
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Label/getLabel.js": {
+          "size": 149
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Label/Label.js": {
+          "size": 416
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Lazy.js": {
+          "size": 656
+        },
+        "/node_modules/@react-navigation/elements/lib/module/MissingIcon.js": {
+          "size": 306
+        },
+        "/node_modules/@react-navigation/elements/lib/module/ResourceSavingView.js": {
+          "size": 607
+        },
+        "/node_modules/@react-navigation/elements/lib/module/SafeAreaProviderCompat.js": {
+          "size": 1003
+        },
+        "/node_modules/@react-navigation/elements/lib/module/Screen.js": {
+          "size": 1680
+        },
+        "/node_modules/@react-navigation/elements/lib/module/types.js": {
+          "size": 3
+        },
+        "/node_modules/react-native-screens/src/index.tsx": {
+          "size": 3860
+        },
+        "/node_modules/react-native-screens/src/fabric/NativeScreensModule.ts": {
+          "size": 191
+        },
+        "/node_modules/react-native-screens/src/types.tsx": {
+          "size": 722
+        },
+        "/node_modules/react-native-screens/src/core.ts": {
+          "size": 629
+        },
+        "/node_modules/react-native-screens/src/components/Screen.tsx": {
+          "size": 3960
+        },
+        "/node_modules/react-native-screens/src/TransitionProgressContext.tsx": {
+          "size": 415
+        },
+        "/node_modules/react-native-screens/src/components/helpers/DelayedFreeze.tsx": {
+          "size": 380
+        },
+        "/node_modules/react-freeze/src/index.tsx": {
+          "size": 307
+        },
+        "/node_modules/react-native-screens/src/fabric/ScreenNativeComponent.ts": {
+          "size": 2027
+        },
+        "/node_modules/react-native-screens/src/fabric/ModalScreenNativeComponent.ts": {
+          "size": 2037
+        },
+        "/node_modules/react-native-screens/src/components/helpers/usePrevious.tsx": {
+          "size": 115
+        },
+        "/node_modules/react-native-screens/src/components/helpers/edge-to-edge.tsx": {
+          "size": 288
+        },
+        "/node_modules/react-native-is-edge-to-edge/dist/index.android.mjs": {
+          "size": 613
+        },
+        "/node_modules/react-native-screens/src/components/helpers/sheet.tsx": {
+          "size": 1140
+        },
+        "/node_modules/react-native-screens/src/components/ScreenStackHeaderConfig.tsx": {
+          "size": 1974
+        },
+        "/node_modules/react-native-screens/src/fabric/ScreenStackHeaderConfigNativeComponent.ts": {
+          "size": 1184
+        },
+        "/node_modules/react-native-screens/src/fabric/ScreenStackHeaderSubviewNativeComponent.ts": {
+          "size": 374
+        },
+        "/node_modules/react-native-screens/src/components/SearchBar.tsx": {
+          "size": 1086
+        },
+        "/node_modules/react-native-screens/src/utils.ts": {
+          "size": 234
+        },
+        "/node_modules/react-native-screens/src/fabric/SearchBarNativeComponent.ts": {
+          "size": 1613
+        },
+        "/node_modules/react-native-screens/src/components/ScreenContainer.tsx": {
+          "size": 570
+        },
+        "/node_modules/react-native-screens/src/fabric/ScreenContainerNativeComponent.ts": {
+          "size": 349
+        },
+        "/node_modules/react-native-screens/src/fabric/ScreenNavigationContainerNativeComponent.ts": {
+          "size": 369
+        },
+        "/node_modules/react-native-screens/src/components/ScreenStack.tsx": {
+          "size": 1453
+        },
+        "/node_modules/react-native-screens/src/contexts.tsx": {
+          "size": 308
+        },
+        "/node_modules/warn-once/index.js": {
+          "size": 34
+        },
+        "/node_modules/react-native-screens/src/fabric/ScreenStackNativeComponent.ts": {
+          "size": 502
+        },
+        "/node_modules/react-native-screens/src/components/ScreenStackItem.tsx": {
+          "size": 1645
+        },
+        "/node_modules/react-native-screens/src/components/DebugContainer.tsx": {
+          "size": 278
+        },
+        "/node_modules/react-native-screens/src/components/ScreenContentWrapper.tsx": {
+          "size": 186
+        },
+        "/node_modules/react-native-screens/src/fabric/ScreenContentWrapperNativeComponent.ts": {
+          "size": 297
+        },
+        "/node_modules/react-native-screens/src/components/ScreenFooter.tsx": {
+          "size": 270
+        },
+        "/node_modules/react-native-screens/src/fabric/ScreenFooterNativeComponent.ts": {
+          "size": 281
+        },
+        "/node_modules/react-native-screens/src/components/FullWindowOverlay.tsx": {
+          "size": 310
+        },
+        "/node_modules/react-native-screens/src/fabric/FullWindowOverlayNativeComponent.ts": {
+          "size": 389
+        },
+        "/node_modules/react-native-screens/src/flags.ts": {
+          "size": 748
+        },
+        "/node_modules/react-native-screens/src/useTransitionProgress.tsx": {
+          "size": 288
+        },
+        "/node_modules/react-native-screens/src/components/bottom-tabs/BottomTabs.tsx": {
+          "size": 1076
+        },
+        "/node_modules/react-native-screens/src/fabric/bottom-tabs/BottomTabsNativeComponent.ts": {
+          "size": 1166
+        },
+        "/node_modules/react-native-screens/src/private/logging.ts": {
+          "size": 132
+        },
+        "/node_modules/react-native-screens/src/components/bottom-tabs/BottomTabsScreen.tsx": {
+          "size": 3877
+        },
+        "/node_modules/react-native-screens/src/fabric/bottom-tabs/BottomTabsScreenNativeComponent.ts": {
+          "size": 1365
+        },
+        "/node_modules/react-native-screens/src/components/gamma/ScreenStackHost.tsx": {
+          "size": 266
+        },
+        "/node_modules/react-native-screens/src/fabric/gamma/ScreenStackHostNativeComponent.ts": {
+          "size": 349
+        },
+        "/node_modules/react-native-screens/src/components/gamma/StackScreen.tsx": {
+          "size": 634
+        },
+        "/node_modules/react-native-screens/src/fabric/gamma/StackScreenNativeComponent.ts": {
+          "size": 713
+        },
+        "/node_modules/react-native-screens/src/components/gamma/SplitViewHost.tsx": {
+          "size": 763
+        },
+        "/node_modules/react-native-screens/src/fabric/gamma/SplitViewHostNativeComponent.ts": {
+          "size": 892
+        },
+        "/node_modules/react-native-screens/src/components/gamma/SplitViewScreen.tsx": {
+          "size": 394
+        },
+        "/node_modules/react-native-screens/src/fabric/gamma/SplitViewScreenNativeComponent.ts": {
+          "size": 701
+        },
+        "/node_modules/@react-navigation/native-stack/lib/module/utils/debounce.js": {
+          "size": 241
+        },
+        "/node_modules/@react-navigation/native-stack/lib/module/utils/getModalRoutesKeys.js": {
+          "size": 415
+        },
+        "/node_modules/@react-navigation/native-stack/lib/module/utils/useAnimatedHeaderHeight.js": {
+          "size": 628
+        },
+        "/node_modules/@react-navigation/native-stack/lib/module/utils/useDismissedRouteError.js": {
+          "size": 934
+        },
+        "/node_modules/@react-navigation/native-stack/lib/module/utils/useInvalidPreventRemoveError.js": {
+          "size": 797
+        },
+        "/node_modules/@react-navigation/native-stack/lib/module/views/useHeaderConfigProps.js": {
+          "size": 5552
+        },
+        "/node_modules/@react-navigation/native-stack/lib/module/views/FontProcessor.native.js": {
+          "size": 231
+        },
+        "/src/navigation/TabNavigator.tsx": {
+          "size": 635
+        },
+        "/node_modules/@react-navigation/bottom-tabs/lib/module/index.js": {
+          "size": 1358
+        },
+        "/node_modules/@react-navigation/bottom-tabs/lib/module/TransitionConfigs/SceneStyleInterpolators.js": {
+          "size": 419
+        },
+        "/node_modules/@react-navigation/bottom-tabs/lib/module/TransitionConfigs/TransitionPresets.js": {
+          "size": 383
+        },
+        "/node_modules/@react-navigation/bottom-tabs/lib/module/TransitionConfigs/TransitionSpecs.js": {
+          "size": 396
+        },
+        "/node_modules/@react-navigation/bottom-tabs/lib/module/navigators/createBottomTabNavigator.js": {
+          "size": 989
+        },
+        "/node_modules/@react-navigation/bottom-tabs/lib/module/views/BottomTabView.js": {
+          "size": 4057
+        },
+        "/node_modules/@react-navigation/bottom-tabs/lib/module/utils/BottomTabBarHeightCallbackContext.js": {
+          "size": 441
+        },
+        "/node_modules/@react-navigation/bottom-tabs/lib/module/utils/BottomTabBarHeightContext.js": {
+          "size": 433
+        },
+        "/node_modules/@react-navigation/bottom-tabs/lib/module/utils/useAnimatedHashMap.js": {
+          "size": 615
+        },
+        "/node_modules/@react-navigation/bottom-tabs/lib/module/views/BottomTabBar.js": {
+          "size": 6057
+        },
+        "/node_modules/@react-navigation/bottom-tabs/lib/module/utils/useIsKeyboardShown.js": {
+          "size": 649
+        },
+        "/node_modules/@react-navigation/bottom-tabs/lib/module/views/BottomTabItem.js": {
+          "size": 3629
+        },
+        "/node_modules/@react-navigation/bottom-tabs/lib/module/views/TabBarIcon.js": {
+          "size": 1083
+        },
+        "/node_modules/@react-navigation/bottom-tabs/lib/module/views/ScreenFallback.js": {
+          "size": 668
+        },
+        "/node_modules/@react-navigation/bottom-tabs/lib/module/utils/useBottomTabBarHeight.js": {
+          "size": 544
+        },
+        "/src/components/navigation/TabBar.tsx": {
+          "size": 1256
+        },
+        "/src/constants/typography.ts": {
+          "size": 1040
+        },
+        "/src/components/AppIcon.tsx": {
+          "size": 969
+        },
+        "/node_modules/@expo/vector-icons/build/IconsLazy.js": {
+          "size": 2080
+        },
+        "/node_modules/@expo/vector-icons/build/AntDesign.js": {
+          "size": 283
+        },
+        "/node_modules/@expo/vector-icons/build/createIconSet.js": {
+          "size": 1971
+        },
+        "/node_modules/expo-font/build/index.js": {
+          "size": 462
+        },
+        "/node_modules/expo-font/build/Font.js": {
+          "size": 2634
+        },
+        "/node_modules/expo-font/build/ExpoFontLoader.js": {
+          "size": 221
+        },
+        "/node_modules/expo-font/build/Font.types.js": {
+          "size": 202
+        },
+        "/node_modules/expo-font/build/FontLoader.js": {
+          "size": 746
+        },
+        "/node_modules/expo-font/build/memory.js": {
+          "size": 417
+        },
+        "/node_modules/expo-font/build/server.js": {
+          "size": 666
+        },
+        "/node_modules/expo-font/build/FontUtils.js": {
+          "size": 393
+        },
+        "/node_modules/expo-font/build/ExpoFontUtils.js": {
+          "size": 141
+        },
+        "/node_modules/expo-font/build/FontHooks.js": {
+          "size": 559
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/lib/create-icon-set.js": {
+          "size": 2568
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/lib/ensure-native-module-available.js": {
+          "size": 345
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/lib/create-icon-source-cache.js": {
+          "size": 318
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/lib/icon-button.js": {
+          "size": 1892
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/lib/object-utils.js": {
+          "size": 429
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/AntDesign.ttf": {
+          "size": 258
+        },
+        "/node_modules/@expo/vector-icons/build/Entypo.js": {
+          "size": 282
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Entypo.ttf": {
+          "size": 255
+        },
+        "/node_modules/@expo/vector-icons/build/EvilIcons.js": {
+          "size": 285
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/EvilIcons.ttf": {
+          "size": 258
+        },
+        "/node_modules/@expo/vector-icons/build/Feather.js": {
+          "size": 283
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Feather.ttf": {
+          "size": 256
+        },
+        "/node_modules/@expo/vector-icons/build/Fontisto.js": {
+          "size": 284
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Fontisto.ttf": {
+          "size": 257
+        },
+        "/node_modules/@expo/vector-icons/build/FontAwesome.js": {
+          "size": 287
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome.ttf": {
+          "size": 260
+        },
+        "/node_modules/@expo/vector-icons/build/FontAwesome5.js": {
+          "size": 488
+        },
+        "/node_modules/@expo/vector-icons/build/createIconSetFromFontAwesome5.js": {
+          "size": 966
+        },
+        "/node_modules/@expo/vector-icons/build/createMultiStyleIconSet.js": {
+          "size": 2185
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf": {
+          "size": 269
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf": {
+          "size": 267
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf": {
+          "size": 268
+        },
+        "/node_modules/@expo/vector-icons/build/FontAwesome6.js": {
+          "size": 672
+        },
+        "/node_modules/@expo/vector-icons/build/createIconSetFromFontAwesome6.js": {
+          "size": 1527
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome6_Regular.ttf": {
+          "size": 269
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome6_Solid.ttf": {
+          "size": 267
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome6_Brands.ttf": {
+          "size": 268
+        },
+        "/node_modules/@expo/vector-icons/build/Foundation.js": {
+          "size": 286
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Foundation.ttf": {
+          "size": 259
+        },
+        "/node_modules/@expo/vector-icons/build/Ionicons.js": {
+          "size": 284
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.ttf": {
+          "size": 257
+        },
+        "/node_modules/@expo/vector-icons/build/MaterialCommunityIcons.js": {
+          "size": 294
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf": {
+          "size": 271
+        },
+        "/node_modules/@expo/vector-icons/build/MaterialIcons.js": {
+          "size": 284
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/MaterialIcons.ttf": {
+          "size": 262
+        },
+        "/node_modules/@expo/vector-icons/build/Octicons.js": {
+          "size": 284
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Octicons.ttf": {
+          "size": 257
+        },
+        "/node_modules/@expo/vector-icons/build/SimpleLineIcons.js": {
+          "size": 293
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/SimpleLineIcons.ttf": {
+          "size": 264
+        },
+        "/node_modules/@expo/vector-icons/build/Zocial.js": {
+          "size": 282
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Zocial.ttf": {
+          "size": 255
+        },
+        "/node_modules/@expo/vector-icons/build/createIconSetFromFontello.js": {
+          "size": 146
+        },
+        "/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/lib/create-icon-set-from-fontello.js": {
+          "size": 234
+        },
+        "/node_modules/@expo/vector-icons/build/createIconSetFromIcoMoon.js": {
+          "size": 560
+        },
+        "/src/constants/colors.ts": {
+          "size": 472
+        },
+        "/src/hooks/useTheme.ts": {
+          "size": 232
+        },
+        "/src/context/ThemeContext.tsx": {
+          "size": 741
+        },
+        "/src/constants/themes.ts": {
+          "size": 844
+        },
+        "/src/navigation/stacks/MyBookingStack.tsx": {
+          "size": 425
+        },
+        "/src/screens/BookingScreen.tsx": {
+          "size": 2768
+        },
+        "/src/data/user.ts": {
+          "size": 98
+        },
+        "/src/components/BookingCard.tsx": {
+          "size": 1994
+        },
+        "/src/components/ButtonPrimary.tsx": {
+          "size": 1194
+        },
+        "/src/components/EmptyState.tsx": {
+          "size": 1273
+        },
+        "/src/components/Toast.tsx": {
+          "size": 1241
+        },
+        "/src/components/DeleteBookingModal.tsx": {
+          "size": 2312
+        },
+        "/src/data/Restaurants.ts": {
+          "size": 853
+        },
+        "/src/services/tablesApi.ts": {
+          "size": 890
+        },
+        "/src/store/hooks.ts": {
+          "size": 224
+        },
+        "/node_modules/react-redux/dist/react-redux.legacy-esm.js": {
+          "size": 11126
+        },
+        "/src/features/bookings/bookingsSlice.ts": {
+          "size": 734
+        },
+        "/node_modules/@reduxjs/toolkit/dist/redux-toolkit.modern.mjs": {
+          "size": 29459
+        },
+        "/node_modules/redux/dist/redux.mjs": {
+          "size": 4268
+        },
+        "/node_modules/immer/dist/immer.legacy-esm.js": {
+          "size": 21619
+        },
+        "/node_modules/reselect/dist/reselect.mjs": {
+          "size": 8788
+        },
+        "/node_modules/redux-thunk/dist/redux-thunk.mjs": {
+          "size": 280
+        },
+        "/src/features/bookings/bookingsThunks.ts": {
+          "size": 319
+        },
+        "/src/components/BookingsHero.tsx": {
+          "size": 842
+        },
+        "/src/navigation/stacks/RestaurantsStack.tsx": {
+          "size": 632
+        },
+        "/src/screens/HomeScreen.tsx": {
+          "size": 1561
+        },
+        "/src/components/CardRestaurant.tsx": {
+          "size": 1484
+        },
+        "/src/components/HomeHero.tsx": {
+          "size": 801
+        },
+        "/src/components/ThemeToggle.tsx": {
+          "size": 1305
+        },
+        "/src/screens/DetailsScreen.tsx": {
+          "size": 2032
+        },
+        "/src/components/DetailsCard.tsx": {
+          "size": 2153
+        },
+        "/src/components/navigation/NavBar.tsx": {
+          "size": 1276
+        },
+        "/src/components/NumberInput.tsx": {
+          "size": 1933
+        },
+        "/src/components/RestaurantImage.tsx": {
+          "size": 450
+        },
+        "/node_modules/expo-image/src/index.ts": {
+          "size": 482
+        },
+        "/node_modules/expo-image/src/Image.tsx": {
+          "size": 3848
+        },
+        "/node_modules/expo-image/src/ExpoImage.tsx": {
+          "size": 1918
+        },
+        "/node_modules/expo-image/src/ImageModule.ts": {
+          "size": 129
+        },
+        "/node_modules/expo/src/Expo.ts": {
+          "size": 1615
+        },
+        "/node_modules/expo/src/hooks/useEvent.ts": {
+          "size": 398
+        },
+        "/node_modules/expo-image/src/utils.ts": {
+          "size": 1508
+        },
+        "/node_modules/expo-image/src/utils/resolveSources.tsx": {
+          "size": 803
+        },
+        "/node_modules/expo-image/src/utils/resolveAssetSource.tsx": {
+          "size": 109
+        },
+        "/node_modules/expo-image/src/utils/resolveHashString.tsx": {
+          "size": 432
+        },
+        "/node_modules/expo-image/src/ImageBackground.tsx": {
+          "size": 404
+        },
+        "/node_modules/expo-image/src/useImage.ts": {
+          "size": 752
+        },
+        "/src/screens/DateTimeScreen.tsx": {
+          "size": 2238
+        },
+        "/src/components/TitleCard.tsx": {
+          "size": 912
+        },
+        "/src/components/dateTimePicker/DateCalendar.tsx": {
+          "size": 1329
+        },
+        "/node_modules/react-native-calendars/src/index.ts": {
+          "size": 1559
+        },
+        "/node_modules/react-native-calendars/src/calendar/index.js": {
+          "size": 4167
+        },
+        "/node_modules/prop-types/index.js": {
+          "size": 22
+        },
+        "/node_modules/prop-types/factoryWithThrowingShims.js": {
+          "size": 647
+        },
+        "/node_modules/prop-types/lib/ReactPropTypesSecret.js": {
+          "size": 72
+        },
+        "/node_modules/xdate/src/xdate.js": {
+          "size": 7490
+        },
+        "/node_modules/lodash/isEmpty.js": {
+          "size": 402
+        },
+        "/node_modules/lodash/_baseKeys.js": {
+          "size": 186
+        },
+        "/node_modules/lodash/_isPrototype.js": {
+          "size": 121
+        },
+        "/node_modules/lodash/_nativeKeys.js": {
+          "size": 48
+        },
+        "/node_modules/lodash/_overArg.js": {
+          "size": 62
+        },
+        "/node_modules/lodash/_getTag.js": {
+          "size": 521
+        },
+        "/node_modules/lodash/_DataView.js": {
+          "size": 48
+        },
+        "/node_modules/lodash/_getNative.js": {
+          "size": 85
+        },
+        "/node_modules/lodash/_baseIsNative.js": {
+          "size": 357
+        },
+        "/node_modules/lodash/isFunction.js": {
+          "size": 190
+        },
+        "/node_modules/lodash/_baseGetTag.js": {
+          "size": 175
+        },
+        "/node_modules/lodash/_Symbol.js": {
+          "size": 35
+        },
+        "/node_modules/lodash/_root.js": {
+          "size": 120
+        },
+        "/node_modules/lodash/_freeGlobal.js": {
+          "size": 64
+        },
+        "/node_modules/lodash/_getRawTag.js": {
+          "size": 226
+        },
+        "/node_modules/lodash/_objectToString.js": {
+          "size": 74
+        },
+        "/node_modules/lodash/isObject.js": {
+          "size": 85
+        },
+        "/node_modules/lodash/_isMasked.js": {
+          "size": 133
+        },
+        "/node_modules/lodash/_coreJsData.js": {
+          "size": 50
+        },
+        "/node_modules/lodash/_toSource.js": {
+          "size": 138
+        },
+        "/node_modules/lodash/_getValue.js": {
+          "size": 54
+        },
+        "/node_modules/lodash/_Map.js": {
+          "size": 43
+        },
+        "/node_modules/lodash/_Promise.js": {
+          "size": 47
+        },
+        "/node_modules/lodash/_Set.js": {
+          "size": 43
+        },
+        "/node_modules/lodash/_WeakMap.js": {
+          "size": 47
+        },
+        "/node_modules/lodash/isArguments.js": {
+          "size": 207
+        },
+        "/node_modules/lodash/_baseIsArguments.js": {
+          "size": 89
+        },
+        "/node_modules/lodash/isObjectLike.js": {
+          "size": 60
+        },
+        "/node_modules/lodash/isArray.js": {
+          "size": 34
+        },
+        "/node_modules/lodash/isArrayLike.js": {
+          "size": 84
+        },
+        "/node_modules/lodash/isLength.js": {
+          "size": 85
+        },
+        "/node_modules/lodash/isBuffer.js": {
+          "size": 183
+        },
+        "/node_modules/lodash/stubFalse.js": {
+          "size": 33
+        },
+        "/node_modules/lodash/isTypedArray.js": {
+          "size": 79
+        },
+        "/node_modules/lodash/_baseIsTypedArray.js": {
+          "size": 662
+        },
+        "/node_modules/lodash/_baseUnary.js": {
+          "size": 57
+        },
+        "/node_modules/lodash/_nodeUtil.js": {
+          "size": 264
+        },
+        "/node_modules/react-native-swipe-gestures/index.js": {
+          "size": 2457
+        },
+        "/node_modules/react-native-calendars/src/commons/constants.js": {
+          "size": 416
+        },
+        "/node_modules/react-native-calendars/src/dateutils.js": {
+          "size": 2971
+        },
+        "/node_modules/react-native-calendars/src/interface.js": {
+          "size": 756
+        },
+        "/node_modules/react-native-calendars/src/day-state-manager.js": {
+          "size": 368
+        },
+        "/node_modules/react-native-calendars/src/componentUpdater.js": {
+          "size": 3420
+        },
+        "/node_modules/lodash/get.js": {
+          "size": 93
+        },
+        "/node_modules/lodash/_baseGet.js": {
+          "size": 136
+        },
+        "/node_modules/lodash/_castPath.js": {
+          "size": 104
+        },
+        "/node_modules/lodash/_isKey.js": {
+          "size": 260
+        },
+        "/node_modules/lodash/isSymbol.js": {
+          "size": 105
+        },
+        "/node_modules/lodash/_stringToPath.js": {
+          "size": 276
+        },
+        "/node_modules/lodash/_memoizeCapped.js": {
+          "size": 115
+        },
+        "/node_modules/lodash/memoize.js": {
+          "size": 335
+        },
+        "/node_modules/lodash/_MapCache.js": {
+          "size": 264
+        },
+        "/node_modules/lodash/_mapCacheClear.js": {
+          "size": 124
+        },
+        "/node_modules/lodash/_Hash.js": {
+          "size": 264
+        },
+        "/node_modules/lodash/_hashClear.js": {
+          "size": 77
+        },
+        "/node_modules/lodash/_nativeCreate.js": {
+          "size": 45
+        },
+        "/node_modules/lodash/_hashDelete.js": {
+          "size": 94
+        },
+        "/node_modules/lodash/_hashGet.js": {
+          "size": 188
+        },
+        "/node_modules/lodash/_hashHas.js": {
+          "size": 128
+        },
+        "/node_modules/lodash/_hashSet.js": {
+          "size": 149
+        },
+        "/node_modules/lodash/_ListCache.js": {
+          "size": 264
+        },
+        "/node_modules/lodash/_listCacheClear.js": {
+          "size": 53
+        },
+        "/node_modules/lodash/_listCacheDelete.js": {
+          "size": 160
+        },
+        "/node_modules/lodash/_assocIndexOf.js": {
+          "size": 99
+        },
+        "/node_modules/lodash/eq.js": {
+          "size": 52
+        },
+        "/node_modules/lodash/_listCacheGet.js": {
+          "size": 94
+        },
+        "/node_modules/lodash/_listCacheHas.js": {
+          "size": 68
+        },
+        "/node_modules/lodash/_listCacheSet.js": {
+          "size": 124
+        },
+        "/node_modules/lodash/_mapCacheDelete.js": {
+          "size": 91
+        },
+        "/node_modules/lodash/_getMapData.js": {
+          "size": 114
+        },
+        "/node_modules/lodash/_isKeyable.js": {
+          "size": 123
+        },
+        "/node_modules/lodash/_mapCacheGet.js": {
+          "size": 63
+        },
+        "/node_modules/lodash/_mapCacheHas.js": {
+          "size": 63
+        },
+        "/node_modules/lodash/_mapCacheSet.js": {
+          "size": 114
+        },
+        "/node_modules/lodash/toString.js": {
+          "size": 62
+        },
+        "/node_modules/lodash/_baseToString.js": {
+          "size": 244
+        },
+        "/node_modules/lodash/_arrayMap.js": {
+          "size": 105
+        },
+        "/node_modules/lodash/_toKey.js": {
+          "size": 118
+        },
+        "/node_modules/lodash/omit.js": {
+          "size": 283
+        },
+        "/node_modules/lodash/_baseClone.js": {
+          "size": 1463
+        },
+        "/node_modules/lodash/_Stack.js": {
+          "size": 233
+        },
+        "/node_modules/lodash/_stackClear.js": {
+          "size": 70
+        },
+        "/node_modules/lodash/_stackDelete.js": {
+          "size": 85
+        },
+        "/node_modules/lodash/_stackGet.js": {
+          "size": 53
+        },
+        "/node_modules/lodash/_stackHas.js": {
+          "size": 53
+        },
+        "/node_modules/lodash/_stackSet.js": {
+          "size": 247
+        },
+        "/node_modules/lodash/_arrayEach.js": {
+          "size": 96
+        },
+        "/node_modules/lodash/_assignValue.js": {
+          "size": 150
+        },
+        "/node_modules/lodash/_baseAssignValue.js": {
+          "size": 127
+        },
+        "/node_modules/lodash/_defineProperty.js": {
+          "size": 115
+        },
+        "/node_modules/lodash/_baseAssign.js": {
+          "size": 73
+        },
+        "/node_modules/lodash/_copyObject.js": {
+          "size": 197
+        },
+        "/node_modules/lodash/keys.js": {
+          "size": 81
+        },
+        "/node_modules/lodash/_arrayLikeKeys.js": {
+          "size": 392
+        },
+        "/node_modules/lodash/_baseTimes.js": {
+          "size": 77
+        },
+        "/node_modules/lodash/_isIndex.js": {
+          "size": 164
+        },
+        "/node_modules/lodash/_baseAssignIn.js": {
+          "size": 73
+        },
+        "/node_modules/lodash/keysIn.js": {
+          "size": 84
+        },
+        "/node_modules/lodash/_baseKeysIn.js": {
+          "size": 201
+        },
+        "/node_modules/lodash/_nativeKeysIn.js": {
+          "size": 87
+        },
+        "/node_modules/lodash/_cloneBuffer.js": {
+          "size": 270
+        },
+        "/node_modules/lodash/_copyArray.js": {
+          "size": 93
+        },
+        "/node_modules/lodash/_copySymbols.js": {
+          "size": 70
+        },
+        "/node_modules/lodash/_getSymbols.js": {
+          "size": 200
+        },
+        "/node_modules/lodash/_arrayFilter.js": {
+          "size": 119
+        },
+        "/node_modules/lodash/stubArray.js": {
+          "size": 33
+        },
+        "/node_modules/lodash/_copySymbolsIn.js": {
+          "size": 70
+        },
+        "/node_modules/lodash/_getSymbolsIn.js": {
+          "size": 146
+        },
+        "/node_modules/lodash/_arrayPush.js": {
+          "size": 90
+        },
+        "/node_modules/lodash/_getPrototype.js": {
+          "size": 58
+        },
+        "/node_modules/lodash/_getAllKeys.js": {
+          "size": 75
+        },
+        "/node_modules/lodash/_baseGetAllKeys.js": {
+          "size": 88
+        },
+        "/node_modules/lodash/_getAllKeysIn.js": {
+          "size": 75
+        },
+        "/node_modules/lodash/_initCloneArray.js": {
+          "size": 189
+        },
+        "/node_modules/lodash/_initCloneByTag.js": {
+          "size": 690
+        },
+        "/node_modules/lodash/_cloneArrayBuffer.js": {
+          "size": 109
+        },
+        "/node_modules/lodash/_Uint8Array.js": {
+          "size": 39
+        },
+        "/node_modules/lodash/_cloneDataView.js": {
+          "size": 124
+        },
+        "/node_modules/lodash/_cloneRegExp.js": {
+          "size": 115
+        },
+        "/node_modules/lodash/_cloneSymbol.js": {
+          "size": 113
+        },
+        "/node_modules/lodash/_cloneTypedArray.js": {
+          "size": 120
+        },
+        "/node_modules/lodash/_initCloneObject.js": {
+          "size": 115
+        },
+        "/node_modules/lodash/_baseCreate.js": {
+          "size": 185
+        },
+        "/node_modules/lodash/isMap.js": {
+          "size": 72
+        },
+        "/node_modules/lodash/_baseIsMap.js": {
+          "size": 83
+        },
+        "/node_modules/lodash/isSet.js": {
+          "size": 72
+        },
+        "/node_modules/lodash/_baseIsSet.js": {
+          "size": 83
+        },
+        "/node_modules/lodash/_baseUnset.js": {
+          "size": 331
+        },
+        "/node_modules/lodash/last.js": {
+          "size": 73
+        },
+        "/node_modules/lodash/_parent.js": {
+          "size": 86
+        },
+        "/node_modules/lodash/_baseSlice.js": {
+          "size": 161
+        },
+        "/node_modules/lodash/_customOmitClone.js": {
+          "size": 60
+        },
+        "/node_modules/lodash/isPlainObject.js": {
+          "size": 325
+        },
+        "/node_modules/lodash/_flatRest.js": {
+          "size": 88
+        },
+        "/node_modules/lodash/flatten.js": {
+          "size": 76
+        },
+        "/node_modules/lodash/_baseFlatten.js": {
+          "size": 185
+        },
+        "/node_modules/lodash/_isFlattenable.js": {
+          "size": 125
+        },
+        "/node_modules/lodash/_overRest.js": {
+          "size": 249
+        },
+        "/node_modules/lodash/_apply.js": {
+          "size": 192
+        },
+        "/node_modules/lodash/_setToString.js": {
+          "size": 41
+        },
+        "/node_modules/lodash/_baseSetToString.js": {
+          "size": 147
+        },
+        "/node_modules/lodash/constant.js": {
+          "size": 53
+        },
+        "/node_modules/lodash/identity.js": {
+          "size": 34
+        },
+        "/node_modules/lodash/_shortOut.js": {
+          "size": 178
+        },
+        "/node_modules/lodash/pickBy.js": {
+          "size": 181
+        },
+        "/node_modules/lodash/_baseIteratee.js": {
+          "size": 165
+        },
+        "/node_modules/lodash/_baseMatches.js": {
+          "size": 153
+        },
+        "/node_modules/lodash/_baseIsMatch.js": {
+          "size": 364
+        },
+        "/node_modules/lodash/_baseIsEqual.js": {
+          "size": 132
+        },
+        "/node_modules/lodash/_baseIsEqualDeep.js": {
+          "size": 600
+        },
+        "/node_modules/lodash/_equalArrays.js": {
+          "size": 518
+        },
+        "/node_modules/lodash/_SetCache.js": {
+          "size": 191
+        },
+        "/node_modules/lodash/_setCacheAdd.js": {
+          "size": 86
+        },
+        "/node_modules/lodash/_setCacheHas.js": {
+          "size": 53
+        },
+        "/node_modules/lodash/_arraySome.js": {
+          "size": 101
+        },
+        "/node_modules/lodash/_cacheHas.js": {
+          "size": 43
+        },
+        "/node_modules/lodash/_equalByTag.js": {
+          "size": 815
+        },
+        "/node_modules/lodash/_mapToArray.js": {
+          "size": 98
+        },
+        "/node_modules/lodash/_setToArray.js": {
+          "size": 92
+        },
+        "/node_modules/lodash/_equalObjects.js": {
+          "size": 663
+        },
+        "/node_modules/lodash/_getMatchData.js": {
+          "size": 124
+        },
+        "/node_modules/lodash/_isStrictComparable.js": {
+          "size": 58
+        },
+        "/node_modules/lodash/_matchesStrictComparable.js": {
+          "size": 104
+        },
+        "/node_modules/lodash/_baseMatchesProperty.js": {
+          "size": 196
+        },
+        "/node_modules/lodash/hasIn.js": {
+          "size": 76
+        },
+        "/node_modules/lodash/_baseHasIn.js": {
+          "size": 58
+        },
+        "/node_modules/lodash/_hasPath.js": {
+          "size": 262
+        },
+        "/node_modules/lodash/property.js": {
+          "size": 94
+        },
+        "/node_modules/lodash/_baseProperty.js": {
+          "size": 72
+        },
+        "/node_modules/lodash/_basePropertyDeep.js": {
+          "size": 73
+        },
+        "/node_modules/lodash/_basePickBy.js": {
+          "size": 151
+        },
+        "/node_modules/lodash/_baseSet.js": {
+          "size": 349
+        },
+        "/node_modules/lodash/isEqual.js": {
+          "size": 55
+        },
+        "/node_modules/lodash/includes.js": {
+          "size": 211
+        },
+        "/node_modules/lodash/_baseIndexOf.js": {
+          "size": 93
+        },
+        "/node_modules/lodash/_baseFindIndex.js": {
+          "size": 109
+        },
+        "/node_modules/lodash/_baseIsNaN.js": {
+          "size": 37
+        },
+        "/node_modules/lodash/_strictIndexOf.js": {
+          "size": 91
+        },
+        "/node_modules/lodash/isString.js": {
+          "size": 122
+        },
+        "/node_modules/lodash/toInteger.js": {
+          "size": 78
+        },
+        "/node_modules/lodash/toFinite.js": {
+          "size": 129
+        },
+        "/node_modules/lodash/toNumber.js": {
+          "size": 366
+        },
+        "/node_modules/lodash/_baseTrim.js": {
+          "size": 91
+        },
+        "/node_modules/lodash/_trimmedEndIndex.js": {
+          "size": 91
+        },
+        "/node_modules/lodash/values.js": {
+          "size": 77
+        },
+        "/node_modules/lodash/_baseValues.js": {
+          "size": 78
+        },
+        "/node_modules/react-native-calendars/src/hooks.js": {
+          "size": 502
+        },
+        "/node_modules/react-native-calendars/src/calendar/style.js": {
+          "size": 556
+        },
+        "/node_modules/react-native-calendars/src/style.js": {
+          "size": 4154
+        },
+        "/node_modules/react-native-calendars/src/calendar/header/index.js": {
+          "size": 3363
+        },
+        "/node_modules/react-native-calendars/src/calendar/header/style.js": {
+          "size": 1169
+        },
+        "/node_modules/react-native-calendars/src/calendar/img/previous.png": {
+          "size": 365
+        },
+        "/node_modules/react-native-calendars/src/calendar/img/next.png": {
+          "size": 361
+        },
+        "/node_modules/react-native-calendars/src/calendar/day/index.js": {
+          "size": 1284
+        },
+        "/node_modules/lodash/some.js": {
+          "size": 141
+        },
+        "/node_modules/lodash/_baseSome.js": {
+          "size": 100
+        },
+        "/node_modules/lodash/_baseEach.js": {
+          "size": 41
+        },
+        "/node_modules/lodash/_baseForOwn.js": {
+          "size": 70
+        },
+        "/node_modules/lodash/_baseFor.js": {
+          "size": 30
+        },
+        "/node_modules/lodash/_createBaseFor.js": {
+          "size": 150
+        },
+        "/node_modules/lodash/_createBaseEach.js": {
+          "size": 189
+        },
+        "/node_modules/lodash/_isIterateeCall.js": {
+          "size": 179
+        },
+        "/node_modules/react-native-calendars/src/services/index.js": {
+          "size": 602
+        },
+        "/node_modules/lodash/isUndefined.js": {
+          "size": 43
+        },
+        "/node_modules/lodash/isDate.js": {
+          "size": 73
+        },
+        "/node_modules/lodash/_baseIsDate.js": {
+          "size": 84
+        },
+        "/node_modules/lodash/isNumber.js": {
+          "size": 105
+        },
+        "/node_modules/react-native-calendars/src/calendar/day/basic/index.js": {
+          "size": 2117
+        },
+        "/node_modules/react-native-calendars/src/calendar/day/marking/index.js": {
+          "size": 1231
+        },
+        "/node_modules/lodash/filter.js": {
+          "size": 98
+        },
+        "/node_modules/lodash/_baseFilter.js": {
+          "size": 101
+        },
+        "/node_modules/react-native-calendars/src/calendar/day/marking/style.js": {
+          "size": 529
+        },
+        "/node_modules/react-native-calendars/src/calendar/day/dot/index.js": {
+          "size": 501
+        },
+        "/node_modules/react-native-calendars/src/calendar/day/dot/style.js": {
+          "size": 590
+        },
+        "/node_modules/react-native-calendars/src/calendar/day/basic/style.js": {
+          "size": 879
+        },
+        "/node_modules/react-native-calendars/src/calendar/day/period/index.js": {
+          "size": 3359
+        },
+        "/node_modules/react-native-calendars/src/calendar/day/period/style.js": {
+          "size": 990
+        },
+        "/node_modules/react-native-calendars/src/calendar-list/index.js": {
+          "size": 5850
+        },
+        "/node_modules/lodash/findIndex.js": {
+          "size": 174
+        },
+        "/node_modules/react-native-calendars/src/calendar-list/style.js": {
+          "size": 672
+        },
+        "/node_modules/react-native-calendars/src/calendar-list/item.js": {
+          "size": 1099
+        },
+        "/node_modules/react-native-calendars/src/calendar-list/new.js": {
+          "size": 2945
+        },
+        "/node_modules/react-native-calendars/src/infinite-list/index.js": {
+          "size": 2487
+        },
+        "/node_modules/lodash/inRange.js": {
+          "size": 121
+        },
+        "/node_modules/lodash/_baseInRange.js": {
+          "size": 82
+        },
+        "/node_modules/lodash/debounce.js": {
+          "size": 945
+        },
+        "/node_modules/lodash/now.js": {
+          "size": 58
+        },
+        "/node_modules/lodash/noop.js": {
+          "size": 25
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/index.js": {
+          "size": 1677
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/dependencies/ContextProvider.js": {
+          "size": 95
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/dependencies/DataProvider.js": {
+          "size": 1923
+        },
+        "/node_modules/ts-object-utils/dist/index.js": {
+          "size": 138
+        },
+        "/node_modules/ts-object-utils/dist/ObjectUtil.js": {
+          "size": 413
+        },
+        "/node_modules/ts-object-utils/dist/Default.js": {
+          "size": 199
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/dependencies/LayoutProvider.js": {
+          "size": 1574
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/layoutmanager/LayoutManager.js": {
+          "size": 3606
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/exceptions/CustomError.js": {
+          "size": 671
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/dependencies/GridLayoutProvider.js": {
+          "size": 1505
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/layoutmanager/GridLayoutManager.js": {
+          "size": 1545
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/RecyclerListView.js": {
+          "size": 16476
+        },
+        "/node_modules/lodash.debounce/index.js": {
+          "size": 1634
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/exceptions/RecyclerListViewExceptions.js": {
+          "size": 1740
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/constants/Constants.js": {
+          "size": 188
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/constants/Messages.js": {
+          "size": 638
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/VirtualRenderer.js": {
+          "size": 7392
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/utils/RecycleItemPool.js": {
+          "size": 1000
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/ViewabilityTracker.js": {
+          "size": 5874
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/utils/BinarySearch.js": {
+          "size": 1278
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/utils/TSCast.js": {
+          "size": 150
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/ItemAnimator.js": {
+          "size": 436
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/utils/ComponentCompat.js": {
+          "size": 1260
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/platform/reactnative/scrollcomponent/ScrollComponent.js": {
+          "size": 3052
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/scrollcomponent/BaseScrollComponent.js": {
+          "size": 781
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/platform/reactnative/viewrenderer/ViewRenderer.js": {
+          "size": 3031
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/viewrenderer/BaseViewRenderer.js": {
+          "size": 2027
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/scrollcomponent/BaseScrollView.js": {
+          "size": 654
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/utils/AutoScroll.js": {
+          "size": 475
+        },
+        "/node_modules/recyclerlistview/dist/reactnative/core/ProgressiveListView.js": {
+          "size": 2694
+        },
+        "/node_modules/react-native-calendars/src/agenda/index.js": {
+          "size": 8711
+        },
+        "/node_modules/react-native-calendars/src/testIDs.js": {
+          "size": 506
+        },
+        "/node_modules/react-native-calendars/src/velocityTracker.js": {
+          "size": 722
+        },
+        "/node_modules/react-native-calendars/src/agenda/style.js": {
+          "size": 987
+        },
+        "/node_modules/react-native-calendars/src/agenda/platform-style.js": {
+          "size": 388
+        },
+        "/node_modules/react-native-calendars/src/commons/WeekDaysNames.js": {
+          "size": 319
+        },
+        "/node_modules/react-native-calendars/src/agenda/reservation-list/index.js": {
+          "size": 4626
+        },
+        "/node_modules/react-native-calendars/src/agenda/reservation-list/style.js": {
+          "size": 706
+        },
+        "/node_modules/react-native-calendars/src/agenda/reservation-list/reservation.js": {
+          "size": 1776
+        },
+        "/node_modules/react-native-calendars/src/expandableCalendar/index.js": {
+          "size": 8475
+        },
+        "/node_modules/lodash/first.js": {
+          "size": 20
+        },
+        "/node_modules/lodash/head.js": {
+          "size": 56
+        },
+        "/node_modules/lodash/throttle.js": {
+          "size": 251
+        },
+        "/node_modules/react-native-calendars/src/expandableCalendar/style.js": {
+          "size": 2734
+        },
+        "/node_modules/react-native-calendars/src/expandableCalendar/week.js": {
+          "size": 1684
+        },
+        "/node_modules/react-native-calendars/src/expandableCalendar/WeekCalendar/index.js": {
+          "size": 4049
+        },
+        "/node_modules/react-native-calendars/src/expandableCalendar/commons.js": {
+          "size": 743
+        },
+        "/node_modules/react-native-calendars/src/expandableCalendar/Context/index.js": {
+          "size": 127
+        },
+        "/node_modules/react-native-calendars/src/expandableCalendar/WeekCalendar/new.js": {
+          "size": 2349
+        },
+        "/node_modules/@babel/runtime/helpers/objectDestructuringEmpty.js": {
+          "size": 133
+        },
+        "/node_modules/react-native-calendars/src/expandableCalendar/AgendaList/agendaList.js": {
+          "size": 3498
+        },
+        "/node_modules/lodash/map.js": {
+          "size": 98
+        },
+        "/node_modules/lodash/_baseMap.js": {
+          "size": 133
+        },
+        "/node_modules/react-native-calendars/src/momentResolver.js": {
+          "size": 143
+        },
+        "/node_modules/moment/moment.js": {
+          "size": 60095
+        },
+        "/node_modules/react-native-calendars/src/expandableCalendar/AgendaList/infiniteAgendaList.js": {
+          "size": 3813
+        },
+        "/node_modules/react-native-calendars/src/expandableCalendar/AgendaList/commons.js": {
+          "size": 331
+        },
+        "/node_modules/react-native-calendars/src/expandableCalendar/Context/Provider.js": {
+          "size": 1693
+        },
+        "/node_modules/lodash/lodash.js": {
+          "size": 73067
+        },
+        "/node_modules/react-native-calendars/src/expandableCalendar/Context/todayButton.js": {
+          "size": 1739
+        },
+        "/node_modules/react-native-calendars/src/img/down.png": {
+          "size": 389
+        },
+        "/node_modules/react-native-calendars/src/img/up.png": {
+          "size": 387
+        },
+        "/node_modules/react-native-calendars/src/expandableCalendar/Context/asCalendarConsumer.js": {
+          "size": 634
+        },
+        "/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js": {
+          "size": 957
+        },
+        "/node_modules/hoist-non-react-statics/node_modules/react-is/index.js": {
+          "size": 33
+        },
+        "/node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.production.min.js": {
+          "size": 2153
+        },
+        "/node_modules/react-native-calendars/src/timeline/Timeline.js": {
+          "size": 2832
+        },
+        "/node_modules/lodash/min.js": {
+          "size": 94
+        },
+        "/node_modules/lodash/_baseExtremum.js": {
+          "size": 158
+        },
+        "/node_modules/lodash/_baseLt.js": {
+          "size": 38
+        },
+        "/node_modules/lodash/times.js": {
+          "size": 195
+        },
+        "/node_modules/lodash/_castFunction.js": {
+          "size": 70
+        },
+        "/node_modules/lodash/groupBy.js": {
+          "size": 130
+        },
+        "/node_modules/lodash/_createAggregator.js": {
+          "size": 142
+        },
+        "/node_modules/lodash/_arrayAggregator.js": {
+          "size": 107
+        },
+        "/node_modules/lodash/_baseAggregator.js": {
+          "size": 90
+        },
+        "/node_modules/react-native-calendars/src/timeline/style.js": {
+          "size": 1684
+        },
+        "/node_modules/react-native-calendars/src/timeline/Packer.js": {
+          "size": 1994
+        },
+        "/node_modules/react-native-calendars/src/timeline/helpers/presenter.js": {
+          "size": 839
+        },
+        "/node_modules/react-native-calendars/src/timeline/TimelineHours.js": {
+          "size": 2027
+        },
+        "/node_modules/lodash/range.js": {
+          "size": 30
+        },
+        "/node_modules/lodash/_createRange.js": {
+          "size": 209
+        },
+        "/node_modules/lodash/_baseRange.js": {
+          "size": 137
+        },
+        "/node_modules/react-native-calendars/src/timeline/EventBlock.js": {
+          "size": 895
+        },
+        "/node_modules/react-native-calendars/src/timeline/NowIndicator.js": {
+          "size": 424
+        },
+        "/node_modules/react-native-calendars/src/timeline/useTimelineOffset.js": {
+          "size": 462
+        },
+        "/node_modules/react-native-calendars/src/timeline-list/index.js": {
+          "size": 2557
+        },
+        "/node_modules/lodash/dropRight.js": {
+          "size": 136
+        },
+        "/node_modules/react-native-calendars/src/timeline-list/useTimelinePages.js": {
+          "size": 1502
+        },
+        "/node_modules/react-native-calendars/src/Profiler.js": {
+          "size": 1194
+        },
+        "/src/components/dateTimePicker/TimePicker.tsx": {
+          "size": 3544
+        },
+        "/src/screens/ContactScreen.tsx": {
+          "size": 3718
+        },
+        "/src/components/LoadingModal.tsx": {
+          "size": 941
+        },
+        "/src/store/store.ts": {
+          "size": 163
+        },
+        "[sourceMappingURL]": {
+          "size": 115
+        },
+        "[unmapped]": {
+          "size": 534726
+        },
+        "[EOLs]": {
+          "size": 1415
+        }
+      }
+    }
+  ]
+}

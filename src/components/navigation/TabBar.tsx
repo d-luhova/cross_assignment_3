@@ -1,7 +1,7 @@
 import { TYPOGRAPHY } from "@/src/constants/typography";
-import { MaterialIcons } from "@expo/vector-icons";
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import AppIcon, { AppIconName } from "../AppIcon";
 import { COLORS } from "../../constants/colors";
 import useTheme from "@/src/hooks/useTheme";
 
@@ -16,8 +16,8 @@ export default function TabBar({ state, navigation }: BottomTabBarProps) {
           navigation.navigate(route.name);
         };
 
-        const iconName =
-          route.name === "Restaurants" ? "restaurant" : "calendar-today";
+        const iconName: AppIconName =
+          route.name === "Restaurants" ? "restaurant" : "calendar";
 
         const label =
           route.name === "Restaurants" ? "Restaurants" : "My Bookings";
@@ -28,7 +28,7 @@ export default function TabBar({ state, navigation }: BottomTabBarProps) {
             onPress={onPress}
             style={styles.tab}
           >
-            <MaterialIcons
+            <AppIcon
               name={iconName}
               size={20}
               color={isFocused ? COLORS.primary[400] : COLORS.grey[300]}

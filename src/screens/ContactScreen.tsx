@@ -8,17 +8,13 @@ import {
   Keyboard,
   TouchableWithoutFeedback,
 } from "react-native";
-
-import { MaterialIcons } from "@expo/vector-icons";
-
+import AppIcon from "../components/AppIcon";
 import ButtonPrimary from "../components/ButtonPrimary";
 import TitleCard from "../components/TitleCard";
 import NavBar from "../components/navigation/NavBar";
-
 import { COLORS } from "../constants/colors";
 import { TYPOGRAPHY } from "../constants/typography";
 import restaurants from "../data/Restaurants";
-import { createBooking } from "../services/tablesApi";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { USER_ID } from "../data/user";
 import LoadingModal from "../components/LoadingModal";
@@ -54,7 +50,9 @@ export default function ContactScreen({ route, navigation }: any) {
         })
       ).unwrap();
 
-      navigation.navigate("Bookings");
+      navigation.navigate("Bookings", {
+        success: true,
+      });
     } catch (error) {
       console.log(error);
     } finally {
@@ -110,7 +108,7 @@ export default function ContactScreen({ route, navigation }: any) {
           >
             <View style={[styles.checkbox, accepted && styles.checkboxActive]}>
               {accepted && (
-                <MaterialIcons name="check" size={16} color={COLORS.white} />
+                <AppIcon name="check" size={16} color={COLORS.white} />
               )}
             </View>
             <Text
@@ -134,7 +132,7 @@ export default function ContactScreen({ route, navigation }: any) {
           </View>
           <ButtonPrimary
             title="To book"
-            icon={<MaterialIcons name="check" size={14} color={COLORS.white} />}
+            icon={<AppIcon name="check" size={14} color={COLORS.white} />}
             onPress={handleBooking}
             disabled={isDisabled}
           />

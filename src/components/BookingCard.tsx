@@ -1,10 +1,10 @@
-import React from 'react';
-import { Text, StyleSheet, View, TouchableOpacity } from 'react-native';
-import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import React from "react";
+import { Text, StyleSheet, View, TouchableOpacity } from "react-native";
 
-import { COLORS } from '../constants/colors';
-import { TYPOGRAPHY } from '../constants/typography';   
-import useTheme from '../hooks/useTheme';
+import AppIcon from "./AppIcon";
+import { COLORS } from "../constants/colors";
+import { TYPOGRAPHY } from "../constants/typography";
+import useTheme from "../hooks/useTheme";
 
 type Props = {
   title: string;
@@ -21,7 +21,8 @@ export default function BookingCard({
   guests,
   onDelete,
 }: Props) {
-  const colors = useTheme().colors;  
+  console.log("Render BookingCard");
+  const colors = useTheme().colors;
   return (
     <View style={styles.container}>
       <View style={styles.content}>
@@ -29,15 +30,21 @@ export default function BookingCard({
           <Text style={[styles.title, { color: colors.text }]}>{title}</Text>
 
           <View style={styles.meta}>
-            <Text style={[styles.metaText, { color: colors.tetriaryText }]}>{date}</Text>
-            <Text style={[styles.metaText, { color: colors.tetriaryText }]}>{time}</Text>
-            <Text style={[styles.metaText, { color: colors.tetriaryText }]}>{guests}</Text>
+            <Text style={[styles.metaText, { color: colors.tetriaryText }]}>
+              {date}
+            </Text>
+            <Text style={[styles.metaText, { color: colors.tetriaryText }]}>
+              {time}
+            </Text>
+            <Text style={[styles.metaText, { color: colors.tetriaryText }]}>
+              {guests}
+            </Text>
           </View>
         </View>
         {onDelete && (
           <TouchableOpacity onPress={onDelete}>
-            <MaterialCommunityIcons
-              name="trash-can-outline"
+            <AppIcon
+              name="trash"
               size={24}
               color={COLORS.error[400]}
             />
@@ -53,13 +60,13 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     borderColor: COLORS.secondary[200],
     padding: 16,
-    width: '100%',
+    width: "100%",
   },
 
   content: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
 
   textBlock: {
@@ -72,7 +79,7 @@ const styles = StyleSheet.create({
   },
 
   meta: {
-    flexDirection: 'row',
+    flexDirection: "row",
     gap: 12,
     marginTop: 8,
   },

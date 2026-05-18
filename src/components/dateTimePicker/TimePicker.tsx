@@ -10,7 +10,7 @@ import {
   TouchableWithoutFeedback
 } from 'react-native';
 import { COLORS } from '../../constants/colors';
-import { MaterialIcons } from '@expo/vector-icons';
+import AppIcon from '../AppIcon';
 import { TYPOGRAPHY } from '@/src/constants/typography';
 import useTheme from '@/src/hooks/useTheme';
 
@@ -153,8 +153,8 @@ export default function TimePicker({
         {selectedTime || "Time"}
       </Text>
 
-      <MaterialIcons
-        name="keyboard-arrow-down"
+      <AppIcon
+        name="chevron-down"
         size={24}
         color={colors.primary}
       />

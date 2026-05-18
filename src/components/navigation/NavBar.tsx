@@ -2,7 +2,7 @@ import React from "react";
 
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import AppIcon from "../AppIcon";
 import { COLORS } from "../../constants/colors";
 import { TYPOGRAPHY } from "../../constants/typography";
 import useTheme from "@/src/hooks/useTheme";
@@ -18,12 +18,13 @@ export default function NavBar({ title, onBackPress }: Props) {
     <View style={styles.navBar}>
       
       <TouchableOpacity onPress={onBackPress} style={styles.backButton}>
-        <MaterialIcons
-          style={[styles.icons, { backgroundColor: colors.background }]}
-          name="chevron-left"
-          size={24}
-          color={COLORS.primary[300]}
-        />
+        <View style={[styles.icons, { backgroundColor: colors.background }]}>
+          <AppIcon
+            name="chevron-left"
+            size={24}
+            color={COLORS.primary[300]}
+          />
+        </View>
       </TouchableOpacity>
 
       {title && (

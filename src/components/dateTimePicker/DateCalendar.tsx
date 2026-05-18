@@ -6,15 +6,15 @@ import useTheme from "@/src/hooks/useTheme";
 
 type DateCalendarProps = {
   onSelectDate: (date: string) => void;
-}
+};
 
 export default function DateCalendar({ onSelectDate }: DateCalendarProps) {
   const [selectedDate, setSelectedDate] = useState("");
-  const colors = useTheme().colors;  
+  const colors = useTheme().colors;
 
   return (
     <View style={styles.calendar}>
-      <Calendar 
+      <Calendar
         onDayPress={(day) => {
           setSelectedDate(day.dateString);
           onSelectDate(day.dateString);
@@ -50,6 +50,6 @@ const styles = StyleSheet.create({
     overflow: "hidden",
     borderWidth: 1,
     borderColor: COLORS.secondary[200],
-    padding: 16,
+    padding: 8,
   },
 });

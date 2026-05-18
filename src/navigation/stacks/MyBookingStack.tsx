@@ -5,7 +5,9 @@ const Stack = createNativeStackNavigator();
 
 export default function MyBookingStack() {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
+    <Stack.Navigator
+      screenOptions={{ headerShown: false, animation: "slide_from_right" }}
+    >
       <Stack.Screen name="Booking" component={BookingScreen} />
     </Stack.Navigator>
   );

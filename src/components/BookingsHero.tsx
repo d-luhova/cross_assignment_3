@@ -2,10 +2,8 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { COLORS } from "../constants/colors";
 import { TYPOGRAPHY } from "../constants/typography";
-import useTheme from "../hooks/useTheme";
 
 export default function BookingsHero() {
-  const colors = useTheme().colors;
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{"Your Tables"}</Text>

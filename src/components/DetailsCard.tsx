@@ -1,20 +1,23 @@
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
-
-import restaurants from '../data/Restaurants';
-import { COLORS } from '../constants/colors';
-import { TYPOGRAPHY } from '../constants/typography';
-import useTheme from '../hooks/useTheme'; 
+import React, { useMemo } from "react";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import AppIcon from "./AppIcon";
+import restaurants from "../data/Restaurants";
+import { COLORS } from "../constants/colors";
+import { TYPOGRAPHY } from "../constants/typography";
+import useTheme from "../hooks/useTheme";
 
 type Props = {
   restaurantId: string;
 };
 
-export default function DetailsCard({ restaurantId }: Props) {
-  const restaurant = restaurants.find(
-    item => item.id === restaurantId
-  );
+function DetailsCard({ restaurantId }: Props) {
+  console.log("Render DetailsCard");
+
   const { colors } = useTheme();
+
+  const restaurant = useMemo(() => {
+    return restaurants.find((item) => item.id === restaurantId);
+  }, [restaurantId]);
 
   if (!restaurant) {
     return <Text>Restaurant not found</Text>;
@@ -31,15 +34,14 @@ export default function DetailsCard({ restaurantId }: Props) {
           <Text style={[styles.address, { color: colors.tetriaryText }]}>
             {restaurant.address}
           </Text>
+
           <TouchableOpacity style={styles.phoneButton}>
-            <MaterialCommunityIcons
-              name="phone-outline"
+            <AppIcon
+              name="phone"
               size={14}
               color={COLORS.primary[400]}
             />
-            <Text style={styles.phone}>
-              {restaurant.phone}
-            </Text>
+            <Text style={styles.phone}>{restaurant.phone}</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -51,9 +53,11 @@ export default function DetailsCard({ restaurantId }: Props) {
   );
 }
 
+export default React.memo(DetailsCard);
+
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
+    width: "100%",
     gap: 24,
   },
 
@@ -75,8 +79,8 @@ const styles = StyleSheet.create({
   },
 
   phoneButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 8,
   },
 

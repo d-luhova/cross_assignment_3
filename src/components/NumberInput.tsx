@@ -5,7 +5,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import AppIcon from './AppIcon';
 import { COLORS } from '../constants/colors';
 import { TYPOGRAPHY } from '../constants/typography';
 import useTheme from '../hooks/useTheme';
@@ -39,8 +39,8 @@ export default function NumberInput({ guests, onChange }: Props) {
           style={styles.button}
           onPress={decrease}
         >
-          <MaterialIcons
-            name="remove"
+          <AppIcon
+            name="minus"
             size={14}
             color={COLORS.grey[700]}
           />
@@ -56,8 +56,8 @@ export default function NumberInput({ guests, onChange }: Props) {
           style={styles.button}
           onPress={increase}
         >
-          <MaterialIcons
-            name="add"
+          <AppIcon
+            name="plus"
             size={14}
             color={COLORS.grey[700]}
           />
