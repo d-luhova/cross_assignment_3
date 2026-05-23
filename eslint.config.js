@@ -1,14 +1,17 @@
-const { defineConfig } = require('eslint/config');
-const expoConfig = require('eslint-config-expo/flat');
+const { defineConfig } = require("eslint/config");
+const expoConfig = require("eslint-config-expo/flat");
+const prettierPlugin = require("eslint-plugin-prettier");
 
 module.exports = defineConfig([
   expoConfig,
-  require('eslint-config-prettier'),
+  require("eslint-config-prettier"),
   {
-    plugins: ['prettier'],
-    rules: {
-      'prettier/prettier': 'warn',
+    plugins: {
+      prettier: prettierPlugin,
     },
-    ignores: ['dist/*'],
+    rules: {
+      "prettier/prettier": "warn",
+    },
+    ignores: ["dist/*"],
   },
 ]);

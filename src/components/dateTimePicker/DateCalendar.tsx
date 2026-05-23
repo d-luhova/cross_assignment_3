@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { StyleSheet, View } from "react-native";
 import { Calendar } from "react-native-calendars";
 import { COLORS } from "../../constants/colors";
+import { SHADOWS } from "../../constants/shadows";
 import useTheme from "@/src/hooks/useTheme";
 
 type DateCalendarProps = {
@@ -13,38 +14,47 @@ export default function DateCalendar({ onSelectDate }: DateCalendarProps) {
   const colors = useTheme().colors;
 
   return (
-    <View style={styles.calendar}>
-      <Calendar
-        onDayPress={(day) => {
-          setSelectedDate(day.dateString);
-          onSelectDate(day.dateString);
-        }}
-        markedDates={{
-          [selectedDate]: {
-            selected: true,
-            selectedColor: COLORS.primary[400],
-            selectedTextColor: COLORS.white,
-          },
-        }}
-        theme={{
-          backgroundColor: colors.background,
-          calendarBackground: colors.background,
-          todayTextColor: colors.primary,
-          monthTextColor: colors.text,
-          textMonthFontSize: 14,
-          textMonthFontWeight: "700",
-          textSectionTitleColor: colors.tetriaryText,
-          dayTextColor: colors.text,
-          arrowColor: colors.primary,
-        }}
-        monthFormat={"MMM yyyy"}
-        hideExtraDays={true}
-      />
+    <View style={styles.calendarShadow}>
+      <View
+        style={[styles.calendar, { backgroundColor: colors.inputBackground }]}
+      >
+        <Calendar
+          onDayPress={(day) => {
+            setSelectedDate(day.dateString);
+            onSelectDate(day.dateString);
+          }}
+          markedDates={{
+            [selectedDate]: {
+              selected: true,
+              selectedColor: COLORS.primary[400],
+              selectedTextColor: COLORS.white,
+            },
+          }}
+          theme={{
+            backgroundColor: colors.background,
+            calendarBackground: colors.background,
+            todayTextColor: colors.primary,
+            monthTextColor: colors.text,
+            textMonthFontSize: 14,
+            textMonthFontWeight: "700",
+            textSectionTitleColor: colors.tetriaryText,
+            dayTextColor: colors.text,
+            arrowColor: colors.primary,
+          }}
+          monthFormat={"MMM yyyy"}
+          hideExtraDays={true}
+        />
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  calendarShadow: {
+    borderRadius: 12,
+    ...SHADOWS.soft,
+  },
+
   calendar: {
     borderRadius: 12,
     overflow: "hidden",

@@ -3,6 +3,7 @@ import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 
 import AppIcon from "./AppIcon";
 import { COLORS } from "../constants/colors";
+import { SHADOWS } from "../constants/shadows";
 import { TYPOGRAPHY } from "../constants/typography";
 
 type Props = {
@@ -14,11 +15,7 @@ type Props = {
 export default function Toast({ title, description, onClose }: Props) {
   return (
     <View style={styles.toast}>
-      <AppIcon
-        name="check-circle"
-        size={24}
-        color={COLORS.primary[500]}
-      />
+      <AppIcon name="check-circle" size={24} color={COLORS.primary[500]} />
       <View style={styles.content}>
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.description}>{description}</Text>
@@ -26,11 +23,7 @@ export default function Toast({ title, description, onClose }: Props) {
 
       {onClose && (
         <TouchableOpacity onPress={onClose}>
-          <AppIcon
-            name="close"
-            size={16}
-            color={COLORS.grey[500]}
-          />
+          <AppIcon name="close" size={16} color={COLORS.grey[500]} />
         </TouchableOpacity>
       )}
     </View>
@@ -45,6 +38,7 @@ const styles = StyleSheet.create({
     padding: 16,
     borderRadius: 12,
     backgroundColor: COLORS.primary[50],
+    ...SHADOWS.soft,
   },
 
   content: {

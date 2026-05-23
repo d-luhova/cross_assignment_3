@@ -9,6 +9,8 @@ export default function StackNavigator() {
       screenOptions={{
         headerShown: false,
         animation: "slide_from_right",
+        animationDuration: 260,
+        gestureEnabled: true,
       }}
     >
       <Stack.Screen name="Tabs" component={TabNavigator} />

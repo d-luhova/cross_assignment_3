@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   View,
   Text,
@@ -13,6 +13,7 @@ import ButtonPrimary from "../components/ButtonPrimary";
 import TitleCard from "../components/TitleCard";
 import NavBar from "../components/navigation/NavBar";
 import { COLORS } from "../constants/colors";
+import { SHADOWS } from "../constants/shadows";
 import { TYPOGRAPHY } from "../constants/typography";
 import restaurants from "../data/Restaurants";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -21,19 +22,35 @@ import LoadingModal from "../components/LoadingModal";
 import useTheme from "../hooks/useTheme";
 import { useAppDispatch } from "../store/hooks";
 import { createBookingThunk } from "../features/bookings/bookingsThunks";
+import { useUser } from "../context/UserContext";
+import { getNameError, getPhoneError } from "../utils/contactValidation";
 
 export default function ContactScreen({ route, navigation }: any) {
   const { restaurantId, guests, date, time } = route.params;
 
   const restaurant = restaurants.find((item) => item.id === restaurantId);
+  const { user } = useUser();
 
   const [loading, setLoading] = useState(false);
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
+  const [name, setName] = useState(user.name);
+  const [phone, setPhone] = useState(user.phone);
   const [accepted, setAccepted] = useState(false);
+  const [focusedField, setFocusedField] = useState<"name" | "phone" | null>(
+    null
+  );
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const dispatch = useAppDispatch();
+  const nameError = getNameError(name);
+  const phoneError = getPhoneError(phone);
+  const showNameError = !!name.trim() && !!nameError;
+  const showPhoneError = !!phone.trim() && !!phoneError;
+
+  useEffect(() => {
+    setName((currentName) => currentName || user.name);
+    setPhone((currentPhone) => currentPhone || user.phone);
+  }, [user]);
+
   const handleBooking = async () => {
     setLoading(true);
 
@@ -60,7 +77,7 @@ export default function ContactScreen({ route, navigation }: any) {
     }
   };
 
-  const isDisabled = !name || !phone || !accepted;
+  const isDisabled = !!nameError || !!phoneError || !accepted;
 
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -82,24 +99,54 @@ export default function ContactScreen({ route, navigation }: any) {
           <View style={styles.form}>
             <View style={styles.fieldWrapper}>
               <Text style={[styles.label, { color: colors.text }]}>Name</Text>
-              <TextInput
-                placeholder="Your name"
-                placeholderTextColor={colors.placeholderText}
-                value={name}
-                onChangeText={setName}
-                style={[styles.input, { color: colors.text }]}
-              />
+              <View style={styles.inputShadow}>
+                <TextInput
+                  placeholder="Your name"
+                  placeholderTextColor={colors.placeholderText}
+                  value={name}
+                  onFocus={() => setFocusedField("name")}
+                  onBlur={() => setFocusedField(null)}
+                  onChangeText={setName}
+                  style={[
+                    styles.input,
+                    focusedField === "name" && styles.inputFocused,
+                    showNameError && styles.inputError,
+                    {
+                      color: colors.text,
+                      backgroundColor: colors.inputBackground,
+                    },
+                  ]}
+                />
+              </View>
+              {showNameError && (
+                <Text style={styles.errorText}>{nameError}</Text>
+              )}
             </View>
             <View style={styles.fieldWrapper}>
               <Text style={[styles.label, { color: colors.text }]}>Phone</Text>
-              <TextInput
-                placeholder="+49..."
-                placeholderTextColor={colors.placeholderText}
-                value={phone}
-                onChangeText={setPhone}
-                keyboardType="phone-pad"
-                style={[styles.input, { color: colors.text }]}
-              />
+              <View style={styles.inputShadow}>
+                <TextInput
+                  placeholder="+49..."
+                  placeholderTextColor={colors.placeholderText}
+                  value={phone}
+                  onFocus={() => setFocusedField("phone")}
+                  onBlur={() => setFocusedField(null)}
+                  onChangeText={setPhone}
+                  keyboardType="phone-pad"
+                  style={[
+                    styles.input,
+                    focusedField === "phone" && styles.inputFocused,
+                    showPhoneError && styles.inputError,
+                    {
+                      color: colors.text,
+                      backgroundColor: colors.inputBackground,
+                    },
+                  ]}
+                />
+              </View>
+              {showPhoneError && (
+                <Text style={styles.errorText}>{phoneError}</Text>
+              )}
             </View>
           </View>
           <TouchableOpacity
@@ -173,6 +220,24 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     paddingHorizontal: 16,
     ...TYPOGRAPHY.body.m,
+  },
+
+  inputShadow: {
+    borderRadius: 12,
+    ...SHADOWS.soft,
+  },
+
+  inputError: {
+    borderColor: COLORS.error[400],
+  },
+
+  inputFocused: {
+    borderColor: COLORS.primary[400],
+  },
+
+  errorText: {
+    ...TYPOGRAPHY.body.s,
+    color: COLORS.error[400],
   },
 
   checkboxRow: {

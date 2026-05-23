@@ -2,6 +2,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import StackNavigator from "./src/navigation/StackNavigator";
 import ThemeProvider from "./src/context/ThemeContext";
+import UserProvider from "./src/context/UserContext";
 import { Provider } from "react-redux";
 import { store } from "./src/store/store";
 import { UIManager, Platform } from "react-native";
@@ -18,9 +19,11 @@ export default function App() {
     <SafeAreaProvider>
       <Provider store={store}>
         <ThemeProvider>
-          <NavigationContainer>
-            <StackNavigator />
-          </NavigationContainer>
+          <UserProvider>
+            <NavigationContainer>
+              <StackNavigator />
+            </NavigationContainer>
+          </UserProvider>
         </ThemeProvider>
       </Provider>
     </SafeAreaProvider>

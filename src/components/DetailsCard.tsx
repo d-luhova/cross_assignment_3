@@ -36,11 +36,7 @@ function DetailsCard({ restaurantId }: Props) {
           </Text>
 
           <TouchableOpacity style={styles.phoneButton}>
-            <AppIcon
-              name="phone"
-              size={14}
-              color={COLORS.primary[400]}
-            />
+            <AppIcon name="phone" size={14} color={COLORS.primary[400]} />
             <Text style={styles.phone}>{restaurant.phone}</Text>
           </TouchableOpacity>
         </View>

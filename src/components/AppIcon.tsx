@@ -17,6 +17,7 @@ import {
   Sun,
   Trash2,
   Utensils,
+  User,
   X,
 } from "lucide-react-native/icons";
 
@@ -37,6 +38,7 @@ export type AppIconName =
   | "moon"
   | "sun"
   | "check-circle"
+  | "user"
   | "close";
 
 type IconProps = {
@@ -63,6 +65,7 @@ const ICONS: Record<AppIconName, ComponentType<IconProps>> = {
   moon: Moon,
   sun: Sun,
   "check-circle": CircleCheck,
+  user: User,
   close: X,
 };
 
@@ -76,11 +79,6 @@ export default function AppIcon({
   const Icon = ICONS[name];
 
   return (
-    <Icon
-      size={size}
-      color={color}
-      strokeWidth={strokeWidth}
-      style={style}
-    />
+    <Icon size={size} color={color} strokeWidth={strokeWidth} style={style} />
   );
 }

@@ -1,9 +1,16 @@
 import { TYPOGRAPHY } from "@/src/constants/typography";
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import {
+  LayoutAnimation,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import AppIcon, { AppIconName } from "../AppIcon";
 import { COLORS } from "../../constants/colors";
 import useTheme from "@/src/hooks/useTheme";
+import { SHADOWS } from "@/src/constants/shadows";
 
 export default function TabBar({ state, navigation }: BottomTabBarProps) {
   const { colors } = useTheme();
@@ -13,6 +20,11 @@ export default function TabBar({ state, navigation }: BottomTabBarProps) {
         const isFocused = state.index === index;
 
         const onPress = () => {
+          if (isFocused) {
+            return;
+          }
+
+          LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
           navigation.navigate(route.name);
         };
 
@@ -23,10 +35,10 @@ export default function TabBar({ state, navigation }: BottomTabBarProps) {
           route.name === "Restaurants" ? "Restaurants" : "My Bookings";
 
         return (
-          <TouchableOpacity
+          <Pressable
             key={route.key}
             onPress={onPress}
-            style={styles.tab}
+            style={({ pressed }) => [styles.tab, pressed && styles.tabPressed]}
           >
             <AppIcon
               name={iconName}
@@ -39,7 +51,7 @@ export default function TabBar({ state, navigation }: BottomTabBarProps) {
             >
               {label}
             </Text>
-          </TouchableOpacity>
+          </Pressable>
         );
       })}
     </View>
@@ -51,10 +63,20 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-around",
+    borderTopWidth: 1,
+    borderTopColor: COLORS.secondary[100],
+    ...SHADOWS.floating,
   },
 
   tab: {
     alignItems: "center",
+    minWidth: 96,
+    paddingVertical: 6,
+  },
+
+  tabPressed: {
+    transform: [{ scale: 0.96 }],
+    opacity: 0.8,
   },
 
   text: {

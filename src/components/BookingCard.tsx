@@ -3,6 +3,7 @@ import { Text, StyleSheet, View, TouchableOpacity } from "react-native";
 
 import AppIcon from "./AppIcon";
 import { COLORS } from "../constants/colors";
+import { SHADOWS } from "../constants/shadows";
 import { TYPOGRAPHY } from "../constants/typography";
 import useTheme from "../hooks/useTheme";
 
@@ -24,7 +25,15 @@ export default function BookingCard({
   console.log("Render BookingCard");
   const colors = useTheme().colors;
   return (
-    <View style={styles.container}>
+    <View
+      style={[
+        styles.container,
+        {
+          backgroundColor: colors.card,
+          borderColor: colors.border,
+        },
+      ]}
+    >
       <View style={styles.content}>
         <View style={styles.textBlock}>
           <Text style={[styles.title, { color: colors.text }]}>{title}</Text>
@@ -43,11 +52,7 @@ export default function BookingCard({
         </View>
         {onDelete && (
           <TouchableOpacity onPress={onDelete}>
-            <AppIcon
-              name="trash"
-              size={24}
-              color={COLORS.error[400]}
-            />
+            <AppIcon name="trash" size={24} color={COLORS.error[400]} />
           </TouchableOpacity>
         )}
       </View>
@@ -58,9 +63,9 @@ const styles = StyleSheet.create({
   container: {
     borderWidth: 1,
     borderRadius: 16,
-    borderColor: COLORS.secondary[200],
     padding: 16,
     width: "100%",
+    ...SHADOWS.card,
   },
 
   content: {

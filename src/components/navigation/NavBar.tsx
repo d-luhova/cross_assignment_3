@@ -16,23 +16,15 @@ export default function NavBar({ title, onBackPress }: Props) {
   const { colors } = useTheme();
   return (
     <View style={styles.navBar}>
-      
       <TouchableOpacity onPress={onBackPress} style={styles.backButton}>
         <View style={[styles.icons, { backgroundColor: colors.background }]}>
-          <AppIcon
-            name="chevron-left"
-            size={24}
-            color={COLORS.primary[300]}
-          />
+          <AppIcon name="chevron-left" size={24} color={colors.primary} />
         </View>
       </TouchableOpacity>
 
       {title && (
-        <Text style={[styles.title, { color: colors.text }]}>
-          {title}
-        </Text>
+        <Text style={[styles.title, { color: colors.text }]}>{title}</Text>
       )}
-
     </View>
   );
 }
@@ -56,10 +48,10 @@ const styles = StyleSheet.create({
   title: {
     ...TYPOGRAPHY.heading.h4,
   },
-  icons: {  
-    borderColor: COLORS.secondary[100], 
-    borderWidth: 1, 
-    borderRadius: 12, 
-    padding: 12, 
+  icons: {
+    borderColor: COLORS.secondary[100],
+    borderWidth: 1,
+    borderRadius: 12,
+    padding: 12,
   },
 });

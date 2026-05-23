@@ -47,7 +47,7 @@ export default function HomeScreen({ navigation }: Props) {
         },
       ]}
     >
-      <HomeHero />
+      <HomeHero onProfilePress={() => navigation.navigate("Profile")} />
       <View style={styles.content}>
         <FlatList
           data={restaurants}

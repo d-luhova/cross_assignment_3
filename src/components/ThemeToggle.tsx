@@ -1,6 +1,7 @@
 import React from "react";
 import { View, StyleSheet, Pressable, LayoutAnimation } from "react-native";
 import AppIcon from "./AppIcon";
+import { SHADOWS } from "../constants/shadows";
 import useTheme from "../hooks/useTheme";
 
 export default function ThemeToggle() {
@@ -66,5 +67,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderWidth: 1,
+    ...SHADOWS.soft,
   },
 });

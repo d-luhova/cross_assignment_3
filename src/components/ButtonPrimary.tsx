@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
 import {
   Text,
   StyleSheet,
-  TouchableOpacity,
+  Pressable,
   View,
   GestureResponderEvent,
   ViewStyle,
-  useWindowDimensions
-} from 'react-native';
+  useWindowDimensions,
+} from "react-native";
 
-import { COLORS } from '../constants/colors';
-import { TYPOGRAPHY } from '../constants/typography';
+import { COLORS } from "../constants/colors";
+import { SHADOWS } from "../constants/shadows";
+import { TYPOGRAPHY } from "../constants/typography";
 
 type Props = {
   title: string;
@@ -30,16 +31,22 @@ export default function ButtonPrimary({
   const { width } = useWindowDimensions();
   const isSmall = width < 375;
   return (
-    <TouchableOpacity
+    <Pressable
       onPress={onPress}
       disabled={disabled}
-      style={[styles.button, disabled && styles.disabled, { paddingHorizontal: isSmall ? 12 : 16 }, style]}
-      activeOpacity={0.8}
+      style={({ pressed }) => [
+        styles.button,
+        disabled && styles.disabled,
+        !disabled && SHADOWS.primary,
+        pressed && !disabled && styles.pressed,
+        { paddingHorizontal: isSmall ? 12 : 16 },
+        style,
+      ]}
     >
       {icon ? <View style={styles.icon}>{icon}</View> : null}
 
       <Text style={styles.text}>{title}</Text>
-    </TouchableOpacity>
+    </Pressable>
   );
 }
 
@@ -49,9 +56,9 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.primary[400],
     borderRadius: 12,
 
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
     paddingHorizontal: 16,
   },
 
@@ -62,11 +69,18 @@ const styles = StyleSheet.create({
 
   icon: {
     marginRight: 8,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
 
   disabled: {
     backgroundColor: COLORS.grey[300],
+    elevation: 0,
+    shadowOpacity: 0,
+  },
+
+  pressed: {
+    transform: [{ scale: 0.98 }],
+    opacity: 0.9,
   },
 });
