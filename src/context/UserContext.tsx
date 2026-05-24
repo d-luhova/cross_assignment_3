@@ -86,8 +86,8 @@ export default function UserProvider({ children }: Props) {
           phone:
             typeof savedProfile.phone === "string" ? savedProfile.phone : "",
         });
-      } catch (error) {
-        console.log(error);
+      } catch {
+        return;
       }
     };
 
@@ -102,7 +102,7 @@ export default function UserProvider({ children }: Props) {
 
     setUser(nextProfile);
 
-    saveUserProfile(nextProfile).catch((error) => console.log(error));
+    saveUserProfile(nextProfile).catch(() => {});
   };
 
   const value = useMemo(

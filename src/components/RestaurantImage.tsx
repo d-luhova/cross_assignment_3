@@ -7,7 +7,6 @@ type Props = {
 };
 
 function RestaurantImage({ source }: Props) {
-  console.log("Render RestaurantImage");
   return (
     <Image
       source={source}

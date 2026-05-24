@@ -22,7 +22,6 @@ export default function BookingCard({
   guests,
   onDelete,
 }: Props) {
-  console.log("Render BookingCard");
   const colors = useTheme().colors;
   return (
     <View

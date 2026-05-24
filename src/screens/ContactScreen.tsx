@@ -70,8 +70,8 @@ export default function ContactScreen({ route, navigation }: any) {
       navigation.navigate("Bookings", {
         success: true,
       });
-    } catch (error) {
-      console.log(error);
+    } catch {
+      return;
     } finally {
       setLoading(false);
     }

@@ -72,9 +72,7 @@ export default function BookingScreen({ navigation }: any) {
         title: "Done!",
         description: "Booking cancelled successfully.",
       });
-    } catch (error) {
-      console.log(error);
-
+    } catch {
       setToast({
         title: "Error",
         description: "Failed to cancel booking.",
@@ -131,9 +129,7 @@ export default function BookingScreen({ navigation }: any) {
 
           <ButtonPrimary
             title="Find a table"
-            icon={
-              <AppIcon name="search" size={14} color={COLORS.white} />
-            }
+            icon={<AppIcon name="search" size={14} color={COLORS.white} />}
             onPress={() => navigation.navigate("Restaurants")}
           />
         </View>

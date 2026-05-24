@@ -11,8 +11,6 @@ type Props = {
 };
 
 function DetailsCard({ restaurantId }: Props) {
-  console.log("Render DetailsCard");
-
   const { colors } = useTheme();
 
   const restaurant = useMemo(() => {

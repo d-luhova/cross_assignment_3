@@ -14,8 +14,6 @@ type Props = {
 };
 
 const CardRestaurant = ({ id, title, address, onPress }: Props) => {
-  console.log("Render CardRestaurant:", id);
-
   const { colors } = useTheme();
 
   const handlePress = React.useCallback(() => {
